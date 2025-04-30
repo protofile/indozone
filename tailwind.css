@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+.exo-<uniquifier> {
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+*/
+
+@layer utilities{
+
+    *{
+        @apply font-exo;
+    }
+    body{
+        @apply w-full overflow-x-hidden;
+    }
+    header{
+        @apply w-full flex;
+    }
+    @media only screen and (min-width: 1536px) {
+        .container {
+            @apply max-w-[1200px];
+        }
+    }
+    @media only screen and (min-width: 1280px) {
+        .container {
+            @apply max-w-[1200px];
+        }
+    }
+    a:hover{
+        @apply no-underline;
+    }
+    .logo{
+        @apply py-2 px-6 max-w-[200px] bg-z-red-600;
+    }
+    .logo img{
+        @apply w-full h-full object-contain;
+    }
+    .header-right{
+        @apply flex flex-col w-full;
+    }
+    .header-right-top{
+        @apply flex justify-between items-center w-full py-2 px-4 bg-[#333] text-white;
+    }
+    .header-right-top .part{
+        @apply flex gap-2 items-center;
+    }
+    .header-right-top .part:nth-child(2){
+        @apply justify-end;
+    }
+    .header-right-bottom{
+        @apply flex justify-between w-full py-2 px-4 items-center border border-b-slate-200;
+    }
+    .header-social{
+        @apply flex gap-2;
+    }
+    .header-social ul{
+        @apply flex gap-1;
+    }
+    .main-menu{
+        @apply flex gap-6 items-center;
+    }
+    .main-menu a{
+        @apply text-sm hover:text-z-red-600 transition-all;
+    }
+    .main-menu .item .dropdown{
+        @apply hidden absolute w-[200px] top-full left-0 bg-white p-4 shadow-md;
+    }
+    .main-menu .item .dropdown a{
+        @apply block p-1 text-sm;
+    }
+    .main-menu .item.with-dropdown:hover .dropdown{
+        @apply block;
+    }
+    .main-menu .item.with-dropdown{
+        @apply relative;
+    }
+    .main-menu .item.with-dropdown a{
+        @apply flex items-center pt-1;
+    }
+    .header-bottom-right{
+        @apply flex items-center gap-4;
+    }
+    .header-bottom-right a{
+        @apply text-sm hover:text-z-red-600 transition-all;
+    }
+    .header-bottom-right a i{
+        @apply text-z-red-600;
+    }
+    .breaking-news-title{
+        @apply text-[13px] w-auto whitespace-nowrap;
+    }
+    .breaking-news-slider{
+        @apply w-full;
+    }
+    .breaking-news-slider .item{
+        @apply text-[13px];
+    }
+    .breaking-news-slider .item{
+        @apply w-full min-w-[600px];
+    }
+    .breaking-news-slider .item a{
+        @apply text-white;
+    }
+    .header-date{
+        @apply text-xs;
+    }
+    .header-social{
+        @apply text-xs;
+    }
+    .src-form{
+        @apply relative;
+    }
+    .src-form input{
+        @apply border border-slate-200 rounded-full px-4 py-2 w-full text-sm;
+    }
+    .src-form button{
+        @apply absolute right-4 top-2; 
+    }
+    .weather-forecast{
+        @apply bg-z-red-600 w-[205px] px-2 py-1 rounded-lg text-white flex items-center gap-2 relative; 
+    }
+    .weather-forecast .weather-icon{
+        @apply text-[36px];
+    }
+    .weather-forecast .temperature{
+        @apply text-lg;
+    }
+    .weather-forecast .weather-name{
+        @apply text-[10px] font-bold;
+    }
+    .city-selector{
+        @apply absolute top-2 right-2;
+    }
+    .city-selector select{
+        @apply bg-transparent text-white text-[10px] w-full text-right appearance-none pr-4;
+    }
+    .city-selector i{
+        @apply absolute top-1.5 right-0 text-xs;
+    }
+    .colormode-btn button{
+        @apply w-6 h-6  rounded-full; 
+    }
+    .colormode-btn.day button{
+        @apply bg-slate-800 text-[#FFC300]
+    }
+    .colormode-btn.night button{
+        @apply text-slate-800 bg-[#FFC300]
+    }
+
+    .footer-section-1{
+        @apply relative before:w-screen before:h-1/2 before:absolute before:bottom-0 before:left-0 before:bg-slate-100 -z-10;
+    }
+    .footer-section-1 .row{
+        @apply bg-z-red-600 bg-[url("../images/paperplane.png")] bg-no-repeat bg-left px-8 py-6 rounded-2xl relative z-10;
+    }
+    .channel-sitemap{
+        @apply columns-3;
+    }
+    .channel-sitemap a{
+        @apply block text-sm text-white py-1;
+    }
+    .footer-section-1 h4{
+        @apply text-4xl text-white;
+    }
+    .footer-section-1 h4 span{
+        @apply text-2xl block;
+    }
+    .footer-section-2{
+        @apply py-10 bg-slate-100;
+    }
+    .footer-tagline{
+        @apply text-sm text-z-red-600 mt-2;
+    }
+    .sitemap{
+        @apply columns-2;
+    }
+    .sitemap a{
+        @apply block text-sm text-slate-800 py-1;
+    }
+    .sponsor{
+        @apply flex justify-end gap-4 items-center pl-[20%] mb-8;
+    }
+    .sponsor img{
+        @apply w-full h-full object-contain;
+    }
+    .verified-banner{
+        @apply flex items-center gap-2 p-2 bg-white border border-slate-200 rounded-lg;
+    }
+    .verified-banner img{
+        @apply object-contain w-12 h-12;
+    }
+    .verified-banner .text{
+        @apply flex flex-col gap-1;
+    }
+    .verified-banner .text h6{
+        @apply text-sm font-bold;
+    }
+    .verified-banner .text p{
+        @apply text-xs;
+    }
+    .footer-section-3{
+        @apply bg-z-red-600 py-2;
+    }
+    .footer-social{
+        @apply flex justify-end w-full gap-3;
+    }
+    .footer-social a{
+        @apply text-white text-lg;
+    }
+    .footer-section-3 p{
+        @apply text-white text-sm;
+    }
+}

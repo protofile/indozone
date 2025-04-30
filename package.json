@@ -1,0 +1,19 @@
+{
+  "name": "indozone",
+  "version": "1.0.0",
+  "description": "HTML of Indozone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./tailwind.css -o ./assets/css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "remixicon": "^4.6.0"
+  }
+}
