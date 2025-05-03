@@ -18,6 +18,9 @@ module.exports = {
         'xxs': ['.6875rem', {
           lineHeight: '1rem',
         }],
+        'md': ['16px', {
+          lineHeight: '1rem',
+        }],
       },
       lineHeight: {
         'leading-half': '0.5rem',

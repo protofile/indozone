@@ -14,13 +14,13 @@
 @layer utilities{
 
     *{
-        @apply font-exo;
+        @apply font-exo transition-all;
     }
     body{
-        @apply w-full overflow-x-hidden;
+        @apply w-full overflow-x-hidden pt-[140px];
     }
     header{
-        @apply w-full flex;
+        @apply w-full flex fixed top-0 left-0 z-50 bg-white;
     }
     @media only screen and (min-width: 1536px) {
         .container {
@@ -32,11 +32,56 @@
             @apply max-w-[1200px];
         }
     }
-    a:hover{
-        @apply no-underline;
+    a{
+        @apply transition-all;
     }
+    a:hover{
+        @apply no-underline text-z-red-600;
+    }
+
+    /* THEMES */
+    .headline-1 .news-item .text .kanal.news a,
+    .news-list-1 .news-item:first-child .text .kanal.news a,
+    .news-list-1a .news-item .text .kanal.news a,
+    .news-card-1 .text .kanal.news a,
+    .foto-card .text .kanal.news a{
+        @apply bg-z-red-600 text-white;
+    }
+    .zcampus-card .kanal.news a,
+    .media-network-item .kanal.news a,
+    .news-list-1 .news-item .kanal.news a{
+        @apply text-z-red-600;
+    }
+    /* THEMES END */
+
+    /* GENERAL */
+    .text{
+        @apply flex flex-col gap-2;
+    }
+    .text h3,
+    .text h4{
+        @apply font-bold;
+    }
+    .meta-info{
+        @apply text-[11px];
+    }
+    .ad-tag{
+        @apply text-[11px] bg-gray-400 text-white inline-block px-1 rounded-[4px] mr-1 leading-4;
+    }
+    .ri-verified-badge-fill{
+        @apply text-[#ED9600];
+    }
+    .content-counter{
+        @apply bg-[rgba(0,0,0,0.8)] text-white text-[10px] flex items-center gap-0.5 leading-[100%] pt-1 pb-0.5 px-1 rounded-md absolute top-2 left-2;
+    }
+    .content-counter i{
+        @apply text-md -translate-y-0.5;
+    }
+    /* GENERAL END */
+
+    /*HEADER*/
     .logo{
-        @apply py-2 px-6 max-w-[200px] bg-z-red-600;
+        @apply py-2 px-6 min-w-[200px] bg-z-red-600;
     }
     .logo img{
         @apply w-full h-full object-contain;
@@ -49,6 +94,9 @@
     }
     .header-right-top .part{
         @apply flex gap-2 items-center;
+    }
+    .header-right-top .part:first-child{
+        @apply w-[73%];
     }
     .header-right-top .part:nth-child(2){
         @apply justify-end;
@@ -91,11 +139,14 @@
     }
     .header-bottom-right a i{
         @apply text-z-red-600;
-    }
+    } 
     .breaking-news-title{
-        @apply text-[13px] w-auto whitespace-nowrap;
+        @apply text-[13px] flex items-center gap-1 w-[170px];
     }
-    .breaking-news-slider{
+    .breaking-news-title i{
+        @apply w-6 h-6 bg-z-red-600 rounded-full flex justify-center items-center;
+    }
+    /*.breaking-news-slider{
         @apply w-full;
     }
     .breaking-news-slider .item{
@@ -106,6 +157,34 @@
     }
     .breaking-news-slider .item a{
         @apply text-white;
+    }*/
+    .breaking-news-slider{
+        @apply w-full overflow-hidden relative h-5;
+    }
+    @keyframes slide {
+        0% {transform: translateX(0);}
+        100% {transform: translateX(-100%);}
+    }
+    @keyframes slide-2 {
+        0% {transform: translateX(100%);}
+        100% {transform: translateX(0);}
+    }
+    .breaking-news-slider .slider{
+        @apply w-auto absolute whitespace-nowrap -top-[2px];
+    }
+    .breaking-news-slider .slider .item{
+        @apply inline-block ml-10 text-[13px] text-slate-200;
+    }
+    .slider-1{
+        animation: slide 20s infinite linear;
+        -webkit-animation: slide 20s infinite linear;
+}
+    .slider-2{
+        animation: slide-2 20s infinite linear;
+        -webkit-animation: slide-2 20s infinite linear;
+}
+    .breaking-news-slider:hover .slider{
+        animation-play-state: paused;
     }
     .header-date{
         @apply text-xs;
@@ -152,9 +231,11 @@
     .colormode-btn.night button{
         @apply text-slate-800 bg-[#FFC300]
     }
+    /*HEADER END*/
 
+    /* FOOTER */
     .footer-section-1{
-        @apply relative before:w-screen before:h-1/2 before:absolute before:bottom-0 before:left-0 before:bg-slate-100 -z-10;
+        @apply relative before:w-screen before:h-1/2 before:absolute before:bottom-0 before:left-0 before:bg-slate-100 before:-z-10;
     }
     .footer-section-1 .row{
         @apply bg-z-red-600 bg-[url("../images/paperplane.png")] bg-no-repeat bg-left px-8 py-6 rounded-2xl relative z-10;
@@ -196,7 +277,7 @@
         @apply object-contain w-12 h-12;
     }
     .verified-banner .text{
-        @apply flex flex-col gap-1;
+        @apply gap-1;
     }
     .verified-banner .text h6{
         @apply text-sm font-bold;
@@ -215,5 +296,656 @@
     }
     .footer-section-3 p{
         @apply text-white text-sm;
+    }
+    /* FOOTER END */
+
+    /* BANNER */
+    .banner-ads{
+        @apply flex justify-center items-center mb-4;
+    }
+    /* BANNER END */
+
+    /* SECTION TITLE */
+    .section-title{
+        @apply w-full mb-4 relative flex items-center justify-between;
+    }
+    .section-title span{
+        @apply text-md text-z-red-600 font-bold after:h-[1px] after:w-10 after:inline-block after:bg-z-red-600 after:ml-2 after:-translate-y-1.5;
+    }
+    .section-title a{
+        @apply text-xs font-bold;
+    }
+    .section-title span i{
+        @apply text-2xl;
+    }
+    /* SECTION TITLE END */
+
+    /* BREAKING NEWS */
+    .breaking-news-2{
+        @apply flex items-center justify-start gap-2 pl-2;
+    }
+    .breaking-news-2 li{
+        @apply py-1.5 px-2 text-sm text-white bg-z-red-600 rounded-lg;
+    }
+    .breaking-news-2 li a{
+        @apply flex items-center gap-2;
+    }
+    .breaking-news{
+        @apply mb-8;
+    }
+    /* BREAKING NEWS */
+
+    /* HEADLINE */
+    .headline-1{
+        @apply mb-8;
+    }
+    .headline-1 .news-item{
+        @apply relative;
+    }
+    .headline-1 .col-md-6 .news-item .pic{
+        @apply h-[500px] w-full;
+    }
+    .headline-1 .col-md-3 .news-item .pic{
+        @apply h-[240px] w-full;
+    }
+    .headline-1 .col-md-3{
+        @apply flex flex-col gap-5;
+    }
+    .headline-1 .news-item,
+    .news-list-1 .news-item:first-child,
+    .news-list-1a .news-item,
+    .news-card-1,
+    .foto-card{
+        @apply before:w-full before:h-full before:absolute before:bottom-0 before:left-0 before:bg-gradient-to-t before:from-slate-900 before:to-[rgba(0,0,0,0)] before:rounded-b-2xl before:z-10;
+    }
+    .headline-1 .news-item .text,
+    .news-list-1 .news-item:first-child .text,
+    .news-list-1a .news-item .text{
+        @apply z-20;
+    }
+    .headline-1 .col-md-6 .news-item{
+        @apply before:h-1/2;
+    }
+    .headline-1 .news-item .pic img{
+        @apply w-full h-full object-cover rounded-2xl;
+    }
+    .headline-1 .news-item .text{
+        @apply absolute bottom-0 left-0 w-full p-4 z-20;
+    }
+    .headline-1 .news-item .text h1,
+    .headline-1 .news-item .text h2{
+        @apply text-md text-white font-bold leading-[120%];
+    }
+    .headline-1 .col-md-6 .news-item .text{
+        @apply p-8;
+    }
+    .headline-1 .news-item .text .kanal a,
+    .news-list-1 .news-item:first-child .text .kanal a,
+    .news-list-1a .news-item .text .kanal a,
+    .news-card-1 .text .kanal a,
+    .foto-card .text .kanal a{
+        @apply py-1 px-2 rounded-md float-left text-sm;
+    }
+    .headline-1 .news-item .text .kanal a,
+    .news-list-1 .news-item:first-child .text .kanal a,
+    .news-list-1a .news-item .text .kanal a,
+    .news-card-1 .text .kanal a,
+    .foto-card .text .kanal{
+        @apply font-bold;
+    }
+    .headline-1 .col-md-6 .news-item .text h1{
+        @apply text-[28px] leading-[120%] text-white font-bold;
+    }
+    .headline-1 .news-item .text .meta-info{
+        @apply text-white;
+    }
+    /* HEADLINE END */
+
+    /* NEWS LIST 1 */
+    .news-list-1{
+        @apply w-full flex flex-col gap-5;
+    }
+    .news-list-1 .news-item{
+        @apply flex gap-6 items-center w-full relative;
+    }
+    .news-list-1 .news-item .pic{
+        @apply w-[240px];
+    }
+    .news-list-1 .news-item .pic a{
+        @apply block w-full h-0 relative pt-[75%]; 
+    }
+    .news-list-1 .news-item .pic a img{
+        @apply w-full h-full absolute top-0 left-0 object-cover rounded-2xl;
+    }
+    .news-list-1 .news-item:first-child{
+        @apply flex-col;
+    }
+    .news-list-1 .news-item:first-child .pic{
+        @apply w-full;
+    }
+    .news-list-1 .news-item:first-child .pic a{
+        @apply pt-[500px];
+    }
+    .news-list-1 .news-item:first-child .text{
+        @apply absolute bottom-0 left-0 w-full p-6 z-20;
+    }
+    .news-list-1a .news-item .pic{
+        @apply w-full;
+    }
+    .news-list-1 .news-list-1a .news-item:first-child .pic a{
+        @apply pt-[75%];
+    }
+    .news-list-1a .news-item .text{
+        @apply absolute p-6 bottom-0 left-0 w-full;
+    }
+    .news-list-1 .news-item .text{
+        @apply gap-1.5;
+    }
+    .news-list-1 .news-item .text .kanal{
+        @apply text-xs font-bold;
+    }
+    .news-list-1 .news-item .text h3{
+        @apply text-[20px];
+    }
+    .news-list-1 .news-item:first-child .text h3,
+    .news-list-1a .news-item .text h3{
+        @apply text-white;
+    }
+    .news-list-1 .news-item:first-child .text .meta-info,
+    .news-list-1a .news-item .text .meta-info{
+        @apply text-white;
+    }
+    .news-list-1 .news-item,
+    .news-list-1a .news-item{
+        @apply relative;
+    }
+    /* NEWS LIST 1 END */
+
+    /* BUTTON */
+    .btn{
+        @apply rounded-lg text-sm font-bold text-sm font-semibold;
+    }
+    .btn.small{
+        @apply text-xs;
+    }
+    .btn.primary{
+        @apply bg-z-red-600 text-white;
+    }
+    .btn.btn-white{
+        @apply bg-white text-slate-800;
+    }
+    .btn-more{
+        @apply text-z-red-600 text-xs font-bold;
+    }
+    /* BUTTON END */
+
+    /* LIPSUS CARD */
+    .lipsus-card{
+        @apply flex flex-col gap-2;
+    }
+    .lipsus-card .pic a{
+        @apply relative h-0 w-full block pt-[130%];
+    }
+    .lipsus-card .pic a img{
+        @apply w-full h-full absolute top-0 left-0 object-cover rounded-lg;
+    }
+    .lipsus-card .text h3{
+        @apply text-sm;
+    }
+    /* LIPSUS CARD END */
+
+    /* ZCAMPUS */
+    .zcampus{
+        @apply bg-[#212121] px-4 py-3 rounded-2xl mb-8;
+    }
+    .zcampus .section-title span:after{
+        @apply hidden;
+    }
+    .zcampus .section-title a{
+        @apply text-z-red-600;
+    }
+    .zcampus-card .pic a{
+        @apply relative block h-0 w-full;
+    }
+    .zcampus-card .pic a img{
+        @apply absolute top-0 left-0 w-full h-full object-cover rounded-lg;
+    }
+    .zcampus-card .text h3{
+        @apply text-white;
+    }
+    .zcampus-card .kanal a{
+        @apply text-xs font-bold;
+    }
+    .zcampus-card .meta-info{
+        @apply text-gray-400;
+    }
+    .zcampus-card-1{
+        @apply flex flex-col gap-4 pt-4;
+    }
+    .zcampus-card-1 .text h3{
+        @apply text-[20px];
+    }
+    .zcampus-card-1 p{
+        @apply text-gray-400 text-sm;
+    }
+    .zcampus-card-1 .pic a{
+        @apply pt-[59.73%];
+    }
+    .zcampus-card-2 .text h3{
+        @apply text-md leading-5;
+    }
+    .zcampus-card-2 .pic a{
+        @apply pt-[49.72%];
+    }
+    /* ZCAMPUS END */
+
+    /* BERITA PILIHAN */
+    .border-section{
+        @apply border border-slate-200 rounded-2xl px-4 py-6; 
+    }
+    .news-card-1{
+        @apply relative;
+    }
+    .news-card-1 .pic a{
+        @apply relative h-[251px] w-full block;
+    }
+    .news-card-1 .pic a img{
+        @apply w-full h-full absolute top-0 left-0 rounded-2xl;
+    }
+    .news-card-1 .text{
+        @apply absolute p-4 bottom-0 left-0 w-full z-20;
+    }
+    .news-card-1 .text h3{
+        @apply text-white text-lg;
+    }
+    .news-card-1 .meta-info{
+        @apply text-gray-400;
+    }
+    .news-card-2{
+        @apply flex gap-4 items-center;
+    }
+    .news-card-2 .pic{
+        @apply w-[33%];
+    }
+    .news-card-2 .pic a{
+        @apply w-full h-[73px] relative block;
+    }
+    .news-card-2 .pic a img{
+        @apply w-full h-full absolute top-0 left-0 rounded-lg object-cover;
+    }
+    .news-card-2 .text{
+        @apply w-[67%];
+    }
+    .news-card-2 .text h3{
+        @apply text-sm;
+    }
+    .news-card-2 .text .meta-info{
+        @apply text-[11px];
+    }
+    /* BERITA PILIHAN END */
+
+    /* BRAND WIDGET */
+    .brand-widget{
+        @apply relative overflow-hidden rounded-2xl px-4 py-8 mb-8;
+    }
+    .brand-widget .bg-section{
+        @apply w-full h-full top-0 left-0 object-cover absolute -z-10;
+    }
+    .brand-widget .logo-brand{
+        @apply w-auto h-[50px] object-contain;
+    }
+    .brand-widget-card{
+        @apply flex gap-4 bg-white rounded-lg p-2 items-center w-[320px];
+    }
+    .brand-widget-card .pic{
+        @apply w-[30%];
+    }
+    .brand-widget-card .pic a{
+        @apply relative w-full h-0 pt-[100%] block;
+    }
+    .brand-widget-card .pic a img{
+        @apply absolute top-0 left-0 w-full h-full object-cover rounded-lg;
+    }
+    .brand-widget-card .text{
+        @apply w-[70%] gap-1;
+    }
+    .brand-widget-card .text .kanal a{
+        @apply text-xs font-bold;
+    }
+    .brand-widget-card .text h4{
+        @apply text-sm;
+    }
+    .brand-text{
+        @apply text-white;
+    }
+    .brand-text h3{
+        @apply text-[20px] font-bold;
+    }
+    .brand-text p{
+        @apply text-sm;
+    }
+    /* BRAND WIDGET END */
+
+    /* POLLING */
+    .polling-card{
+        @apply flex flex-col gap-4 border border-slate-200 p-5 rounded-2xl;
+    }
+    .polling-card .pic{
+        @apply block relative w-full h-0 pt-[40%];
+    }
+    .polling-card .pic img{
+        @apply absolute w-full h-full top-0 left-0 object-cover rounded-lg;
+    }
+    .polling-card .text{
+        @apply gap-4;
+    }
+    .polling-card .text h3{
+        @apply text-lg leading-5;
+    }
+    .polling-card .text p{
+        @apply text-sm text-slate-800;
+    }
+    .polling-card .inp-group{
+        @apply flex justify-between relative items-center p-1 rounded-lg overflow-hidden bg-gray-100;
+    }
+    .polling-card .inp-group .progress-bar{
+        @apply absolute top-0 left-0 w-full h-full -z-0;
+    }
+    .polling-card .inp-group label{
+        @apply mb-0 text-sm leading-[100%]; 
+    }
+    .polling-card .inp-group input{
+        @apply w-6 h-6 bg-white border border-slate-400;
+    }
+    .polling-card .inp-group span{
+        @apply text-sm text-slate-700 relative z-10;
+    }
+    /* POLLING END */
+
+    /* FOTO CARD */
+    .foto-card{
+        @apply relative w-full;
+    }
+    .foto-card .pic a{
+        @apply relative block h-0 pt-[250px];
+    }
+    .foto-card .pic a img{
+        @apply w-full h-full object-cover absolute top-0 left-0 rounded-2xl;
+    }
+    .foto-card .text{
+        @apply absolute bottom-0 left-0 w-full p-4 z-20;
+    }
+    .foto-card .text h3{
+        @apply text-white;
+    }
+    .foto-card .text .meta-info{
+        @apply text-gray-400;
+    }
+    .foto .grid div:nth-child(2) .text h3,
+    .foto .grid div:nth-child(3) .text h3{
+        @apply text-sm;
+    }
+    /* FOTO CARD END */
+
+    /* PODCAST CARD */
+    .podcast-card{
+        @apply flex flex-col gap-2;
+    }
+    .podcast-card .pic a{
+        @apply relative h-0 w-full block pt-[100%];
+    }
+    .podcast-card .pic a img{
+        @apply w-full h-full absolute top-0 left-0 object-cover rounded-lg;
+    }
+    .podcast-card .text{
+        @apply gap-1;
+    }
+    .podcast-card .text h3{
+        @apply text-sm;
+    }
+    .podcast-title{
+        @apply text-[11px] text-z-red-600; 
+    }
+    .speaker{
+        @apply text-[11px] text-slate-700;
+    }
+    .speaker i{
+        @apply text-z-red-600;
+    }
+    /* PODCAST CARD END */
+
+    /* TERPOPULER */
+    .popular-list{
+        @apply flex flex-col gap-4;
+    }
+    .popular-list .item{
+        @apply flex gap-4 items-start pb-4 border-b border-b-slate-200;
+    }
+    .popular-list .item i{
+        @apply w-5 text-center border-t-[3px] border-t-z-red-600 font-black text-[20px];
+    }
+    .popular-list .item h3{
+        @apply text-sm font-bold;
+    }
+    /* TERPOPULER END */
+
+    /* SUARA ANDA */
+    .text-block{
+        @apply flex flex-col gap-4 p-4 bg-slate-100 rounded-lg mb-4;
+    }
+    .text-block p{
+        @apply text-xs
+    }
+    .news-list-2{
+        @apply flex flex-col gap-4;
+    }
+    .news-list-2 .text{
+        @apply pb-4 border-b border-dashed border-slate-200;
+    }
+    .news-list-2 .text h3{
+        @apply text-sm;
+    }
+    /* SUARA ANDA END */
+
+    /* TOPIK KHUSUS */
+    .topik-card{
+        @apply relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-full before:z-10 before:bg-gradient-to-t before:from-[#E6465C] before:to-[rgba(230,70,92,0)] before:rounded-b-lg;
+    }
+    .topik-card .text{
+        @apply absolute bottom-0 left-0 w-full p-4 z-20;
+    }
+    .topik-card .text h3{
+        @apply text-sm text-white;
+    }
+    .topik-card .pic a{
+        @apply relative block w-full h-0 pt-[130%];
+    }
+    .topik-card .pic a img{
+        @apply w-full h-full object-cover absolute top-0 left-0 rounded-lg; 
+    }
+    /* TOPIK KHUSUS END */
+    
+    /* KOLOM */
+    .news-list-3{
+        @apply flex flex-col gap-4;
+    }
+    .news-list-3 .news-item{
+        @apply flex gap-4 items-center pb-4 border-b border-dashed border-slate-200;
+    }
+    .news-list-3 .news-item .pic{
+        @apply w-1/4;
+    }
+    .news-list-3 .news-item .pic a{
+        @apply relative h-0 w-full block pt-[100%];
+    }
+    .news-list-3 .news-item .pic a img{
+        @apply w-full h-full absolute top-0 left-0 object-cover rounded-2xl;
+    }
+    .news-list-3 .news-item .text{
+        @apply w-3/4 gap-1;
+    }
+    .news-list-3 .news-item .text h3{
+        @apply text-sm;
+    }
+    .news-list-3 .news-item .text .author{
+        @apply text-xs font-bold text-z-red-600;
+    }
+    /* KOLOM END */
+
+    /* TAG POPULER */
+    .tag-list-1{
+        @apply flex flex-col gap-2;
+    }
+    .tag-list-1 a{
+        @apply flex justify-between items-center w-full bg-slate-100 rounded-lg p-2 text-md;
+    }
+    .tag-list-1 a span{
+        @apply flex items-center gap-1;
+    }
+    .tag-list-1 a i{
+        @apply text-lg text-z-red-600;
+    }
+    /* TAG POPULER END */
+
+    /* SOCIAL MEDIA */
+    .social-media-sidebar{
+        @apply bg-slate-100 p-6 flex flex-col gap-4 rounded-2xl;
+    }
+    .social-media-sidebar h4{
+        @apply text-center font-bold text-md;
+    }
+    .social-media-sidebar a{
+        @apply w-9 h-9 rounded-lg text-white flex justify-center items-center text-lg;
+    }
+    .social-media-sidebar a.fb{
+        @apply bg-[#1579F1];
+    }
+    .social-media-sidebar a.tw{
+        @apply bg-black;
+    }
+    .social-media-sidebar a.ig{
+        @apply bg-[#E20D94];
+    }
+    .social-media-sidebar a.yt{
+        @apply bg-[#FE0002];
+    }
+    .social-media-sidebar a.tt{
+        @apply bg-black;
+    }
+    .social-media-sidebar a.in{
+        @apply bg-[#2B67B7];
+    }
+    /* SOCIAL MEDIA END */
+
+    /* KANAL GROUP */
+    .news-list-4{
+        @apply flex flex-col gap-5;
+    }
+    .news-list-4 .news-item{
+        @apply flex gap-2 items-center;
+    }
+    .news-list-4 .news-item .pic{
+        @apply w-[18%];
+    }
+    .news-list-4 .news-item .pic a{
+        @apply relative block h-0 w-full pt-[100%];
+    }
+    .news-list-4 .news-item .pic a img{
+        @apply absolute top-0 left-0  w-full h-full rounded-lg object-cover;
+    }
+    .news-list-4 .news-item .text{
+        @apply w-[82%];
+    }
+    .news-list-4 .news-item .text h3{
+        @apply text-sm;
+    }
+    .news-list-4 .news-item:first-child{
+        @apply flex-col;
+    }
+    .news-list-4 .news-item:first-child .pic{
+        @apply w-full;
+    }
+    .news-list-4 .news-item:first-child .pic a{
+        @apply pt-[56.25%];
+    }
+    .news-list-4 .news-item:first-child .text{
+        @apply w-full;
+    }
+    /* KANAL GROUP END */
+
+    /* MEDIA NETWORK */
+    .media-network-item{
+        @apply flex flex-col gap-3;
+    }
+    .media-network-item .kanal{
+        @apply text-xs font-bold;
+    }
+    .media-network-item .text h3{
+        @apply text-sm text-white;
+    }
+    .media-network-item .text .meta-info{
+        @apply text-slate-400;
+    }
+    .media-network-wrap{
+        @apply bg-[#333] py-4 px-4 rounded-r-lg;
+    }
+    .media-network-item .pic a{
+        @apply relative block pt-[60%];
+    }
+    .media-network-item .pic a img{
+        @apply absolute top-0 left-0 w-full h-full object-cover rounded-lg;
+    }
+    /* MEDIA NETWORK END */
+
+    /* NIGHTMODE */
+    body.night{
+        @apply bg-gray-900;
+    }
+    body.night .text h3,
+    body.night .text h4,
+    body.night .popular-list .item h3,
+    body.night .popular-list .item i,
+    body.night .header-right-bottom a{
+        @apply text-slate-300;
+    }
+    body.night p,
+    body.night .meta-info{
+        @apply text-slate-400;
+    }
+    body.night .border-section,
+    body.night .polling-card{
+        @apply border-slate-800;
+    }
+    body.night .popular-list .item,
+    body.night .news-list-2 .text,
+    body.night .news-list-3 .news-item{
+        @apply border-b-slate-800;
+    }
+    body.night img{
+        @apply opacity-50;
+    }
+    body.night .header-right-bottom{
+        @apply bg-slate-950 border-slate-950;
+    }
+    /* NIGHTMODE END*/
+
+    /* RESPONSIVE */
+    @media only screen and (max-width:768px){
+        header{
+            @apply mt-9;
+        }
+        .header-right-top{
+            @apply !w-screen fixed top-0 left-0;
+        }
+        .breaking-news-title,
+        .header-right-top span,
+        .header-right-top .part:nth-child(2),
+        .main-menu,
+        .weather-forecast{
+            @apply hidden;
+        }
+        .header-right-top .part:first-child{
+            @apply w-full;
+        }
     }
 }
