@@ -60,9 +60,23 @@
     .text{
         @apply flex flex-col gap-2;
     }
-    .text h3,
-    .text h4{
-        @apply font-bold;
+    h1{
+        @apply text-4xl font-bold;
+    }
+    h2{
+        @apply text-3xl font-bold;
+    }
+    h3{
+        @apply text-2xl font-bold;
+    }
+    h4{
+        @apply text-xl font-bold;
+    }
+    h5{
+        @apply text-lg font-bold;
+    }
+    h6{
+        @apply text-md font-bold;
     }
     .meta-info{
         @apply text-[11px];
@@ -122,13 +136,13 @@
 
     /*HEADER*/
     .logo{
-        @apply py-2 px-6 min-w-[200px] bg-z-red-600;
+        @apply py-2 px-6 min-w-[200px] bg-z-red-600 flex-shrink-0 flex-grow-0;
     }
     .logo img{
         @apply w-full h-full object-contain;
     }
     .header-right{
-        @apply flex flex-col w-full;
+        @apply flex flex-col w-[calc(100%-200px)] flex-shrink-0 flex-grow-0;
     }
     .header-right-top{
         @apply flex justify-between items-center w-full py-2 px-4 bg-[#333] text-white;
