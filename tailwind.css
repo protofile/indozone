@@ -149,7 +149,9 @@
     .ratio iframe{
         @apply w-full h-full absolute top-0 left-0 object-cover;
     }
-    .z-select{
+    .z-select,
+    .z-input,
+    .z-textarea{
         @apply px-4 py-2 text-sm border border-slate-200 rounded-lg;
     }
     /* GENERAL END */
@@ -387,6 +389,9 @@
     .section-title span{
         @apply text-md text-z-red-600 font-bold after:h-[1px] after:w-10 after:inline-block after:bg-z-red-600 after:ml-2 after:-translate-y-1.5;
     }
+    .section-title.no-line span{
+        @apply after:hidden;
+    }
     .section-title a{
         @apply text-xs font-bold;
     }
@@ -398,6 +403,9 @@
     }
     .section-title.bigger span i{
         @apply text-[32px] text-z-red-600;
+    }
+    .section-title span em{
+        @apply not-italic text-xs text-slate-500 font-normal;
     }
     /* SECTION TITLE END */
 
@@ -1299,6 +1307,24 @@
         @apply text-[rgba(255,255,255,0.8)];
     }
     /* NEWS LIST 5 END */
+
+    /* PROFILE AUTHOR */
+    .profile{
+        @apply flex items-center justify-between p-6 border border-slate-200 bg-[url("../images/bg-author-profile.jpg")] bg-no-repeat bg-cover rounded-2xl;
+    }
+    .profile .author-profile{
+        @apply flex gap-4 items-center;
+    }
+    .profile .author-profile .avatar{
+        @apply w-20 h-20 relative;
+    }
+    .profile .author-profile .avatar i{
+        @apply w-9 h-9 text-[32px] text-[#ed9600] absolute -right-1 -bottom-1 leading-[100%] bg-white rounded-full flex items-center justify-center;
+    }
+    .profile .author-profile .text{
+        @apply gap-0;
+    }
+    /* PROFILE AUTHOR END */
 
     /* NIGHTMODE */
     body.night{
