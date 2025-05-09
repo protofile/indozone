@@ -1350,6 +1350,27 @@
     }
     /* PROFILE AUTHOR END */
 
+    /* TOPIK COVER */
+    .topik-cover{
+        @apply w-full relative h-[300px] overflow-hidden rounded-2xl mb-8 bg-slate-900 flex items-center;
+    }
+    .topik-cover .pic{
+        @apply h-full w-[60%] absolute top-0 right-0 before:w-1/4 before:h-full before:absolute before:top-0 before:left-0 before:bg-gradient-to-r before:from-slate-900 before:to-[rgba(0,0,0,0)];
+    }
+    .topik-cover .pic img{
+        @apply w-full h-full object-cover
+    }
+    .topik-cover .text{
+        @apply w-1/2 p-6 flex relative z-10;
+    }
+    .topik-cover .text h1{
+        @apply text-slate-200 text-left;
+    }
+    .topik-cover .text p{
+        @apply text-slate-300 text-sm;
+    }
+    /* TOPIK COVER END */
+
     /* NIGHTMODE */
     body.night{
         @apply bg-gray-900;

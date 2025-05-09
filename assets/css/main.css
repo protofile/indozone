@@ -649,6 +649,10 @@ video {
   margin-bottom: 4rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -663,22 +667,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
 }
 
 .block {
@@ -3889,6 +3877,73 @@ h6 {
 }
 
 /* PROFILE AUTHOR END */
+
+/* TOPIK COVER */
+
+.topik-cover {
+  position: relative;
+  margin-bottom: 2rem;
+  display: flex;
+  height: 300px;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
+}
+
+.topik-cover .pic {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 60%;
+}
+
+.topik-cover .pic::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 25%;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #0f172a var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(15 23 42 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  content: var(--tw-content);
+  --tw-gradient-to: rgba(0,0,0,0) var(--tw-gradient-to-position);
+}
+
+.topik-cover .pic img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.topik-cover .text {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  width: 50%;
+  padding: 1.5rem;
+}
+
+.topik-cover .text h1 {
+  text-align: left;
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity, 1));
+}
+
+.topik-cover .text p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity, 1));
+}
+
+/* TOPIK COVER END */
 
 /* NIGHTMODE */
 
