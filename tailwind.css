@@ -137,13 +137,16 @@
         @apply block w-full h-0 relative;
     }
     .ratio.ratio-1{
-        @apply pt-[100%]
+        @apply pt-[100%];
     }
     .ratio.ratio-75{
-        @apply pt-[75%]
+        @apply pt-[75%];
     }
     .ratio.ratio-56{
-        @apply pt-[56.25%]
+        @apply pt-[56.25%];
+    }
+    .ratio.ratio-125{
+        @apply pt-[125%];
     }
     .ratio img,
     .ratio iframe{
@@ -153,6 +156,9 @@
     .z-input,
     .z-textarea{
         @apply px-4 py-2 text-sm border border-slate-200 rounded-lg;
+    }
+    .z-link{
+        @apply text-z-red-600 text-xs font-bold;
     }
     /* GENERAL END */
 
@@ -379,6 +385,9 @@
     /* BANNER */
     .banner-ads{
         @apply flex justify-center items-center mb-4;
+    }
+    .banner-ads.bg-greylight{
+        @apply rounded-2xl bg-slate-100 p-4;
     }
     /* BANNER END */
 
@@ -797,22 +806,25 @@
     .foto .grid div:nth-child(3) .text h3{
         @apply text-sm;
     }
+    .headline-1 .foto-card .pic a{
+        @apply pt-[380px];
+    }
     /* FOTO CARD END */
 
-    /* PODCAST CARD */
-    .podcast-card{
+    /* NEWS CARD 5 */
+    .news-card-5{
         @apply flex flex-col gap-2;
     }
-    .podcast-card .pic a{
-        @apply relative h-0 w-full block pt-[100%];
+    .news-card-5 .pic{
+        @apply relative;
     }
-    .podcast-card .pic a img{
-        @apply w-full h-full absolute top-0 left-0 object-cover rounded-lg;
+    .news-card-5 .pic a img{
+        @apply rounded-lg;
     }
-    .podcast-card .text{
+    .news-card-5 .text{
         @apply gap-1;
     }
-    .podcast-card .text h3{
+    .news-card-5 .text h3{
         @apply text-sm;
     }
     .podcast-title{
@@ -824,7 +836,13 @@
     .speaker i{
         @apply text-z-red-600;
     }
-    /* PODCAST CARD END */
+    .news-card-5 p{
+        @apply text-xs;
+    }
+    .post-label{
+        @apply text-xs font-bold bg-[url("../images/label-bg.png")] bg-no-repeat bg-right absolute top-4 -left-1 py-0.5 pl-2 pr-4;
+    }
+    /* NEWS CARD 5 END */
 
     /* TERPOPULER */
     .popular-list{
