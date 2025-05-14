@@ -54,7 +54,8 @@
     .news-list-1 .news-item .kanal.news a,
     .news-card-4 .text .kanal.news a,
     .news-list-5 .text .kanal.news a,
-    .video-headline-list .news-card-5 .text .kanal.news a{
+    .video-headline-list .news-card-5 .text .kanal.news a,
+    .news-card-5 .kanal.news a{
         @apply text-z-red-600;
     }
     /* THEMES END */
@@ -493,8 +494,9 @@
     .news-list-1a .news-item .text .kanal a,
     .news-card-1 .text .kanal a,
     .foto-card .text .kanal,
-    .news-list-5 .text .kanal.news a,
-    .video-headline-list .news-card-5 .text .kanal.news a{
+    .news-list-5 .text .kanal a,
+    .video-headline-list .news-card-5 .text .kanal a,
+    .news-card-5 .kanal a{
         @apply font-bold text-xs;
     }
     .headline-1 .col-md-6 .news-item .text h1{
@@ -618,6 +620,48 @@
         @apply text-sm;
     }
     /* LIPSUS CARD END */
+
+    /* LIPSUS COVER */
+    .lipsus-cover{
+        @apply flex items-center gap-10 bg-slate-900 rounded-2xl px-10;
+    }
+    .lipsus-cover img{
+        @apply -my-10;
+    }
+    .liputan-author-info{
+        @apply flex flex-col gap-4 p-6 bg-slate-800 rounded-2xl text-slate-300;
+    }
+    .liputan-author-info img,
+    .liputan-author-info-2 img{
+        @apply w-full rounded-lg;
+    }
+    .liputan-author-info h3,
+    .liputan-author-info-2 h3{
+        @apply text-lg;
+    }
+    .liputan-author-info span,
+    .liputan-author-info-2 span{
+        @apply text-sm;
+    }
+    .liputan-author-info p,
+    .liputan-author-info-2 p{
+        @apply text-sm text-slate-400;
+    }
+    .liputan-author-info h5,
+    .liputan-author-info-2 h5{
+        @apply text-xs;
+    }
+    .liputan-author-info a.soc,
+    .liputan-author-info-2 a.soc{
+        @apply rounded-md;
+    }
+    .liputan-author-info .share-group{
+        @apply flex flex-col gap-1 text-white;
+    }
+    .liputan-author-info-2{
+        @apply flex gap-6 items-center;
+    }
+    /* LIPSUS COVER END */
 
     /* ZCAMPUS */
     .zcampus{
@@ -1066,7 +1110,9 @@
         @apply flex items-center gap-2;
     }
     .article-head .share-group span,
-    .article-head .share-group a{
+    .article-head .share-group a,
+    .liputan-author-info a.soc,
+    .liputan-author-info-2 a.soc{
         @apply h-8 p-2 flex justify-center items-center;
     }
     .article-head .share-group span{
@@ -1080,20 +1126,32 @@
         @apply rounded-md text-lg text-white;
     }
     .article-head .share-group a.fb,
-    .share-article-group .social a.fb{
+    .share-article-group .social a.fb,
+    .liputan-author-info a.fb,
+    .liputan-author-info-2 a.fb{
         @apply bg-[#1559C2];
     }
     .article-head .share-group a.tw,
-    .share-article-group .social a.tw{
+    .share-article-group .social a.tw,
+    .liputan-author-info a.tw,
+    .liputan-author-info-2 a.tw{
         @apply bg-[#000];
     }
     .article-head .share-group a.wa,
-    .share-article-group .social a.wa{
+    .share-article-group .social a.wa,
+    .liputan-author-info a.wa,
+    .liputan-author-info-2 a.wa{
         @apply bg-[#43CE13];
     }
     .article-head .share-group a.other,
-    .share-article-group .social a.other{
+    .share-article-group .social a.other,
+    .liputan-author-info a.other,
+    .liputan-author-info-2 a.other{
         @apply bg-[#555555];
+    }
+    .liputan-author-info a.ig,
+    .liputan-author-info-2 a.ig{
+        @apply bg-[#E20D94];
     }
     .article figure{
         @apply w-full flex flex-col gap-2 mb-4;
@@ -1101,7 +1159,7 @@
     .article-ct figure img{
         @apply w-full rounded-2xl;
     }
-    .article-ct figure figcaption{
+    figcaption{
         @apply text-[#555] text-sm;
     }
     .article-ct p,
@@ -1428,6 +1486,60 @@
         @apply text-slate-400;
     }
     /* VIDEO HEADLINE END */
+
+    /* DETAIL LIPSUS */
+    .main-lipsus-image img{
+        @apply w-full h-[480px] object-cover rounded-b-2xl mb-2;
+    }
+    .article-ct.unsubscribed{
+        @apply h-[720px] overflow-hidden relative after:w-full after:h-[320px] after:absolute after:left-0 after:bottom-0 after:bg-gradient-to-t after:from-white after:to-[rgba(255,255,255,0)];
+    }
+    .lipsus-plan-card{
+        @apply bg-slate-100 rounded-2xl p-6 max-w-[500px] mb-4;
+    }
+    .lipsus-plan-item{
+        @apply text-center bg-z-red-600 text-white text-sm w-full p-4 rounded-lg;
+    }
+    .lipsus-plan-item i{
+        @apply text-6xl mb-2 inline-block;
+    }
+    .lipsus-plan-card p{
+        @apply text-sm;
+    }
+    .lipsus-plan-card p a{
+        @apply text-z-red-600;
+    }
+    .lipsus-plan-card li{
+        @apply text-sm text-slate-800 p-1;
+    }
+    .lipsus-plan-card ul{
+        @apply mb-4;
+    }
+    .lipsus-plan-card li i{
+        @apply text-lg text-[#22BDBD];
+    }
+    .lipsus-group{
+        @apply p-6 rounded-2xl bg-slate-900 mb-8;
+    }
+    .lipsus-group .share-group a{
+        @apply text-[#fff];
+    }
+    .lipsus-group h3,
+    .lipsus-group span,
+    .lipsus-group h5{
+        @apply text-white;
+    }
+    .lipsus-group img.lipsus-thumbnail{
+        @apply w-[220px] flex-grow-0 flex-shrink-0;
+    }
+    .lipsus-group .section-title span,
+    .lipsus-group .section-title a{
+        @apply text-z-red-600;
+    }
+    .lipsus-group .news-card-4 .meta-info{
+        @apply text-slate-400;
+    }
+    /* DETAIL LIPSUS END */
 
     /* NIGHTMODE */
     body.night{
