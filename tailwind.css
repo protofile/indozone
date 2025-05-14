@@ -45,14 +45,16 @@
     .news-list-1a .news-item .text .kanal.news a,
     .news-card-1 .text .kanal.news a,
     .foto-card .text .kanal.news a,
-    .article-head .kanal a{
+    .article-head .kanal.news a,
+    .video-headline .kanal.news a{
         @apply bg-z-red-600 text-white;
     }
     .zcampus-card .kanal.news a,
     .media-network-item .kanal.news a,
     .news-list-1 .news-item .kanal.news a,
     .news-card-4 .text .kanal.news a,
-    .news-list-5 .text .kanal.news a{
+    .news-list-5 .text .kanal.news a,
+    .video-headline-list .news-card-5 .text .kanal.news a{
         @apply text-z-red-600;
     }
     /* THEMES END */
@@ -482,7 +484,8 @@
     .news-list-1a .news-item .text .kanal a,
     .news-card-1 .text .kanal a,
     .foto-card .text .kanal a,
-    .article-head .kanal a{
+    .article-head .kanal a,
+    .video-headline .kanal a{
         @apply py-1 px-2 rounded-md float-left text-sm;
     }
     .headline-1 .news-item .text .kanal a,
@@ -490,7 +493,8 @@
     .news-list-1a .news-item .text .kanal a,
     .news-card-1 .text .kanal a,
     .foto-card .text .kanal,
-    .news-list-5 .text .kanal.news a{
+    .news-list-5 .text .kanal.news a,
+    .video-headline-list .news-card-5 .text .kanal.news a{
         @apply font-bold text-xs;
     }
     .headline-1 .col-md-6 .news-item .text h1{
@@ -1388,6 +1392,42 @@
         @apply text-slate-300 text-sm;
     }
     /* TOPIK COVER END */
+
+    /* VIDEO HEADLINE */
+    .video-headline{
+        @apply w-full relative h-[360px] overflow-hidden rounded-t-2xl bg-slate-900 flex items-center;
+    }
+    .video-headline .pic{
+        @apply h-full w-[60%] absolute top-0 right-0 before:w-1/4 before:h-full before:absolute before:top-0 before:left-0 before:bg-gradient-to-r before:from-slate-900 before:to-[rgba(0,0,0,0)];
+    }
+    .video-headline .pic img{
+        @apply w-full h-full object-cover
+    }
+    .video-headline .text{
+        @apply w-1/2 p-6 flex relative z-10;
+    }
+    .video-headline .text h1{
+        @apply text-slate-200 text-left text-2xl;
+    }
+    .video-headline .text p{
+        @apply text-slate-300 text-sm;
+    }
+    .video-headline .meta-info{
+        @apply text-slate-400;
+    }
+    .video-headline-list{
+        @apply grid grid-cols-5 gap-5 bg-slate-900 p-4 rounded-b-2xl;
+    }
+    .video-headline-list .news-card-5{
+        @apply col-span-1;
+    }
+    .video-headline-list .news-card-5 .text h3{
+        @apply text-white;
+    }
+    .video-headline-list .news-card-5 .text .meta-info{
+        @apply text-slate-400;
+    }
+    /* VIDEO HEADLINE END */
 
     /* NIGHTMODE */
     body.night{
