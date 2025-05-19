@@ -8,4 +8,14 @@ $(document).ready(function(){
         $("body").toggleClass("night day");
     });
 
+    // SCROLLTOP
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 240){  
+            $('.skycrapper-ads').addClass("sticky");
+        }
+        else{
+            $('.skycrapper-ads').removeClass("sticky");
+        }
+    });
+
 });

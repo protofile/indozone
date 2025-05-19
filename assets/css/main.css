@@ -707,6 +707,10 @@ video {
   width: auto;
 }
 
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -951,7 +955,8 @@ video {
   transition-duration: 150ms;
 }
 
-body {
+body,
+    main {
   width: 100%;
   overflow-x: hidden;
 }
@@ -990,13 +995,15 @@ a:hover {
 
 /* THEMES */
 
+/* NEWS */
+
 .headline-1 .news-item .text .kanal.news a,
-    .news-list-1.first-bigger .news-item:first-child .text .kanal.news a,
-    .news-list-1a .news-item .text .kanal.news a,
-    .news-card-1 .text .kanal.news a,
-    .foto-card .text .kanal.news a,
-    .article-head .kanal.news a,
-    .video-headline .kanal.news a {
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.news a,
+        .news-list-1a .news-item .text .kanal.news a,
+        .news-card-1 .text .kanal.news a,
+        .foto-card .text .kanal.news a,
+        .article-head .kanal.news a,
+        .video-headline .kanal.news a {
   --tw-bg-opacity: 1;
   background-color: rgb(230 70 92 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
@@ -1004,14 +1011,352 @@ a:hover {
 }
 
 .zcampus-card .kanal.news a,
-    .media-network-item .kanal.news a,
-    .news-list-1 .news-item .kanal.news a,
-    .news-card-4 .text .kanal.news a,
-    .news-list-5 .text .kanal.news a,
-    .video-headline-list .news-card-5 .text .kanal.news a,
-    .news-card-5 .kanal.news a {
+        .media-network-item .kanal.news a,
+        .news-list-1 .news-item .kanal.news a,
+        .news-card-4 .text .kanal.news a,
+        .news-list-5 .text .kanal.news a,
+        .video-headline-list .news-card-5 .text .kanal.news a,
+        .news-card-5 .kanal.news a {
   --tw-text-opacity: 1;
   color: rgb(230 70 92 / var(--tw-text-opacity, 1));
+}
+
+/* TECH */
+
+.headline-1 .news-item .text .kanal.tech a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.tech a,
+        .news-list-1a .news-item .text .kanal.tech a,
+        .news-card-1 .text .kanal.tech a,
+        .foto-card .text .kanal.tech a,
+        .article-head .kanal.tech a,
+        .video-headline .kanal.tech a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(110 110 110 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.zcampus-card .kanal.tech a,
+        .media-network-item .kanal.tech a,
+        .news-list-1 .news-item .kanal.tech a,
+        .news-card-4 .text .kanal.tech a,
+        .news-list-5 .text .kanal.tech a,
+        .video-headline-list .news-card-5 .text .kanal.tech a,
+        .news-card-5 .kanal.tech a {
+  --tw-text-opacity: 1;
+  color: rgb(110 110 110 / var(--tw-text-opacity, 1));
+}
+
+/* LIFE */
+
+.headline-1 .news-item .text .kanal.life a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.life a,
+        .news-list-1a .news-item .text .kanal.life a,
+        .news-card-1 .text .kanal.life a,
+        .foto-card .text .kanal.life a,
+        .article-head .kanal.life a,
+        .video-headline .kanal.life a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 89 91 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.zcampus-card .kanal.life a,
+        .media-network-item .kanal.life a,
+        .news-list-1 .news-item .kanal.life a,
+        .news-card-4 .text .kanal.life a,
+        .news-list-5 .text .kanal.life a,
+        .video-headline-list .news-card-5 .text .kanal.life a,
+        .news-card-5 .kanal.life a {
+  --tw-text-opacity: 1;
+  color: rgb(88 89 91 / var(--tw-text-opacity, 1));
+}
+
+/* SOCCER */
+
+.headline-1 .news-item .text .kanal.soccer a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.soccer a,
+        .news-list-1a .news-item .text .kanal.soccer a,
+        .news-card-1 .text .kanal.soccer a,
+        .foto-card .text .kanal.soccer a,
+        .article-head .kanal.soccer a,
+        .video-headline .kanal.soccer a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 154 2 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.zcampus-card .kanal.soccer a,
+        .media-network-item .kanal.soccer a,
+        .news-list-1 .news-item .kanal.soccer a,
+        .news-card-4 .text .kanal.soccer a,
+        .news-list-5 .text .kanal.soccer a,
+        .video-headline-list .news-card-5 .text .kanal.soccer a,
+        .news-card-5 .kanal.soccer a {
+  --tw-text-opacity: 1;
+  color: rgb(14 154 2 / var(--tw-text-opacity, 1));
+}
+
+/* SPORT */
+
+.headline-1 .news-item .text .kanal.sport a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.sport a,
+        .news-list-1a .news-item .text .kanal.sport a,
+        .news-card-1 .text .kanal.sport a,
+        .foto-card .text .kanal.sport a,
+        .article-head .kanal.sport a,
+        .video-headline .kanal.sport a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 203 13 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.zcampus-card .kanal.sport a,
+        .media-network-item .kanal.sport a,
+        .news-list-1 .news-item .kanal.sport a,
+        .news-card-4 .text .kanal.sport a,
+        .news-list-5 .text .kanal.sport a,
+        .video-headline-list .news-card-5 .text .kanal.sport a,
+        .news-card-5 .kanal.sport a {
+  --tw-text-opacity: 1;
+  color: rgb(42 203 13 / var(--tw-text-opacity, 1));
+}
+
+/* HEALTH */
+
+.headline-1 .news-item .text .kanal.health a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.health a,
+        .news-list-1a .news-item .text .kanal.health a,
+        .news-card-1 .text .kanal.health a,
+        .foto-card .text .kanal.health a,
+        .article-head .kanal.health a,
+        .video-headline .kanal.health a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 47 146 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.zcampus-card .kanal.health a,
+        .media-network-item .kanal.health a,
+        .news-list-1 .news-item .kanal.health a,
+        .news-card-4 .text .kanal.health a,
+        .news-list-5 .text .kanal.health a,
+        .video-headline-list .news-card-5 .text .kanal.health a,
+        .news-card-5 .kanal.health a {
+  --tw-text-opacity: 1;
+  color: rgb(29 47 146 / var(--tw-text-opacity, 1));
+}
+
+/* OTOMOTIF */
+
+.headline-1 .news-item .text .kanal.otomotif a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.otomotif a,
+        .news-list-1a .news-item .text .kanal.otomotif a,
+        .news-card-1 .text .kanal.otomotif a,
+        .foto-card .text .kanal.otomotif a,
+        .article-head .kanal.otomotif a,
+        .video-headline .kanal.otomotif a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(11 20 58 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.zcampus-card .kanal.otomotif a,
+        .media-network-item .kanal.otomotif a,
+        .news-list-1 .news-item .kanal.otomotif a,
+        .news-card-4 .text .kanal.otomotif a,
+        .news-list-5 .text .kanal.otomotif a,
+        .video-headline-list .news-card-5 .text .kanal.otomotif a,
+        .news-card-5 .kanal.otomotif a {
+  --tw-text-opacity: 1;
+  color: rgb(11 20 58 / var(--tw-text-opacity, 1));
+}
+
+/* MUSIC */
+
+.headline-1 .news-item .text .kanal.music a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.music a,
+        .news-list-1a .news-item .text .kanal.music a,
+        .news-card-1 .text .kanal.music a,
+        .foto-card .text .kanal.music a,
+        .article-head .kanal.music a,
+        .video-headline .kanal.music a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 109 36 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.zcampus-card .kanal.music a,
+        .media-network-item .kanal.music a,
+        .news-list-1 .news-item .kanal.music a,
+        .news-card-4 .text .kanal.music a,
+        .news-list-5 .text .kanal.music a,
+        .video-headline-list .news-card-5 .text .kanal.music a,
+        .news-card-5 .kanal.music a {
+  --tw-text-opacity: 1;
+  color: rgb(255 109 36 / var(--tw-text-opacity, 1));
+}
+
+/* SELEB */
+
+.headline-1 .news-item .text .kanal.seleb a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.seleb a,
+        .news-list-1a .news-item .text .kanal.seleb a,
+        .news-card-1 .text .kanal.seleb a,
+        .foto-card .text .kanal.seleb a,
+        .article-head .kanal.seleb a,
+        .video-headline .kanal.seleb a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 86 93 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.zcampus-card .kanal.seleb a,
+        .media-network-item .kanal.seleb a,
+        .news-list-1 .news-item .kanal.seleb a,
+        .news-card-4 .text .kanal.seleb a,
+        .news-list-5 .text .kanal.seleb a,
+        .video-headline-list .news-card-5 .text .kanal.seleb a,
+        .news-card-5 .kanal.seleb a {
+  --tw-text-opacity: 1;
+  color: rgb(244 86 93 / var(--tw-text-opacity, 1));
+}
+
+/* GAME */
+
+.headline-1 .news-item .text .kanal.game a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.game a,
+        .news-list-1a .news-item .text .kanal.game a,
+        .news-card-1 .text .kanal.game a,
+        .foto-card .text .kanal.game a,
+        .article-head .kanal.game a,
+        .video-headline .kanal.game a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(92 184 46 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.zcampus-card .kanal.game a,
+        .media-network-item .kanal.game a,
+        .news-list-1 .news-item .kanal.game a,
+        .news-card-4 .text .kanal.game a,
+        .news-list-5 .text .kanal.game a,
+        .video-headline-list .news-card-5 .text .kanal.game a,
+        .news-card-5 .kanal.game a {
+  --tw-text-opacity: 1;
+  color: rgb(92 184 46 / var(--tw-text-opacity, 1));
+}
+
+/* FOOD */
+
+.headline-1 .news-item .text .kanal.food a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.food a,
+        .news-list-1a .news-item .text .kanal.food a,
+        .news-card-1 .text .kanal.food a,
+        .foto-card .text .kanal.food a,
+        .article-head .kanal.food a,
+        .video-headline .kanal.food a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 132 6 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.zcampus-card .kanal.food a,
+        .media-network-item .kanal.food a,
+        .news-list-1 .news-item .kanal.food a,
+        .news-card-4 .text .kanal.food a,
+        .news-list-5 .text .kanal.food a,
+        .video-headline-list .news-card-5 .text .kanal.food a,
+        .news-card-5 .kanal.food a {
+  --tw-text-opacity: 1;
+  color: rgb(255 132 6 / var(--tw-text-opacity, 1));
+}
+
+/* TRAVEL */
+
+.headline-1 .news-item .text .kanal.travel a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.travel a,
+        .news-list-1a .news-item .text .kanal.travel a,
+        .news-card-1 .text .kanal.travel a,
+        .foto-card .text .kanal.travel a,
+        .article-head .kanal.travel a,
+        .video-headline .kanal.travel a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 142 201 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.zcampus-card .kanal.travel a,
+        .media-network-item .kanal.travel a,
+        .news-list-1 .news-item .kanal.travel a,
+        .news-card-4 .text .kanal.travel a,
+        .news-list-5 .text .kanal.travel a,
+        .video-headline-list .news-card-5 .text .kanal.travel a,
+        .news-card-5 .kanal.travel a {
+  --tw-text-opacity: 1;
+  color: rgb(64 142 201 / var(--tw-text-opacity, 1));
+}
+
+/* BEAUTY */
+
+.headline-1 .news-item .text .kanal.beauty a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.beauty a,
+        .news-list-1a .news-item .text .kanal.beauty a,
+        .news-card-1 .text .kanal.beauty a,
+        .foto-card .text .kanal.beauty a,
+        .article-head .kanal.beauty a,
+        .video-headline .kanal.beauty a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 102 204 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.zcampus-card .kanal.beauty a,
+        .media-network-item .kanal.beauty a,
+        .news-list-1 .news-item .kanal.beauty a,
+        .news-card-4 .text .kanal.beauty a,
+        .news-list-5 .text .kanal.beauty a,
+        .video-headline-list .news-card-5 .text .kanal.beauty a,
+        .news-card-5 .kanal.beauty a {
+  --tw-text-opacity: 1;
+  color: rgb(255 102 204 / var(--tw-text-opacity, 1));
+}
+
+/* MOVIE */
+
+.headline-1 .news-item .text .kanal.movie a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.movie a,
+        .news-list-1a .news-item .text .kanal.movie a,
+        .news-card-1 .text .kanal.movie a,
+        .foto-card .text .kanal.movie a,
+        .article-head .kanal.movie a,
+        .video-headline .kanal.movie a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 128 40 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.zcampus-card .kanal.movie a,
+        .media-network-item .kanal.movie a,
+        .news-list-1 .news-item .kanal.movie a,
+        .news-card-4 .text .kanal.movie a,
+        .news-list-5 .text .kanal.movie a,
+        .video-headline-list .news-card-5 .text .kanal.movie a,
+        .news-card-5 .kanal.movie a {
+  --tw-text-opacity: 1;
+  color: rgb(185 128 40 / var(--tw-text-opacity, 1));
 }
 
 /* THEMES END */
@@ -1641,6 +1986,14 @@ h6 {
   color: rgb(30 41 59 / var(--tw-text-opacity, 1));
 }
 
+.burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 /*HEADER END*/
 
 /* FOOTER */
@@ -1829,6 +2182,26 @@ h6 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1));
   padding: 1rem;
+}
+
+.skycrapper-ads {
+  position: fixed;
+  top: 240px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.skycrapper-ads.left {
+  left: calc((100% - 1530px) / 2);
+}
+
+.skycrapper-ads.right {
+  right: calc((100% - 1530px) / 2);
+}
+
+.skycrapper-ads.sticky {
+  top: 140px;
 }
 
 /* BANNER END */
@@ -2072,6 +2445,30 @@ h6 {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.headline-1.headline-m .news-item .pic a {
+  position: relative;
+  display: block;
+  height: 0px;
+  width: 100%;
+  padding-top: 400px;
+}
+
+.headline-1.headline-m .news-item .pic a img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.headline-1.headline-m .news-item .text h1,
+    .headline-1.headline-m .news-item .text h2,
+    .headline-1.headline-m .news-item .text h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 /* HEADLINE END */
 
 /* NEWS LIST 1 */
@@ -2107,10 +2504,6 @@ h6 {
 
 .news-list-1.first-bigger .news-item:first-child .pic {
   width: 100%;
-}
-
-.news-list-1.first-bigger .news-item:first-child .pic a {
-  padding-top: 500px;
 }
 
 .news-list-1.first-bigger .news-item:first-child .text {
@@ -2484,12 +2877,17 @@ h6 {
 
 .news-card-1 {
   position: relative;
+  height: 100%;
+}
+
+.news-card-1 .pic {
+  height: 100%;
 }
 
 .news-card-1 .pic a {
   position: relative;
   display: block;
-  height: 251px;
+  height: 100%;
   width: 100%;
 }
 
@@ -2536,7 +2934,7 @@ h6 {
 .news-card-2 .pic a {
   position: relative;
   display: block;
-  height: 73px;
+  height: 100%;
   width: 100%;
 }
 
@@ -3221,8 +3619,8 @@ h6 {
 }
 
 .news-list-4 .news-item .text h3 {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .news-list-4 .news-item:first-child {
@@ -4224,6 +4622,14 @@ figcaption {
   line-height: 1.25rem;
 }
 
+@media only screen and (max-width:768px){
+  .foto .video-headline-list div:nth-child(1) .text h3, 
+        .foto .video-headline-list div:nth-child(4) .text h3 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
 .video-headline-list .news-card-5 {
   grid-column: span 1 / span 1;
 }
@@ -4408,11 +4814,78 @@ body.night .header-right-bottom {
 
 /* NIGHTMODE END*/
 
+.for-mobile {
+  display: none;
+}
+
 /* RESPONSIVE */
 
+@media only screen and (max-width:1367px){
+  .container {
+    max-width: 1024px;
+  }
+
+  .skycrapper-ads.left {
+    left: calc((100% - 1340px) / 2);
+  }
+
+  .skycrapper-ads.right {
+    right: calc((100% - 1340px) / 2);
+  }
+
+  .main-menu a,
+        .header-bottom-right a {
+    font-size: 13px;
+  }
+
+  .headline-1 .col-md-6 .news-item .pic {
+    height: 400px;
+  }
+
+  .headline-1 .col-md-3 .news-item .pic {
+    height: 190px;
+  }
+
+  .headline-1 .col-md-6 .news-item .text h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .news-list-1 .news-item .text h3 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    line-height: 150%;
+  }
+}
+
 @media only screen and (max-width:768px){
+  .for-mobile {
+    display: block;
+  }
+
+  .for-desktop {
+    display: none;
+  }
+
+  main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   header {
-    margin-top: 2.25rem;
+    position: fixed;
+    top: 1.75rem;
+    z-index: 50;
+  }
+
+  .header-right {
+    width: calc(100% - 119px);
+  }
+
+  .header-right-bottom {
+    justify-content: space-between;
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
   }
 
   .header-right-top {
@@ -4420,6 +4893,8 @@ body.night .header-right-bottom {
     top: 0px;
     left: 0px;
     width: 100vw !important;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
   }
 
   .breaking-news-title,
@@ -4432,6 +4907,129 @@ body.night .header-right-bottom {
 
   .header-right-top .part:first-child {
     width: 100%;
+  }
+
+  .logo {
+    height: 51px;
+    min-width: 100px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .src-form {
+    order: 2;
+  }
+
+  .colormode-btn {
+    order: 2;
+  }
+
+  .src-form input {
+    width: 38px;
+    opacity: 0;
+  }
+
+  .src-form button {
+    right: 10px;
+    top: 0.375rem;
+  }
+
+  .header-bottom-right {
+    gap: 0.25rem;
+  }
+
+  .media-network-1 .col-md-11 {
+    width: 100vw;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .media-network-wrap {
+    margin-left: -10px;
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .h-scroller {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .h-scroller-ct {
+    width: 1200px;
+  }
+
+  .news-list-1 .news-item .pic {
+    width: 110px;
+  }
+
+  .news-list-1 .news-item .pic a.ratio-75:not(first-child) {
+    padding-top: 110px;
+  }
+
+  .news-list-1 .news-item .text h3:not(first-child) {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .foto .grid div:nth-child(1) .text h3, 
+        .foto .grid div:nth-child(4) .text h3 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sidebar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer-section-1 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .footer-section-1 .row {
+    gap: 1rem;
+    background-size: contain;
+    background-position: top;
+  }
+
+  .footer-section-2 .row {
+    gap: 1.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .sponsor {
+    justify-content: center;
+    padding-left: 0px;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-tagline {
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .footer-section-3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer-section-3 p {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .footer-section-3 .footer-social {
+    width: 100%;
+    justify-content: center;
   }
 }
 
@@ -4518,4 +5116,26 @@ body.night .header-right-bottom {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
 }

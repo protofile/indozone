@@ -16,7 +16,8 @@
     *{
         @apply font-exo transition-all;
     }
-    body{
+    body,
+    main{
         @apply w-full overflow-x-hidden;
     }
     header{
@@ -40,24 +41,276 @@
     }
 
     /* THEMES */
-    .headline-1 .news-item .text .kanal.news a,
-    .news-list-1.first-bigger .news-item:first-child .text .kanal.news a,
-    .news-list-1a .news-item .text .kanal.news a,
-    .news-card-1 .text .kanal.news a,
-    .foto-card .text .kanal.news a,
-    .article-head .kanal.news a,
-    .video-headline .kanal.news a{
-        @apply bg-z-red-600 text-white;
-    }
-    .zcampus-card .kanal.news a,
-    .media-network-item .kanal.news a,
-    .news-list-1 .news-item .kanal.news a,
-    .news-card-4 .text .kanal.news a,
-    .news-list-5 .text .kanal.news a,
-    .video-headline-list .news-card-5 .text .kanal.news a,
-    .news-card-5 .kanal.news a{
-        @apply text-z-red-600;
-    }
+        /* NEWS */
+        .headline-1 .news-item .text .kanal.news a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.news a,
+        .news-list-1a .news-item .text .kanal.news a,
+        .news-card-1 .text .kanal.news a,
+        .foto-card .text .kanal.news a,
+        .article-head .kanal.news a,
+        .video-headline .kanal.news a{
+            @apply bg-z-red-600 text-white;
+        }
+        .zcampus-card .kanal.news a,
+        .media-network-item .kanal.news a,
+        .news-list-1 .news-item .kanal.news a,
+        .news-card-4 .text .kanal.news a,
+        .news-list-5 .text .kanal.news a,
+        .video-headline-list .news-card-5 .text .kanal.news a,
+        .news-card-5 .kanal.news a{
+            @apply text-z-red-600;
+        }
+
+        /* TECH */
+        .headline-1 .news-item .text .kanal.tech a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.tech a,
+        .news-list-1a .news-item .text .kanal.tech a,
+        .news-card-1 .text .kanal.tech a,
+        .foto-card .text .kanal.tech a,
+        .article-head .kanal.tech a,
+        .video-headline .kanal.tech a{
+            @apply bg-[#6e6e6e] text-white;
+        }
+        .zcampus-card .kanal.tech a,
+        .media-network-item .kanal.tech a,
+        .news-list-1 .news-item .kanal.tech a,
+        .news-card-4 .text .kanal.tech a,
+        .news-list-5 .text .kanal.tech a,
+        .video-headline-list .news-card-5 .text .kanal.tech a,
+        .news-card-5 .kanal.tech a{
+            @apply text-[#6e6e6e];
+        }
+
+        /* LIFE */
+        .headline-1 .news-item .text .kanal.life a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.life a,
+        .news-list-1a .news-item .text .kanal.life a,
+        .news-card-1 .text .kanal.life a,
+        .foto-card .text .kanal.life a,
+        .article-head .kanal.life a,
+        .video-headline .kanal.life a{
+            @apply bg-[#58595b] text-white;
+        }
+        .zcampus-card .kanal.life a,
+        .media-network-item .kanal.life a,
+        .news-list-1 .news-item .kanal.life a,
+        .news-card-4 .text .kanal.life a,
+        .news-list-5 .text .kanal.life a,
+        .video-headline-list .news-card-5 .text .kanal.life a,
+        .news-card-5 .kanal.life a{
+            @apply text-[#58595b];
+        }
+
+        /* SOCCER */
+        .headline-1 .news-item .text .kanal.soccer a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.soccer a,
+        .news-list-1a .news-item .text .kanal.soccer a,
+        .news-card-1 .text .kanal.soccer a,
+        .foto-card .text .kanal.soccer a,
+        .article-head .kanal.soccer a,
+        .video-headline .kanal.soccer a{
+            @apply bg-[#0e9a02] text-white;
+        }
+        .zcampus-card .kanal.soccer a,
+        .media-network-item .kanal.soccer a,
+        .news-list-1 .news-item .kanal.soccer a,
+        .news-card-4 .text .kanal.soccer a,
+        .news-list-5 .text .kanal.soccer a,
+        .video-headline-list .news-card-5 .text .kanal.soccer a,
+        .news-card-5 .kanal.soccer a{
+            @apply text-[#0e9a02];
+        }
+
+        /* SPORT */
+        .headline-1 .news-item .text .kanal.sport a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.sport a,
+        .news-list-1a .news-item .text .kanal.sport a,
+        .news-card-1 .text .kanal.sport a,
+        .foto-card .text .kanal.sport a,
+        .article-head .kanal.sport a,
+        .video-headline .kanal.sport a{
+            @apply bg-[#2acb0d] text-white;
+        }
+        .zcampus-card .kanal.sport a,
+        .media-network-item .kanal.sport a,
+        .news-list-1 .news-item .kanal.sport a,
+        .news-card-4 .text .kanal.sport a,
+        .news-list-5 .text .kanal.sport a,
+        .video-headline-list .news-card-5 .text .kanal.sport a,
+        .news-card-5 .kanal.sport a{
+            @apply text-[#2acb0d];
+        }
+        /* HEALTH */
+        .headline-1 .news-item .text .kanal.health a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.health a,
+        .news-list-1a .news-item .text .kanal.health a,
+        .news-card-1 .text .kanal.health a,
+        .foto-card .text .kanal.health a,
+        .article-head .kanal.health a,
+        .video-headline .kanal.health a{
+            @apply bg-[#1d2f92] text-white;
+        }
+        .zcampus-card .kanal.health a,
+        .media-network-item .kanal.health a,
+        .news-list-1 .news-item .kanal.health a,
+        .news-card-4 .text .kanal.health a,
+        .news-list-5 .text .kanal.health a,
+        .video-headline-list .news-card-5 .text .kanal.health a,
+        .news-card-5 .kanal.health a{
+            @apply text-[#1d2f92];
+        }
+        /* OTOMOTIF */
+        .headline-1 .news-item .text .kanal.otomotif a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.otomotif a,
+        .news-list-1a .news-item .text .kanal.otomotif a,
+        .news-card-1 .text .kanal.otomotif a,
+        .foto-card .text .kanal.otomotif a,
+        .article-head .kanal.otomotif a,
+        .video-headline .kanal.otomotif a{
+            @apply bg-[#0b143a] text-white;
+        }
+        .zcampus-card .kanal.otomotif a,
+        .media-network-item .kanal.otomotif a,
+        .news-list-1 .news-item .kanal.otomotif a,
+        .news-card-4 .text .kanal.otomotif a,
+        .news-list-5 .text .kanal.otomotif a,
+        .video-headline-list .news-card-5 .text .kanal.otomotif a,
+        .news-card-5 .kanal.otomotif a{
+            @apply text-[#0b143a];
+        }
+        /* MUSIC */
+        .headline-1 .news-item .text .kanal.music a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.music a,
+        .news-list-1a .news-item .text .kanal.music a,
+        .news-card-1 .text .kanal.music a,
+        .foto-card .text .kanal.music a,
+        .article-head .kanal.music a,
+        .video-headline .kanal.music a{
+            @apply bg-[#ff6d24] text-white;
+        }
+        .zcampus-card .kanal.music a,
+        .media-network-item .kanal.music a,
+        .news-list-1 .news-item .kanal.music a,
+        .news-card-4 .text .kanal.music a,
+        .news-list-5 .text .kanal.music a,
+        .video-headline-list .news-card-5 .text .kanal.music a,
+        .news-card-5 .kanal.music a{
+            @apply text-[#ff6d24];
+        }
+        /* SELEB */
+        .headline-1 .news-item .text .kanal.seleb a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.seleb a,
+        .news-list-1a .news-item .text .kanal.seleb a,
+        .news-card-1 .text .kanal.seleb a,
+        .foto-card .text .kanal.seleb a,
+        .article-head .kanal.seleb a,
+        .video-headline .kanal.seleb a{
+            @apply bg-[#f4565d] text-white;
+        }
+        .zcampus-card .kanal.seleb a,
+        .media-network-item .kanal.seleb a,
+        .news-list-1 .news-item .kanal.seleb a,
+        .news-card-4 .text .kanal.seleb a,
+        .news-list-5 .text .kanal.seleb a,
+        .video-headline-list .news-card-5 .text .kanal.seleb a,
+        .news-card-5 .kanal.seleb a{
+            @apply text-[#f4565d];
+        }
+        /* GAME */
+        .headline-1 .news-item .text .kanal.game a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.game a,
+        .news-list-1a .news-item .text .kanal.game a,
+        .news-card-1 .text .kanal.game a,
+        .foto-card .text .kanal.game a,
+        .article-head .kanal.game a,
+        .video-headline .kanal.game a{
+            @apply bg-[#5cb82e] text-white;
+        }
+        .zcampus-card .kanal.game a,
+        .media-network-item .kanal.game a,
+        .news-list-1 .news-item .kanal.game a,
+        .news-card-4 .text .kanal.game a,
+        .news-list-5 .text .kanal.game a,
+        .video-headline-list .news-card-5 .text .kanal.game a,
+        .news-card-5 .kanal.game a{
+            @apply text-[#5cb82e];
+        }
+        /* FOOD */
+        .headline-1 .news-item .text .kanal.food a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.food a,
+        .news-list-1a .news-item .text .kanal.food a,
+        .news-card-1 .text .kanal.food a,
+        .foto-card .text .kanal.food a,
+        .article-head .kanal.food a,
+        .video-headline .kanal.food a{
+            @apply bg-[#ff8406] text-white;
+        }
+        .zcampus-card .kanal.food a,
+        .media-network-item .kanal.food a,
+        .news-list-1 .news-item .kanal.food a,
+        .news-card-4 .text .kanal.food a,
+        .news-list-5 .text .kanal.food a,
+        .video-headline-list .news-card-5 .text .kanal.food a,
+        .news-card-5 .kanal.food a{
+            @apply text-[#ff8406];
+        }
+        /* TRAVEL */
+        .headline-1 .news-item .text .kanal.travel a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.travel a,
+        .news-list-1a .news-item .text .kanal.travel a,
+        .news-card-1 .text .kanal.travel a,
+        .foto-card .text .kanal.travel a,
+        .article-head .kanal.travel a,
+        .video-headline .kanal.travel a{
+            @apply bg-[#408ec9] text-white;
+        }
+        .zcampus-card .kanal.travel a,
+        .media-network-item .kanal.travel a,
+        .news-list-1 .news-item .kanal.travel a,
+        .news-card-4 .text .kanal.travel a,
+        .news-list-5 .text .kanal.travel a,
+        .video-headline-list .news-card-5 .text .kanal.travel a,
+        .news-card-5 .kanal.travel a{
+            @apply text-[#408ec9];
+        }
+        /* BEAUTY */
+        .headline-1 .news-item .text .kanal.beauty a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.beauty a,
+        .news-list-1a .news-item .text .kanal.beauty a,
+        .news-card-1 .text .kanal.beauty a,
+        .foto-card .text .kanal.beauty a,
+        .article-head .kanal.beauty a,
+        .video-headline .kanal.beauty a{
+            @apply bg-[#f6c] text-white;
+        }
+        .zcampus-card .kanal.beauty a,
+        .media-network-item .kanal.beauty a,
+        .news-list-1 .news-item .kanal.beauty a,
+        .news-card-4 .text .kanal.beauty a,
+        .news-list-5 .text .kanal.beauty a,
+        .video-headline-list .news-card-5 .text .kanal.beauty a,
+        .news-card-5 .kanal.beauty a{
+            @apply text-[#f6c];
+        }
+        /* MOVIE */
+        .headline-1 .news-item .text .kanal.movie a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.movie a,
+        .news-list-1a .news-item .text .kanal.movie a,
+        .news-card-1 .text .kanal.movie a,
+        .foto-card .text .kanal.movie a,
+        .article-head .kanal.movie a,
+        .video-headline .kanal.movie a{
+            @apply bg-[#b98028] text-white;
+        }
+        .zcampus-card .kanal.movie a,
+        .media-network-item .kanal.movie a,
+        .news-list-1 .news-item .kanal.movie a,
+        .news-card-4 .text .kanal.movie a,
+        .news-list-5 .text .kanal.movie a,
+        .video-headline-list .news-card-5 .text .kanal.movie a,
+        .news-card-5 .kanal.movie a{
+            @apply text-[#b98028];
+        }
     /* THEMES END */
 
     /* GENERAL */
@@ -317,6 +570,9 @@
     .colormode-btn.night button{
         @apply text-slate-800 bg-[#FFC300]
     }
+    .burger{
+        @apply flex justify-center items-center text-lg;
+    }
     /*HEADER END*/
 
     /* FOOTER */
@@ -391,6 +647,18 @@
     }
     .banner-ads.bg-greylight{
         @apply rounded-2xl bg-slate-100 p-4;
+    }
+    .skycrapper-ads{
+        @apply fixed top-[240px] transition-all;
+    }
+    .skycrapper-ads.left{
+        @apply left-[calc((100%-1530px)/2)];
+    }
+    .skycrapper-ads.right{
+        @apply right-[calc((100%-1530px)/2)];
+    }
+    .skycrapper-ads.sticky{
+        @apply top-[140px];
     }
     /* BANNER END */
 
@@ -505,6 +773,18 @@
     .headline-1 .news-item .text .meta-info{
         @apply text-white;
     }
+
+    .headline-1.headline-m .news-item .pic a{
+        @apply block w-full h-0 pt-[400px] relative;
+    }
+    .headline-1.headline-m .news-item .pic a img{
+        @apply w-full h-full absolute top-0 left-0 rounded-2xl;
+    }
+    .headline-1.headline-m .news-item .text h1,
+    .headline-1.headline-m .news-item .text h2,
+    .headline-1.headline-m .news-item .text h3{
+        @apply text-xl;
+    }
     /* HEADLINE END */
 
     /* NEWS LIST 1 */
@@ -525,9 +805,6 @@
     }
     .news-list-1.first-bigger .news-item:first-child .pic{
         @apply w-full;
-    }
-    .news-list-1.first-bigger .news-item:first-child .pic a{
-        @apply pt-[500px];
     }
     .news-list-1.first-bigger .news-item:first-child .text{
         @apply absolute bottom-0 left-0 w-full p-6 z-20;
@@ -713,10 +990,13 @@
         @apply border border-slate-200 rounded-2xl px-4 py-6; 
     }
     .news-card-1{
-        @apply relative;
+        @apply relative h-full;
+    }
+    .news-card-1 .pic{
+        @apply h-full;
     }
     .news-card-1 .pic a{
-        @apply relative h-[251px] w-full block;
+        @apply relative h-full w-full block;
     }
     .news-card-1 .pic a img{
         @apply w-full h-full absolute top-0 left-0 rounded-2xl;
@@ -737,7 +1017,7 @@
         @apply w-[33%];
     }
     .news-card-2 .pic a{
-        @apply w-full h-[73px] relative block;
+        @apply w-full h-full relative block;
     }
     .news-card-2 .pic a img{
         @apply w-full h-full absolute top-0 left-0 rounded-lg object-cover;
@@ -1035,7 +1315,7 @@
         @apply w-[82%];
     }
     .news-list-4 .news-item .text h3{
-        @apply text-sm;
+        @apply text-xs;
     }
     .news-list-4 .news-item:first-child{
         @apply flex-col;
@@ -1573,13 +1853,59 @@
     }
     /* NIGHTMODE END*/
 
+    .for-mobile{
+        @apply hidden;
+    }
     /* RESPONSIVE */
+    @media only screen and (max-width:1367px){
+        .container{
+            @apply max-w-[1024px];
+        }
+        .skycrapper-ads.left{
+            @apply left-[calc((100%-1340px)/2)];
+        }
+        .skycrapper-ads.right{
+            @apply right-[calc((100%-1340px)/2)];
+        }
+
+        .main-menu a,
+        .header-bottom-right a{
+            @apply text-[13px];
+        }
+        .headline-1 .col-md-6 .news-item .pic{
+            @apply h-[400px];
+        }
+        .headline-1 .col-md-3 .news-item .pic{
+            @apply h-[190px];
+        }
+        .headline-1 .col-md-6 .news-item .text h1{
+            @apply text-2xl;
+        }
+        .news-list-1 .news-item .text h3{
+            @apply text-lg leading-[150%];
+        }
+    }
     @media only screen and (max-width:768px){
+        .for-mobile{
+            @apply block;
+        }
+        .for-desktop{
+            @apply hidden;
+        }
+        main{
+            @apply px-[10px];
+        }
         header{
-            @apply mt-9;
+            @apply top-7 fixed z-50;
+        }
+        .header-right{
+            @apply w-[calc(100%-119px)];
+        }
+        .header-right-bottom{
+            @apply py-1.5 justify-between;
         }
         .header-right-top{
-            @apply !w-screen fixed top-0 left-0;
+            @apply !w-screen fixed top-0 left-0 py-1;
         }
         .breaking-news-title,
         .header-right-top span,
@@ -1590,6 +1916,79 @@
         }
         .header-right-top .part:first-child{
             @apply w-full;
+        }
+        .logo{
+            @apply h-[51px] min-w-[100px] px-4;
+        }
+        .src-form{
+            @apply order-2;
+        }
+        .colormode-btn{
+            @apply order-2;
+        }
+        .src-form input{
+            @apply w-[38px] opacity-0;
+        }
+        .src-form button{
+            @apply right-[10px] top-1.5;
+        }
+        .header-bottom-right{
+            @apply gap-1;
+        }
+        .media-network-1 .col-md-11{
+            @apply w-screen px-0;
+        }
+        .media-network-wrap{
+            @apply rounded-r-none -ml-[10px] w-full;
+        }
+        .h-scroller{
+            @apply w-full overflow-x-auto;
+        }
+        .h-scroller-ct{
+            @apply w-[1200px];
+        }
+        .news-list-1 .news-item .pic{
+            @apply w-[110px]
+        }
+        .news-list-1 .news-item .pic a.ratio-75:not(first-child){
+            @apply pt-[110px];
+        }
+        .news-list-1 .news-item .text h3:not(first-child){
+            @apply text-sm;
+        }
+        .foto .grid div:nth-child(1) .text h3, 
+        .foto .grid div:nth-child(4) .text h3{
+            @apply text-sm;
+        }
+        .sidebar{
+            @apply px-[10px];
+        }
+        .footer-section-1{
+            @apply px-5;
+        }
+        .footer-section-1 .row{
+            @apply bg-contain bg-top gap-4;
+        }
+        .footer-section-2 .row{
+            @apply gap-6 px-3;
+        }
+        .sponsor{
+            @apply justify-center pl-0;
+        }
+        .footer-logo{
+            @apply flex justify-center;
+        }
+        .footer-tagline{
+            @apply text-center text-sm;
+        }
+        .footer-section-3{
+            @apply py-4;
+        }
+        .footer-section-3 p{
+            @apply text-center mb-4;
+        }
+        .footer-section-3 .footer-social{
+            @apply w-full justify-center;
         }
     }
 }
