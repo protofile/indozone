@@ -18,4 +18,24 @@ $(document).ready(function(){
         }
     });
 
+
+    var header = document.querySelector("header");
+    var navbarHeight = header.offsetHeight;
+    var lastScrollTop = 0;
+
+    window.onscroll = function() {scrollHide()};
+
+    function scrollHide() {
+    var st = window.pageYOffset || document.documentElement.scrollTop;
+    console.log(st);
+    if (st > lastScrollTop) {
+        header.classList.add('hide');
+        $('.skycrapper-ads').addClass("sticky");
+    } else {
+        header.classList.remove('hide');
+        $('.skycrapper-ads').removeClass("sticky");
+    }
+    lastScrollTop = st <= 0 ? 0 : st;
+    }
+
 });

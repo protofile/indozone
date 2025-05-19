@@ -961,12 +961,21 @@ body,
   overflow-x: hidden;
 }
 
+body {
+  padding-top: 120px;
+}
+
 header {
+  position: fixed;
+  top: 0px;
   z-index: 50;
   display: flex;
   width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 @media only screen and (min-width: 1536px) {
@@ -1715,6 +1724,7 @@ h6 {
 }
 
 .main-menu a {
+  white-space: nowrap;
   font-size: 0.875rem;
   line-height: 1.25rem;
   transition-property: all;
@@ -1769,6 +1779,8 @@ h6 {
 }
 
 .header-bottom-right a {
+  display: flex;
+  gap: 0.25rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
   transition-property: all;
@@ -2186,7 +2198,7 @@ h6 {
 
 .skycrapper-ads {
   position: fixed;
-  top: 240px;
+  top: 140px;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -2201,7 +2213,7 @@ h6 {
 }
 
 .skycrapper-ads.sticky {
-  top: 140px;
+  top: 1.25rem;
 }
 
 /* BANNER END */
@@ -4856,6 +4868,10 @@ body.night .header-right-bottom {
     line-height: 1.75rem;
     line-height: 150%;
   }
+
+  .main-menu {
+    gap: 0.75rem;
+  }
 }
 
 @media only screen and (max-width:768px){
@@ -5106,6 +5122,10 @@ body.night .header-right-bottom {
 
 #small-slide .owl-item.current{
   opacity: 1;
+}
+
+header.hide{
+  top: -120px;
 }
 
 .hover\:bg-slate-800:hover {
