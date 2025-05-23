@@ -1,0 +1,17 @@
+.header-bottom-right a i,
+.section-title span,
+.btn-more,
+.news-list-3 .news-item .text .author{
+    color: #00f;
+}
+.weather-forecast,
+.section-title span::after,
+.btn.primary,
+.footer-section-1 .row,
+.footer-section-3{
+    background-color: #00f;
+}
+.popular-list .item i{
+    border-color: #00f;
+}
+

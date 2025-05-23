@@ -431,8 +431,11 @@
     .logo img{
         @apply w-full h-full object-contain;
     }
+    header{
+        @apply border-b border-b-slate-200;
+    }
     .header-right{
-        @apply flex flex-col w-[calc(100%-200px)] flex-shrink-0 flex-grow-0;
+        @apply flex flex-col w-[calc(100%-260px)] flex-shrink-0 flex-grow-0;
     }
     .header-right-top{
         @apply flex justify-between items-center w-full py-2 px-4 bg-[#333] text-white;
@@ -447,7 +450,7 @@
         @apply justify-end;
     }
     .header-right-bottom{
-        @apply flex justify-between w-full py-2 px-4 items-center border border-b-slate-200;
+        @apply flex justify-between w-full py-2 px-4 items-center;
     }
     .header-social{
         @apply flex gap-2;
@@ -486,7 +489,7 @@
         @apply text-z-red-600;
     } 
     .breaking-news-title{
-        @apply text-[13px] flex items-center gap-1 w-[170px];
+        @apply text-[13px] flex items-center gap-1 w-[170px] whitespace-nowrap;
     }
     .breaking-news-title i{
         @apply w-6 h-6 bg-z-red-600 rounded-full flex justify-center items-center;
@@ -504,7 +507,7 @@
         @apply text-white;
     }*/
     .breaking-news-slider{
-        @apply w-full overflow-hidden relative h-5;
+        @apply w-full overflow-hidden relative h-5 mr-10;
     }
     @keyframes slide {
         0% {transform: translateX(0);}
@@ -532,10 +535,10 @@
         animation-play-state: paused;
     }
     .header-date{
-        @apply text-xs;
+        @apply text-xs whitespace-nowrap;
     }
     .header-social{
-        @apply text-xs;
+        @apply text-xs whitespace-nowrap;
     }
     .src-form{
         @apply relative;
@@ -613,13 +616,13 @@
         @apply block text-sm text-slate-800 py-1;
     }
     .sponsor{
-        @apply flex justify-end gap-4 items-center pl-[20%] mb-8;
+        @apply flex justify-end gap-4 items-center pl-[20%] mb-8 max-w-[320px];
     }
     .sponsor img{
         @apply w-full h-full object-contain;
     }
     .verified-banner{
-        @apply flex items-center gap-2 p-2 bg-white border border-slate-200 rounded-lg;
+        @apply flex items-center gap-2 p-2 bg-white border border-slate-200 rounded-lg max-w-[320px];
     }
     .verified-banner img{
         @apply object-contain w-12 h-12;
@@ -804,6 +807,9 @@
     }
     .news-list-1 .news-item .pic{
         @apply w-[240px] flex-grow-0 flex-shrink-0;
+    }
+    .news-list-1.smaller .news-item .pic{
+        @apply w-[180px];
     }
     .news-list-1 .news-item .pic a img{
         @apply rounded-2xl;
@@ -1020,7 +1026,9 @@
     .news-card-1 .text{
         @apply absolute p-4 bottom-0 left-0 w-full z-20;
     }
-    .news-card-1 .text h3{
+    .news-card-1 .text h3,
+    .news-card-1 .text h2,
+    .news-card-1 .text h1{
         @apply text-white text-lg;
     }
     .news-card-1 .meta-info{
@@ -1368,6 +1376,24 @@
     }
     .media-network-item .pic a img{
         @apply rounded-lg;
+    }
+    .media-network-2{
+        @apply relative;
+    }
+    .media-network-slider .owl-nav{
+        @apply w-full flex justify-between mt-4;
+    }
+    .media-network-slider .owl-nav button span{
+        @apply w-7 h-7 rounded-full text-white bg-slate-700 flex items-center justify-center;
+    }
+    .media-network-slider .owl-dots{
+        @apply flex justify-center gap-1 items-center w-[calc(100%-60px)] h-7 absolute bottom-0 left-[30px];
+    }
+    .media-network-slider .owl-dots span{
+        @apply w-1.5 h-1.5 block rounded-full bg-slate-600 transition-all;
+    }
+    .media-network-slider .owl-dots .owl-dot.active span{
+        @apply w-2 h-2 bg-white;
     }
     /* MEDIA NETWORK END */
 
@@ -1861,6 +1887,8 @@
     .zcampus-card-1 .text h3,
     .zcampus-card-2 .text h3,
     .news-card-1 .text h3,
+    .news-card-1 .text h2,
+    .news-card-1 .text h1,
     .news-card-2 .text h3,
     .foto-card .text h3,
     .news-card-5 .text h3{
@@ -1874,8 +1902,32 @@
     .for-mobile{
         @apply hidden;
     }
+
+    /* NICHE */
+    .niche-web header a.logo{
+        @apply bg-slate-50 flex items-center;
+    }
+    body.niche-web .skycrapper-ads{
+        @apply top-[96px];
+    }
+    body.niche-web{
+        @apply pt-[80px]
+    }
+    
+    /* oto */
+    body.oto .pic a img,
+    .border-section{
+        @apply !rounded-none;
+    }
+    body.oto .news-card-1::before,
+    body.oto .foto-card::before,
+    body.oto .topik-card::before{
+        @apply !rounded-b-none;
+    }
+    /* NICHE END */
+
     /* RESPONSIVE */
-    @media only screen and (min-width:768px){
+    @media only screen and (min-width:1024px){
         .news-list-1a{
             @apply flex gap-5;
         }
@@ -1947,8 +1999,29 @@
         .share-article-group{
             @apply flex-col gap-4 items-start;
         }
+        .sidebar{
+            @apply px-2;
+        }
+        .header-right{
+            @apply w-[calc(100%-200px)];
+        }
     }
-    @media only screen and (max-width:768px){
+    @media only screen and (max-width:1024px){
+        .container{
+            max-width: 720px;
+        }
+        .col-md-11,
+        .col-md-8,
+        .col-md-6,
+        .col-md-4{
+            width: 100%;
+            max-width: 100%;
+        }
+        .col-md-4,
+        .col-md-6,
+        .col-md-8{
+            flex: 0 0 100%;
+        }
         body{
             @apply pt-[80px]
         }
@@ -1965,7 +2038,7 @@
             @apply top-7 fixed z-50;
         }
         .header-right{
-            @apply w-[calc(100%-119px)];
+            @apply w-[calc(100%-100px)];
         }
         .header-right-bottom{
             @apply py-1.5 justify-between;
@@ -1976,7 +2049,6 @@
         .breaking-news-title,
         .header-right-top span,
         .header-right-top .part:nth-child(2),
-        .main-menu,
         .weather-forecast{
             @apply hidden;
         }
@@ -1984,7 +2056,10 @@
             @apply w-full;
         }
         .logo{
-            @apply h-[51px] min-w-[100px] px-4;
+            @apply h-[51px] w-[100px] px-4 items-center min-w-0;
+        }
+        .logo img{
+            @apply w-[82px] h-[33px] object-contain;
         }
         .src-form{
             @apply order-2;
@@ -2003,9 +2078,6 @@
         }
         .media-network-1 .col-md-11{
             @apply w-screen px-0;
-        }
-        .media-network-wrap{
-            @apply rounded-r-none -ml-[10px] w-full;
         }
         .h-scroller{
             @apply w-full overflow-x-auto;
@@ -2145,6 +2217,76 @@
         }
         .video-headline .text h1{
             @apply text-md leading-[150%];
+        }
+        .media-network-wrap{
+            @apply ml-0 rounded-l-lg;
+        }
+        .sponsor,
+        .sitemap,
+        .verified-banner{
+            @apply mx-auto;
+        }
+        .lipsus-cover{
+            @apply flex-col pt-8 w-full mb-12;
+        }
+        .lipsus-cover .text{
+            @apply text-center;
+        }
+        .lipsus-cover .text h2{
+            @apply text-2xl;
+        }
+        .lipsus-cover .text h3{
+            @apply text-lg;
+        }
+        .liputan-author-info{
+            @apply mb-8;
+        }
+        .lipsus-group .news-card-4,
+        .lipsus-cards .news-card-4{
+            @apply flex-col;
+        }
+        .lipsus-group .news-card-4 .pic,
+        .lipsus-cards .news-card-4 .pic{
+            @apply w-full;
+        }
+        .lipsus-group .news-card-4 .pic a,
+        .lipsus-cards .news-card-4 .pic a{
+            @apply pt-[75%];
+        }
+        .main-menu{
+            @apply pointer-events-none opacity-0 fixed w-[calc(100vh-100px)] top-[80px] left-[100%] z-50 bg-white flex-col items-start gap-0 transition-all; 
+        }
+        .main-menu .item{
+            @apply w-full;
+        }
+        .main-menu a{
+            @apply w-full block justify-start border-b border-b-slate-200 px-4 py-2;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px){
+        .news-list-1 .news-item:first-child .pic a.ratio-75{
+            @apply pt-[75%];
+        }
+        .channel-sitemap{
+            @apply columns-6;
+        }
+        .sitemap{
+            @apply columns-5;
+        }
+        .col-md-3,
+        .col-md-9{
+            @apply w-full max-w-full;
+            flex: 0 0 100%;
+        }
+        .liputan-author-info{
+            @apply flex-row;
+        }
+        .liputan-author-info img{
+            @apply w-[160px];
+        }
+        .section-title.bigger{
+            @apply flex-row;
         }
     }
 }
@@ -2353,3 +2495,83 @@ body.night .article-ct.unsubscribed::after{
     background: linear-gradient(to top, #111827, rgba(17,24,39,0));
 }
 /* NIGHTMODE END*/
+
+.media-network-slider .owl-stage{
+    display: flex;
+    gap: 20px;
+}
+.headline-slider{
+    padding-bottom: 48px;
+    position: relative;
+}
+.headline-slider .owl-nav.disabled{
+    display: block !important;
+}
+.headline-slider .owl-nav{
+    width: 72px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+.headline-slider .owl-nav button{
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    text-indent: -200px;
+}
+.headline-slider .owl-nav button.owl-prev{
+    background: url(../images/arrow-left-circle-fill.png) no-repeat center;
+    background-size: contain;
+}
+.headline-slider .owl-nav button.owl-next{
+    background: url(../images/arrow-right-circle-fill.png) no-repeat center;
+    background-size: contain;
+}
+.headline-slider .owl-dots{
+    width: calc(100% - 72px);
+    position: absolute;
+    left: 0;
+    bottom: 16px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 4px;
+}
+.headline-slider .owl-dots span{
+    display: block;
+    width: 20px;
+    height: 4px;
+    background: #ccc;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    transition: all ease-out 0.3;
+    -webkit-transition: all ease-out 0.3;
+    -moz-transition: all ease-out 0.3;
+    -ms-transition: all ease-out 0.3;
+    -o-transition: all ease-out 0.3;
+}
+.headline-slider .owl-dots .owl-dot.active span{
+    background: #E6465C;
+    width: 60px;
+}
+.headline-slider .owl-dots .owl-dot:focus,
+.headline-slider .owl-dots .owl-dot:hover{
+    outline: none;
+}
+
+.main-menu.show{
+    left: 100px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+
+
+

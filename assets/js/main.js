@@ -18,6 +18,11 @@ $(document).ready(function(){
         }
     });
 
+    // BURGER
+    $(".burger").click(function(){
+        $(".main-menu").toggleClass("show");
+    });
+
 
     var header = document.querySelector("header");
     var navbarHeight = header.offsetHeight;
