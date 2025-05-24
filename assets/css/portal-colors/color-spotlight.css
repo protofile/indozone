@@ -9,7 +9,7 @@
 .section-title.bigger span i,
 .tag-list-1 a i,
 a:hover{
-    color: #F3344F;
+    color: #3A59D1;
 }
 .weather-forecast,
 .section-title span::after,
@@ -17,11 +17,11 @@ a:hover{
 .footer-section-1 .row,
 .footer-section-3,
 .breaking-news-title i{
-    background-color: #F3344F;
+    background-color: #3A59D1;
 }
 .popular-list .item i,
 .news-card-3,
 .article-pagination .pagination a.pagenum{
-    border-color: #F3344F;
+    border-color: #3A59D1;
 }
 
