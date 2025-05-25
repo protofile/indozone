@@ -43,4 +43,13 @@ $(document).ready(function(){
     lastScrollTop = st <= 0 ? 0 : st;
     }
 
+    // TAB
+    $(".tab-nav a").click(function(tn){
+        tn.preventDefault();
+        $(".tab-nav a").removeClass("active");
+        $(this).addClass("active")
+        $(".tab-ct").removeClass("show");
+        $($(this).attr("href")).addClass("show");
+    });
+
 });
