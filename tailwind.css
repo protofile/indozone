@@ -1436,6 +1436,9 @@
     .media-network-slider .owl-dots .owl-dot.active span{
         @apply w-2 h-2 bg-white;
     }
+    .media-network-2 .media-network-wrap a.btn-more{
+        @apply text-white;
+    }
     /* MEDIA NETWORK END */
 
     /* DETAIL */
@@ -2223,6 +2226,9 @@
         }
         .h-scroller-ct{
             @apply w-[1200px];
+        }
+        .match-schedule-widget .h-scroller-ct{
+            @apply w-[600px];
         }
         .news-list-1 .news-item .pic{
             @apply w-[110px];

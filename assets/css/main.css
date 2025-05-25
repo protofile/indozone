@@ -3947,6 +3947,11 @@ body.night .polling-card .inp-group{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.media-network-2 .media-network-wrap a.btn-more {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 /* MEDIA NETWORK END */
 
 /* DETAIL */
@@ -5573,6 +5578,10 @@ body.oto .news-card-1::before,
 
   .h-scroller-ct {
     width: 1200px;
+  }
+
+  .match-schedule-widget .h-scroller-ct {
+    width: 600px;
   }
 
   .news-list-1 .news-item .pic {
