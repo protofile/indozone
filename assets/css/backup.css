@@ -1,0 +1,64 @@
+.brand-widget-small{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+}
+.brand-widget-small .brand-banner{
+    width: 100%;
+}
+.widget-small-grid{
+    padding: 20px;
+}
+.widget-row{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.widget-row:last-child{
+    margin-bottom: 0;
+}
+.brand-widget-small .text h3{
+    color: #fff;
+}
+
+/* NIGHTMODE */
+body.night .burger,
+body.night .headline-slider .owl-nav .owl-prev,
+body.night .headline-slider .owl-nav .owl-next{
+    color: rgba(255,255,255,0.8);
+}
+
+@media only screen and (min-width:480px) and (max-width:1024px){
+    .weather-forecast{
+        order: 2;
+        margin-left: 8px;
+    }
+    .weather-forecast .text{
+        flex-direction: column;
+        gap: 0;
+    }
+    .weather-forecast i.weather-icon{
+        font-size: 24px;
+        line-height: 100%;
+    }
+    .weather-forecast .temperature{
+        font-size: 14px;
+        line-height: 100%
+    }
+}
+
+@media only screen and (max-width:480px){
+    .weather-forecast{
+        width: 100%;
+    }
+    .weather-forecast i.weather-icon{
+        font-size: 18px;
+    }
+    .weather-forecast .text{
+        flex-direction: row;
+        align-items: center;
+    }
+    .weather-forecast .city-selector{
+        top: 4px;
+    }
+}
