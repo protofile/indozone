@@ -57,4 +57,16 @@ $(document).ready(function(){
         $(".author-popup").toggleClass("show");
     });
 
+    //SEARCH TOGGLE
+    $(".src-form").click(function(){
+        $(this).addClass("active");
+        $(".src-form input").focus();
+    });
+     window.addEventListener('mouseup',function(event){
+        var pol = document.getElementById('pol');
+        if(event.target != $(".src-form") && event.target.parentNode != $(".src-form")){
+            $(".src-form").removeClass("active");
+        }
+    });  
+
 });
