@@ -1089,7 +1089,8 @@ a:hover {
         .news-card-4 .text .kanal.news a,
         .news-list-5 .text .kanal.news a,
         .video-headline-list .news-card-5 .text .kanal.news a,
-        .news-card-5 .kanal.news a {
+        .news-card-5 .kanal.news a,
+        .brand-widget-card .kanal.news a {
   --tw-text-opacity: 1;
   color: rgb(230 70 92 / var(--tw-text-opacity, 1));
 }
@@ -1115,7 +1116,8 @@ a:hover {
         .news-card-4 .text .kanal.tech a,
         .news-list-5 .text .kanal.tech a,
         .video-headline-list .news-card-5 .text .kanal.tech a,
-        .news-card-5 .kanal.tech a {
+        .news-card-5 .kanal.tech a,
+        .brand-widget-card .kanal.tech a {
   --tw-text-opacity: 1;
   color: rgb(110 110 110 / var(--tw-text-opacity, 1));
 }
@@ -1141,7 +1143,8 @@ a:hover {
         .news-card-4 .text .kanal.life a,
         .news-list-5 .text .kanal.life a,
         .video-headline-list .news-card-5 .text .kanal.life a,
-        .news-card-5 .kanal.life a {
+        .news-card-5 .kanal.life a,
+        .brand-widget-card .kanal.life a {
   --tw-text-opacity: 1;
   color: rgb(88 89 91 / var(--tw-text-opacity, 1));
 }
@@ -1167,7 +1170,8 @@ a:hover {
         .news-card-4 .text .kanal.soccer a,
         .news-list-5 .text .kanal.soccer a,
         .video-headline-list .news-card-5 .text .kanal.soccer a,
-        .news-card-5 .kanal.soccer a {
+        .news-card-5 .kanal.soccer a,
+        .brand-widget-card .kanal.soccer a {
   --tw-text-opacity: 1;
   color: rgb(14 154 2 / var(--tw-text-opacity, 1));
 }
@@ -1193,7 +1197,8 @@ a:hover {
         .news-card-4 .text .kanal.sport a,
         .news-list-5 .text .kanal.sport a,
         .video-headline-list .news-card-5 .text .kanal.sport a,
-        .news-card-5 .kanal.sport a {
+        .news-card-5 .kanal.sport a,
+        .brand-widget-card .kanal.sport a {
   --tw-text-opacity: 1;
   color: rgb(42 203 13 / var(--tw-text-opacity, 1));
 }
@@ -1219,7 +1224,8 @@ a:hover {
         .news-card-4 .text .kanal.health a,
         .news-list-5 .text .kanal.health a,
         .video-headline-list .news-card-5 .text .kanal.health a,
-        .news-card-5 .kanal.health a {
+        .news-card-5 .kanal.health a,
+        .brand-widget-card .kanal.health a {
   --tw-text-opacity: 1;
   color: rgb(29 47 146 / var(--tw-text-opacity, 1));
 }
@@ -1245,7 +1251,8 @@ a:hover {
         .news-card-4 .text .kanal.otomotif a,
         .news-list-5 .text .kanal.otomotif a,
         .video-headline-list .news-card-5 .text .kanal.otomotif a,
-        .news-card-5 .kanal.otomotif a {
+        .news-card-5 .kanal.otomotif a,
+        .brand-widget-card .kanal.otomotif a {
   --tw-text-opacity: 1;
   color: rgb(11 20 58 / var(--tw-text-opacity, 1));
 }
@@ -1271,7 +1278,8 @@ a:hover {
         .news-card-4 .text .kanal.music a,
         .news-list-5 .text .kanal.music a,
         .video-headline-list .news-card-5 .text .kanal.music a,
-        .news-card-5 .kanal.music a {
+        .news-card-5 .kanal.music a,
+        .brand-widget-card .kanal.music a {
   --tw-text-opacity: 1;
   color: rgb(255 109 36 / var(--tw-text-opacity, 1));
 }
@@ -1297,7 +1305,8 @@ a:hover {
         .news-card-4 .text .kanal.seleb a,
         .news-list-5 .text .kanal.seleb a,
         .video-headline-list .news-card-5 .text .kanal.seleb a,
-        .news-card-5 .kanal.seleb a {
+        .news-card-5 .kanal.seleb a,
+        .brand-widget-card .kanal.seleb a {
   --tw-text-opacity: 1;
   color: rgb(244 86 93 / var(--tw-text-opacity, 1));
 }
@@ -1323,7 +1332,8 @@ a:hover {
         .news-card-4 .text .kanal.game a,
         .news-list-5 .text .kanal.game a,
         .video-headline-list .news-card-5 .text .kanal.game a,
-        .news-card-5 .kanal.game a {
+        .news-card-5 .kanal.game a,
+        .brand-widget-card .kanal.game a {
   --tw-text-opacity: 1;
   color: rgb(92 184 46 / var(--tw-text-opacity, 1));
 }
@@ -1349,7 +1359,8 @@ a:hover {
         .news-card-4 .text .kanal.food a,
         .news-list-5 .text .kanal.food a,
         .video-headline-list .news-card-5 .text .kanal.food a,
-        .news-card-5 .kanal.food a {
+        .news-card-5 .kanal.food a,
+        .brand-widget-card .kanal.food a {
   --tw-text-opacity: 1;
   color: rgb(255 132 6 / var(--tw-text-opacity, 1));
 }
@@ -1375,7 +1386,8 @@ a:hover {
         .news-card-4 .text .kanal.travel a,
         .news-list-5 .text .kanal.travel a,
         .video-headline-list .news-card-5 .text .kanal.travel a,
-        .news-card-5 .kanal.travel a {
+        .news-card-5 .kanal.travel a,
+        .brand-widget-card .kanal.travel a {
   --tw-text-opacity: 1;
   color: rgb(64 142 201 / var(--tw-text-opacity, 1));
 }
@@ -1401,7 +1413,8 @@ a:hover {
         .news-card-4 .text .kanal.beauty a,
         .news-list-5 .text .kanal.beauty a,
         .video-headline-list .news-card-5 .text .kanal.beauty a,
-        .news-card-5 .kanal.beauty a {
+        .news-card-5 .kanal.beauty a,
+        .brand-widget-card .kanal.beauty a {
   --tw-text-opacity: 1;
   color: rgb(255 102 204 / var(--tw-text-opacity, 1));
 }
@@ -1427,7 +1440,8 @@ a:hover {
         .news-card-4 .text .kanal.movie a,
         .news-list-5 .text .kanal.movie a,
         .video-headline-list .news-card-5 .text .kanal.movie a,
-        .news-card-5 .kanal.movie a {
+        .news-card-5 .kanal.movie a,
+        .brand-widget-card .kanal.movie a {
   --tw-text-opacity: 1;
   color: rgb(185 128 40 / var(--tw-text-opacity, 1));
 }
@@ -4595,7 +4609,7 @@ figcaption {
   padding: 0.5rem;
 }
 
-.comment-form .inp-group input {
+.comment-form .inp-group textarea {
   width: 100%;
   padding: 0.75rem;
   font-size: 0.875rem;
@@ -5259,6 +5273,12 @@ figcaption {
 .zcampus .h-scroller-ct {
   display: flex;
   max-width: 480px;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.news-wrap {
+  display: flex;
   flex-direction: column;
   gap: 1rem;
 }
@@ -6015,6 +6035,18 @@ body.oto .news-card-1::before,
   .for-mobile .weather-forecast .city-selector {
     top: 0.25rem;
   }
+
+  .news-wrap {
+    margin-top: 2rem;
+    width: 100%;
+    gap: 0.25rem;
+  }
+
+  .brand-widget-card .pic {
+    width: 80px;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
@@ -6205,7 +6237,8 @@ body.night figcaption,
 body.night .share-article-group .interaction span,
 body.night .article-status span,
 body.night .author-profile span,
-body.night .speaker{
+body.night .speaker,
+body.night .polling-card .inp-group span{
   color: #94a5b8;
 }
 
@@ -6229,7 +6262,8 @@ body.night .main-menu .item .dropdown,
 body.night .z-select, 
 body.night .z-input, 
 body.night .z-textarea,
-body.night .profile{
+body.night .profile,
+body.night header{
   border-color: #1e293b;
 }
 
@@ -6253,7 +6287,7 @@ body.night .article-ct blockquote{
 
 body.night .breadcrumb-wrapper,
 body.night .comment-form .inp-group,
-body.night .comment-form .inp-group input,
+body.night .comment-form .inp-group textarea,
 body.night .header-right-top,
 body.night .footer-section-2,
 body.night .footer-section-1::before,
@@ -6270,7 +6304,9 @@ body.night .lipsus-plan-card,
 body.night .profile,
 body.night .profile .author-profile .avatar i,
 body.night .niche-content .row:first-child,
-body.night .niche-content .row:last-child{
+body.night .niche-content .row:last-child,
+body.night .text-block,
+body.night .brand-widget-card{
   background: #020617;
 }
 

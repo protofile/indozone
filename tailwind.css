@@ -60,7 +60,8 @@
         .news-card-4 .text .kanal.news a,
         .news-list-5 .text .kanal.news a,
         .video-headline-list .news-card-5 .text .kanal.news a,
-        .news-card-5 .kanal.news a{
+        .news-card-5 .kanal.news a,
+        .brand-widget-card .kanal.news a{
             @apply text-z-red-600;
         }
 
@@ -80,7 +81,8 @@
         .news-card-4 .text .kanal.tech a,
         .news-list-5 .text .kanal.tech a,
         .video-headline-list .news-card-5 .text .kanal.tech a,
-        .news-card-5 .kanal.tech a{
+        .news-card-5 .kanal.tech a,
+        .brand-widget-card .kanal.tech a{
             @apply text-[#6e6e6e];
         }
 
@@ -100,7 +102,8 @@
         .news-card-4 .text .kanal.life a,
         .news-list-5 .text .kanal.life a,
         .video-headline-list .news-card-5 .text .kanal.life a,
-        .news-card-5 .kanal.life a{
+        .news-card-5 .kanal.life a,
+        .brand-widget-card .kanal.life a{
             @apply text-[#58595b];
         }
 
@@ -120,7 +123,8 @@
         .news-card-4 .text .kanal.soccer a,
         .news-list-5 .text .kanal.soccer a,
         .video-headline-list .news-card-5 .text .kanal.soccer a,
-        .news-card-5 .kanal.soccer a{
+        .news-card-5 .kanal.soccer a,
+        .brand-widget-card .kanal.soccer a{
             @apply text-[#0e9a02];
         }
 
@@ -140,7 +144,8 @@
         .news-card-4 .text .kanal.sport a,
         .news-list-5 .text .kanal.sport a,
         .video-headline-list .news-card-5 .text .kanal.sport a,
-        .news-card-5 .kanal.sport a{
+        .news-card-5 .kanal.sport a,
+        .brand-widget-card .kanal.sport a{
             @apply text-[#2acb0d];
         }
         /* HEALTH */
@@ -159,7 +164,8 @@
         .news-card-4 .text .kanal.health a,
         .news-list-5 .text .kanal.health a,
         .video-headline-list .news-card-5 .text .kanal.health a,
-        .news-card-5 .kanal.health a{
+        .news-card-5 .kanal.health a,
+        .brand-widget-card .kanal.health a{
             @apply text-[#1d2f92];
         }
         /* OTOMOTIF */
@@ -178,7 +184,8 @@
         .news-card-4 .text .kanal.otomotif a,
         .news-list-5 .text .kanal.otomotif a,
         .video-headline-list .news-card-5 .text .kanal.otomotif a,
-        .news-card-5 .kanal.otomotif a{
+        .news-card-5 .kanal.otomotif a,
+        .brand-widget-card .kanal.otomotif a{
             @apply text-[#0b143a];
         }
         /* MUSIC */
@@ -197,7 +204,8 @@
         .news-card-4 .text .kanal.music a,
         .news-list-5 .text .kanal.music a,
         .video-headline-list .news-card-5 .text .kanal.music a,
-        .news-card-5 .kanal.music a{
+        .news-card-5 .kanal.music a,
+        .brand-widget-card .kanal.music a{
             @apply text-[#ff6d24];
         }
         /* SELEB */
@@ -216,7 +224,8 @@
         .news-card-4 .text .kanal.seleb a,
         .news-list-5 .text .kanal.seleb a,
         .video-headline-list .news-card-5 .text .kanal.seleb a,
-        .news-card-5 .kanal.seleb a{
+        .news-card-5 .kanal.seleb a,
+        .brand-widget-card .kanal.seleb a{
             @apply text-[#f4565d];
         }
         /* GAME */
@@ -235,7 +244,8 @@
         .news-card-4 .text .kanal.game a,
         .news-list-5 .text .kanal.game a,
         .video-headline-list .news-card-5 .text .kanal.game a,
-        .news-card-5 .kanal.game a{
+        .news-card-5 .kanal.game a,
+        .brand-widget-card .kanal.game a{
             @apply text-[#5cb82e];
         }
         /* FOOD */
@@ -254,7 +264,8 @@
         .news-card-4 .text .kanal.food a,
         .news-list-5 .text .kanal.food a,
         .video-headline-list .news-card-5 .text .kanal.food a,
-        .news-card-5 .kanal.food a{
+        .news-card-5 .kanal.food a,
+        .brand-widget-card .kanal.food a{
             @apply text-[#ff8406];
         }
         /* TRAVEL */
@@ -273,7 +284,8 @@
         .news-card-4 .text .kanal.travel a,
         .news-list-5 .text .kanal.travel a,
         .video-headline-list .news-card-5 .text .kanal.travel a,
-        .news-card-5 .kanal.travel a{
+        .news-card-5 .kanal.travel a,
+        .brand-widget-card .kanal.travel a{
             @apply text-[#408ec9];
         }
         /* BEAUTY */
@@ -292,7 +304,8 @@
         .news-card-4 .text .kanal.beauty a,
         .news-list-5 .text .kanal.beauty a,
         .video-headline-list .news-card-5 .text .kanal.beauty a,
-        .news-card-5 .kanal.beauty a{
+        .news-card-5 .kanal.beauty a,
+        .brand-widget-card .kanal.beauty a{
             @apply text-[#f6c];
         }
         /* MOVIE */
@@ -311,7 +324,8 @@
         .news-card-4 .text .kanal.movie a,
         .news-list-5 .text .kanal.movie a,
         .video-headline-list .news-card-5 .text .kanal.movie a,
-        .news-card-5 .kanal.movie a{
+        .news-card-5 .kanal.movie a,
+        .brand-widget-card .kanal.movie a{
             @apply text-[#b98028];
         }
     /* THEMES END */
@@ -1734,7 +1748,7 @@
     .comment-form .inp-group{
         @apply w-full relative p-2 rounded-lg border border-slate-200 overflow-hidden flex ;
     }
-    .comment-form .inp-group input{
+    .comment-form .inp-group textarea{
         @apply p-3 text-sm text-slate-900 w-full ;
     }
     .comment-list{
@@ -2016,6 +2030,10 @@
 
     .zcampus .h-scroller-ct{
         @apply flex flex-col gap-4 max-w-[480px];
+    }
+
+    .news-wrap{
+        @apply flex flex-col gap-4;
     }
 
     .for-mobile{
@@ -2472,6 +2490,12 @@
         .for-mobile .weather-forecast .city-selector{
             @apply top-1;
         }
+        .news-wrap{
+            @apply w-full mt-8 gap-1;
+        }
+        .brand-widget-card .pic{
+            @apply w-[80px] flex-shrink-0 flex-grow-0;
+        }
     }
 
     @media only screen and (min-width: 768px) and (max-width: 1024px){
@@ -2630,7 +2654,8 @@ body.night figcaption,
 body.night .share-article-group .interaction span,
 body.night .article-status span,
 body.night .author-profile span,
-body.night .speaker{
+body.night .speaker,
+body.night .polling-card .inp-group span{
     color: #94a5b8;
 }
 body.night .border-section,
@@ -2653,7 +2678,8 @@ body.night .main-menu .item .dropdown,
 body.night .z-select, 
 body.night .z-input, 
 body.night .z-textarea,
-body.night .profile{
+body.night .profile,
+body.night header{
     border-color: #1e293b;
 }
 body.night img{
@@ -2673,7 +2699,7 @@ body.night .article-ct blockquote{
 }
 body.night .breadcrumb-wrapper,
 body.night .comment-form .inp-group,
-body.night .comment-form .inp-group input,
+body.night .comment-form .inp-group textarea,
 body.night .header-right-top,
 body.night .footer-section-2,
 body.night .footer-section-1::before,
@@ -2690,7 +2716,9 @@ body.night .lipsus-plan-card,
 body.night .profile,
 body.night .profile .author-profile .avatar i,
 body.night .niche-content .row:first-child,
-body.night .niche-content .row:last-child{
+body.night .niche-content .row:last-child,
+body.night .text-block,
+body.night .brand-widget-card{
     background: #020617;
 }
 body.night .social-media-sidebar a.tw,
