@@ -553,7 +553,7 @@
         @apply absolute right-4 top-2; 
     }
     .weather-forecast{
-        @apply bg-z-red-600 w-[205px] px-2 py-1 rounded-lg text-white flex items-center gap-2 relative; 
+        @apply bg-z-red-600 w-[205px] px-2 py-1 rounded-lg text-white flex items-center gap-2 relative flex-grow-0 flex-shrink-0; 
     }
     .weather-forecast .weather-icon{
         @apply text-[36px];
@@ -1079,7 +1079,7 @@
         @apply flex gap-4 items-center;
     }
     .news-card-2 .pic{
-        @apply w-[33%];
+        @apply w-[33%] relative;
     }
     .news-card-2 .pic a{
         @apply w-full h-full relative block pt-[100%];
@@ -1998,6 +1998,25 @@
         @apply !w-5 h-5 rounded-full object-contain flex-grow-0 flex-shrink-0;
     }
 
+    .error-section{
+        @apply flex flex-col items-center gap-8 py-16;
+    }
+    .error-section img{
+        @apply w-[120px] h-[120px] object-contain;
+    }
+    .error-section h1{
+        @apply text-[64px] text-slate-900;
+    }
+    .error-section p{
+        @apply text-sm text-slate-800 text-center;
+    }
+    .error-section p a{
+        @apply font-bold text-z-red-600;
+    }
+
+    .zcampus .h-scroller-ct{
+        @apply flex flex-col gap-4 max-w-[480px];
+    }
 
     .for-mobile{
         @apply hidden;
@@ -2147,6 +2166,10 @@
         .headline-3 .news-card-1.item-5 .text h3{
             @apply text-[18px] leading-[22px];
         }
+
+        .section-title.news-filter{
+            @apply !flex-col gap-5;
+        }
     }
     @media only screen and (max-width:1024px){
         .container{
@@ -2167,6 +2190,9 @@
         body{
             @apply pt-[80px]
         }
+        body.niche-web{
+            @apply pt-[52px];
+        }
         .for-mobile{
             @apply block;
         }
@@ -2179,8 +2205,11 @@
         header{
             @apply top-7 fixed z-50;
         }
+        .niche-web header{
+            @apply top-0;
+        }
         .header-right{
-            @apply w-[calc(100%-100px)];
+            @apply !w-[calc(100%-100px)];
         }
         .header-right-bottom{
             @apply py-1.5 justify-between;
@@ -2190,8 +2219,7 @@
         }
         .breaking-news-title,
         .header-right-top span,
-        .header-right-top .part:nth-child(2),
-        .weather-forecast{
+        .header-right-top .part:nth-child(2){
             @apply hidden;
         }
         .header-right-top .part:first-child{
@@ -2318,7 +2346,8 @@
         .section-title.bigger .inp-group{
             @apply w-1/2;
         }
-        .section-title.bigger .inp-group input{
+        .section-title.bigger .inp-group input,
+        .section-title.bigger .inp-group select{
             @apply w-full;
         }
         .footer-section-1 .row{
@@ -2407,6 +2436,42 @@
         .main-menu a{
             @apply w-full block justify-start border-b border-b-slate-200 px-4 py-2;
         }
+        .mn-logo{
+            @apply w-[150px];
+        }
+        .news-list-4{
+            @apply mb-10;
+        }
+        .zcampus-card-2{
+            @apply flex !flex-row gap-4 mb-5;
+        }
+        .zcampus-card-2 .pic{
+            @apply w-[120px] flex-shrink-0 flex-grow-0 items-center;;
+        }
+        .zcampus-card-2 .pic a{
+            @apply pt-[75%];
+        }
+        .zcampus-card-2 .text{
+            @apply gap-1;
+        }
+        .zcampus-card-2 .text h3{
+            @apply text-sm line-clamp-2;
+        }
+        .breaking-news-slider{
+            @apply mr-0;
+        }
+        .for-mobile .weather-forecast{
+            @apply w-full;
+        }
+        .for-mobile .weather-forecast .text{
+            @apply flex-row items-center;
+        }
+        .for-mobile .weather-forecast .weather-icon{
+            @apply text-lg;
+        }
+        .for-mobile .weather-forecast .city-selector{
+            @apply top-1;
+        }
     }
 
     @media only screen and (min-width: 768px) and (max-width: 1024px){
@@ -2432,6 +2497,15 @@
         }
         .section-title.bigger{
             @apply flex-row;
+        }
+    }
+
+    @media only screen and (max-width: 480px){
+        .filter-group{
+            @apply !flex-col gap-2 w-full;
+        }
+        .filter-group .inp-group{
+            @apply !w-full;
         }
     }
 }
@@ -2742,6 +2816,7 @@ body.night .article-ct.unsubscribed::after{
 .klasemen-slider .owl-nav button.owl-next{
     right: 16px;
 }
+
 
 
 

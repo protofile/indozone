@@ -69,7 +69,7 @@
                     <div class="burger for-mobile">
                         <i class='ri-menu-line'></i>
                     </div>
-                    <div class="main-menu">
+                    <nav class="main-menu">
                         <div class="item">
                             <a href="#">Home</a>
                         </div>
@@ -108,7 +108,7 @@
                                 <a href="#">Dropdown 3</a>
                             </div>
                         </div>
-                    </div>
+                    </nav>
                     <div class="header-bottom-right">
                         <form action="" class="src-form">
                             <input type="text" placeholder="Search...">
@@ -118,7 +118,7 @@
                         <div class="colormode-btn day">
                             <button><i class='ri-sun-fill'></i></button>
                         </div>
-                        <div class="weather-forecast">
+                        <div class="weather-forecast for-desktop">
                             <i class='weather-icon ri-sun-cloudy-fill'></i>
                             <div class="text">
                                 <div class="temperature">24&deg; C</div>
@@ -178,6 +178,32 @@
                     </div>
                 </div>
             </section> -->
+            <section class="for-mobile">
+                <div class="container">
+                    <div class="row justify-center">
+                        <div class="col-md-4">
+                            <div class="weather-forecast mb-3">
+                                <i class='weather-icon ri-sun-cloudy-fill'></i>
+                                <div class="text">
+                                    <div class="temperature">24&deg; C</div>
+                                    <div class="weather-name">Cerah Berawan</div>
+                                </div>
+                                <div class="city-selector">
+                                    <select name="" id="">
+                                        <option value="">Jakarta Utara</option>
+                                        <option value="">Jakarta Pusat</option>
+                                        <option value="">Jakarta Barat</option>
+                                        <option value="">Jakarta Timur</option>
+                                        <option value="">Jakarta Selatan</option>
+                                    </select>
+                                    <i class="ri-arrow-down-box-line"></i>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </section>
+            
             <section class="headline-1 for-desktop">
                 <div class="container">
                     <div class="row">
@@ -342,9 +368,9 @@
                             
                             <div class="media-network-wrap flex flex-col gap-4">
                                 <div class="flex justify-between items-center">
-                                    <img class="for-mobile" src="assets/images/medianetwork-logo-white.png" alt="">
+                                    <img class="mn-logo for-mobile" src="assets/images/media-network-logo-horizontalpng.png" alt="">
                                     <div class="spacer"></div>
-                                    <a class="btn-more" href="#">Selengkapnya</a>
+                                    <a class="btn-more" href="#">Lihat Selengkapnya</a>
                                 </div>
                                 <div class="h-scroller">
                                     <div class="h-scroller-ct">
@@ -629,7 +655,7 @@
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi condimentum dui lorem, quis mollis metus laoreet quis. Nunc maximus odio nono</p>
                                         </div>
                                     </div>
-                                    <div class="col-span-2 flex flex-col gap-4">
+                                    <div class="col-span-2">
                                         <div class="zcampus-card zcampus-card-2">
                                             <div class="pic">
                                                 <a href="#"><img src="assets/images/stocks/img-2.jpg" alt=""></a>
@@ -935,6 +961,9 @@
                                                 <div class="foto-card">
                                                     <div class="pic">
                                                         <a href="#"><img src="assets/images/stocks/img-8.jpg" alt=""></a>
+                                                        <div class="content-counter">
+                                                            <i class='ri-camera-fill'></i> 5 foto
+                                                        </div>
                                                     </div>
                                                     <div class="text">
                                                         <div class="kanal news">
@@ -949,6 +978,9 @@
                                                 <div class="foto-card">
                                                     <div class="pic">
                                                         <a href="#"><img src="assets/images/stocks/img-8.jpg" alt=""></a>
+                                                        <div class="content-counter">
+                                                            <i class='ri-camera-fill'></i> 5 foto
+                                                        </div>
                                                     </div>
                                                     <div class="text">
                                                         <div class="kanal news">
@@ -963,6 +995,9 @@
                                                 <div class="foto-card">
                                                     <div class="pic">
                                                         <a href="#"><img src="assets/images/stocks/img-8.jpg" alt=""></a>
+                                                        <div class="content-counter">
+                                                            <i class='ri-camera-fill'></i> 5 foto
+                                                        </div>
                                                     </div>
                                                     <div class="text">
                                                         <div class="kanal news">
@@ -977,6 +1012,9 @@
                                                 <div class="foto-card">
                                                     <div class="pic">
                                                         <a href="#"><img src="assets/images/stocks/img-8.jpg" alt=""></a>
+                                                        <div class="content-counter">
+                                                            <i class='ri-camera-fill'></i> 5 foto
+                                                        </div>
                                                     </div>
                                                     <div class="text">
                                                         <div class="kanal news">
@@ -1001,6 +1039,9 @@
                                         <div class="news-card-1">
                                             <div class="pic">
                                                 <a href="#"><img src="assets/images/stocks/img-5.jpg" alt=""></a>
+                                                <div class="content-counter">
+                                                    <i class='ri-play-fill'></i> 11:24
+                                                </div>
                                             </div>
                                             <div class="text">
                                                 <div class="kanal news"><a href="#">News</a></div>
@@ -1013,6 +1054,9 @@
                                         <div class="news-card-2">
                                             <div class="pic">
                                                 <a href="#"><img src="assets/images/stocks/img-6.jpg" alt=""></a>
+                                                <div class="content-counter">
+                                                    <i class='ri-play-fill'></i> 11:24
+                                                </div>
                                             </div>
                                             <div class="text">
                                                 <h3><a href="#">Akhir Pekan, Cuaca Jakarta Didominasi Berawan</a></h3>
@@ -1022,6 +1066,9 @@
                                         <div class="news-card-2">
                                             <div class="pic">
                                                 <a href="#"><img src="assets/images/stocks/img-7.jpg" alt=""></a>
+                                                <div class="content-counter">
+                                                    <i class='ri-play-fill'></i> 11:24
+                                                </div>
                                             </div>
                                             <div class="text">
                                                 <h3><a href="#">Akhir Pekan, Cuaca Jakarta Didominasi Berawan</a></h3>
@@ -1031,6 +1078,9 @@
                                         <div class="news-card-2">
                                             <div class="pic">
                                                 <a href="#"><img src="assets/images/stocks/img-8.jpg" alt=""></a>
+                                                <div class="content-counter">
+                                                    <i class='ri-play-fill'></i> 11:24
+                                                </div>
                                             </div>
                                             <div class="text">
                                                 <h3><a href="#">Akhir Pekan, Cuaca Jakarta Didominasi Berawan</a></h3>

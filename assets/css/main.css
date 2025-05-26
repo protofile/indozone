@@ -672,6 +672,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -2006,6 +2010,8 @@ header {
   position: relative;
   display: flex;
   width: 205px;
+  flex-shrink: 0;
+  flex-grow: 0;
   align-items: center;
   gap: 0.5rem;
   border-radius: 0.5rem;
@@ -3119,6 +3125,7 @@ header {
 }
 
 .news-card-2 .pic {
+  position: relative;
   width: 33%;
 }
 
@@ -5213,6 +5220,49 @@ figcaption {
      object-fit: contain;
 }
 
+.error-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.error-section img {
+  height: 120px;
+  width: 120px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.error-section h1 {
+  font-size: 64px;
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity, 1));
+}
+
+.error-section p {
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity, 1));
+}
+
+.error-section p a {
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(230 70 92 / var(--tw-text-opacity, 1));
+}
+
+.zcampus .h-scroller-ct {
+  display: flex;
+  max-width: 480px;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .for-mobile {
   display: none;
 }
@@ -5453,6 +5503,11 @@ body.oto .news-card-1::before,
     font-size: 18px;
     line-height: 22px;
   }
+
+  .section-title.news-filter {
+    flex-direction: column !important;
+    gap: 1.25rem;
+  }
 }
 
 @media only screen and (max-width:1024px){
@@ -5478,6 +5533,10 @@ body.oto .news-card-1::before,
     padding-top: 80px;
   }
 
+  body.niche-web {
+    padding-top: 52px;
+  }
+
   .for-mobile {
     display: block;
   }
@@ -5497,8 +5556,12 @@ body.oto .news-card-1::before,
     z-index: 50;
   }
 
+  .niche-web header {
+    top: 0px;
+  }
+
   .header-right {
-    width: calc(100% - 100px);
+    width: calc(100% - 100px) !important;
   }
 
   .header-right-bottom {
@@ -5518,8 +5581,7 @@ body.oto .news-card-1::before,
 
   .breaking-news-title,
         .header-right-top span,
-        .header-right-top .part:nth-child(2),
-        .weather-forecast {
+        .header-right-top .part:nth-child(2) {
     display: none;
   }
 
@@ -5724,7 +5786,8 @@ body.oto .news-card-1::before,
     width: 50%;
   }
 
-  .section-title.bigger .inp-group input {
+  .section-title.bigger .inp-group input,
+        .section-title.bigger .inp-group select {
     width: 100%;
   }
 
@@ -5891,6 +5954,67 @@ body.oto .news-card-1::before,
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
+
+  .mn-logo {
+    width: 150px;
+  }
+
+  .news-list-4 {
+    margin-bottom: 2.5rem;
+  }
+
+  .zcampus-card-2 {
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: row !important;
+    gap: 1rem;
+  }
+
+  .zcampus-card-2 .pic {
+    width: 120px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    align-items: center;
+  }
+
+  .zcampus-card-2 .pic a {
+    padding-top: 75%;
+  }
+
+  .zcampus-card-2 .text {
+    gap: 0.25rem;
+  }
+
+  .zcampus-card-2 .text h3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .breaking-news-slider {
+    margin-right: 0px;
+  }
+
+  .for-mobile .weather-forecast {
+    width: 100%;
+  }
+
+  .for-mobile .weather-forecast .text {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .for-mobile .weather-forecast .weather-icon {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .for-mobile .weather-forecast .city-selector {
+    top: 0.25rem;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
@@ -5925,6 +6049,18 @@ body.oto .news-card-1::before,
 
   .section-title.bigger {
     flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .filter-group {
+    width: 100%;
+    flex-direction: column !important;
+    gap: 0.5rem;
+  }
+
+  .filter-group .inp-group {
+    width: 100% !important;
   }
 }
 
@@ -6331,6 +6467,7 @@ body.night .article-ct.unsubscribed::after{
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
+
 
 
 

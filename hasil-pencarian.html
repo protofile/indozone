@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="assets/fonts/remixicon/fonts/remixicon.css">
         <link rel="stylesheet" href="assets/css/owl.carousel.css">
         <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/jquery-ui.css">
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body class="day">
@@ -69,7 +70,7 @@
                     <div class="burger for-mobile">
                         <i class='ri-menu-line'></i>
                     </div>
-                    <div class="main-menu">
+                    <nav class="main-menu">
                         <div class="item">
                             <a href="#">Home</a>
                         </div>
@@ -108,7 +109,7 @@
                                 <a href="#">Dropdown 3</a>
                             </div>
                         </div>
-                    </div>
+                    </nav>
                     <div class="header-bottom-right">
                         <form action="" class="src-form">
                             <input type="text" placeholder="Search...">
@@ -173,7 +174,7 @@
                     <div class="row">
                         <div class="col-md-8">
                             <section class="mt-4 mb-8">
-                                <div class="section-title bigger no-line">
+                                <div class="section-title news-filter bigger no-line">
                                     <span class="flex gap-2">
                                         <i class='ri-chat-thread-fill'></i> 
                                         <span class="flex flex-col gap-1">
@@ -181,7 +182,7 @@
                                             <em>12.892 hasil pencarian</em>
                                         </span>
                                     </span>
-                                    <div class="flex justify-end items-center gap-2">
+                                    <div class="filter-group  flex justify-end items-center gap-2">
                                         <div class="inp-group">
                                             <select name="" id="" class="z-select">
                                                 <option value="">Tampilkan Semua</option>
@@ -199,7 +200,7 @@
                                             </select>
                                         </div>
                                         <div class="inp-group relative">
-                                            <input type="text" placeholder="dd/mm/yyyy" class="z-input">
+                                            <input type="text" placeholder="dd/mm/yyyy" class="z-input" id="datepicker">
                                             <i class='ri-calendar-2-line absolute top-1.5 right-2 pointer-events-none'></i>
                                         </div>
                                     </div>
@@ -594,8 +595,12 @@
 
         <script src="assets/js/jquery-1.11.0.min.js"></script>
         <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/jquery-ui.min.js"></script>
         <script src="assets/js/main.js"></script>
         <script>
+            $( function() {
+                $( "#datepicker" ).datepicker();
+            } );
             $(document).ready(function(){
                 /*$(".breaking-news-slider").owlCarousel({
                     items: 1,
