@@ -606,7 +606,9 @@
         @apply relative before:w-screen before:h-1/2 before:absolute before:bottom-0 before:left-0 before:bg-slate-100 before:-z-10;
     }
     .footer-section-1 .row{
-        @apply bg-z-red-600 bg-[url("../images/paperplane.png")] bg-no-repeat bg-left px-8 py-6 rounded-2xl relative z-10;
+        @apply bg-z-red-600 bg-[url("../images/paperplane.png")] bg-no-repeat px-8 py-6 rounded-2xl relative z-10;
+        background-position-x: -10%;
+        background-position-y: 50%;
     }
     .channel-sitemap{
         @apply columns-3;
@@ -1749,7 +1751,7 @@
         @apply w-full relative p-2 rounded-lg border border-slate-200 overflow-hidden flex ;
     }
     .comment-form .inp-group textarea{
-        @apply p-3 text-sm text-slate-900 w-full ;
+        @apply p-3 text-sm text-slate-900 w-full h-12;
     }
     .comment-list{
         @apply flex flex-col gap-2;
@@ -2035,6 +2037,9 @@
     .news-wrap{
         @apply flex flex-col gap-4;
     }
+    .author-groups{
+        @apply flex items-center gap-4;
+    }
 
     .for-mobile{
         @apply hidden;
@@ -2042,7 +2047,7 @@
 
     /* NICHE */
     .niche-web header a.logo{
-        @apply bg-slate-50 flex items-center;
+        @apply bg-slate-50 flex items-center w-[248px];
     }
     .niche-web header a.logo img{
         @apply max-w-[200px] max-h-[50px] object-contain;
@@ -2247,7 +2252,10 @@
             @apply h-[51px] w-[100px] px-4 items-center min-w-0;
         }
         .logo img{
-            @apply w-[82px] h-[33px] object-contain;
+            @apply w-full h-[33px] object-contain;
+        }
+        .niche-web header a.logo{
+            @apply w-[100px];
         }
         .src-form{
             @apply order-2;
@@ -2369,7 +2377,10 @@
             @apply w-full;
         }
         .footer-section-1 .row{
-            @apply bg-z-red-600 bg-none;
+            @apply bg-z-red-600 bg-[url("../images/paper-plane-mobile.png")];
+            background-position-x: 90%;
+            background-position-y: 0;
+            background-size: auto;
         }
         .footer-section-1 .row{
             @apply px-2;
@@ -2448,6 +2459,12 @@
         .main-menu{
             @apply pointer-events-none opacity-0 fixed w-[calc(100vh-100px)] top-[80px] left-[100%] z-50 bg-white flex-col items-start gap-0 transition-all; 
         }
+        .niche-web .main-menu{
+            @apply top-[52px];
+        }
+        header.hide .main-menu{
+            @apply top-0;
+        }
         .main-menu .item{
             @apply w-full;
         }
@@ -2496,6 +2513,24 @@
         .brand-widget-card .pic{
             @apply w-[80px] flex-shrink-0 flex-grow-0;
         }
+        .comment-form .inp-group textarea{
+            @apply w-full h-[100px];
+        }
+        .comment-form .inp-group{
+            @apply flex-col;
+        }
+        .comment-form .inp-group button{
+            @apply w-[150px];
+        }
+        .tags-group{
+            @apply block;
+        }
+        .tags-group a{
+            @apply inline-block mb-1;
+        }
+        .tags-group span{
+            @apply block mb-2;;
+        }
     }
 
     @media only screen and (min-width: 768px) and (max-width: 1024px){
@@ -2530,6 +2565,9 @@
         }
         .filter-group .inp-group{
             @apply !w-full;
+        }
+        .author-groups{
+            @apply flex-col items-start;
         }
     }
 }
@@ -2683,7 +2721,7 @@ body.night header{
     border-color: #1e293b;
 }
 body.night img{
-    opacity: 0.5;
+    opacity: 0.8;
 }
 body.night .logo img,
 body.night .footer-logo img{
