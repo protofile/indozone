@@ -52,4 +52,9 @@ $(document).ready(function(){
         $($(this).attr("href")).addClass("show");
     });
 
+    $(".author-group button").click(function(agb){
+        agb.preventDefault();
+        $(".author-popup").toggleClass("show");
+    });
+
 });

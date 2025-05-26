@@ -4068,6 +4068,86 @@ body.night .polling-card .inp-group{
   color: rgb(51 51 51 / var(--tw-text-opacity, 1));
 }
 
+.author-group .img-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.author-group .img-group button {
+  display: flex;
+  height: 1.5rem;
+  width: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatars {
+  display: flex;
+}
+
+.avatars .avatar {
+  margin-left: -0.5rem;
+}
+
+.avatars .avatar img {
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+
+.avatars .avatar:first-child {
+  margin-left: 0px;
+}
+
+.author-popup {
+  pointer-events: none;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  z-index: 50;
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity, 1));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  padding: 0.5rem;
+  opacity: 0;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.author-popup.show {
+  pointer-events: auto;
+  top: 100%;
+  opacity: 1;
+}
+
+.author-popup .text {
+  gap: 0px;
+}
+
+.author-popup .text a {
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity, 1));
+}
+
+.author-popup .text span {
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity, 1));
+}
+
 .article-head .share-group {
   display: flex;
   align-items: center;
@@ -5304,7 +5384,8 @@ figcaption {
   gap: 1rem;
 }
 
-.for-mobile {
+.for-mobile,
+    .for-mobile-only {
   display: none;
 }
 
@@ -6149,6 +6230,14 @@ body.oto .news-card-1::before,
 }
 
 @media only screen and (max-width: 480px){
+  .for-desktop-and-tablet {
+    display: none;
+  }
+
+  .for-mobile-only {
+    display: block;
+  }
+
   .filter-group {
     width: 100%;
     flex-direction: column !important;
