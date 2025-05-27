@@ -62,11 +62,21 @@ $(document).ready(function(){
         $(this).addClass("active");
         $(".src-form input").focus();
     });
-     window.addEventListener('mouseup',function(event){
-        var pol = document.getElementById('pol');
+    window.addEventListener('mouseup',function(event){
         if(event.target != $(".src-form") && event.target.parentNode != $(".src-form")){
             $(".src-form").removeClass("active");
         }
     });  
+
+    //NETWORK MENU
+    $(".bt-network-menu").click(function(nm){
+        nm.preventDefault();
+        $($(this).attr("href")).addClass("show");
+    });
+    window.addEventListener('mouseup',function(event){
+        if(event.target != $(".mega-menu") && event.target.parentNode != $(".mega-menu")){
+            $(".mega-menu").removeClass("show");
+        }
+    });
 
 });
