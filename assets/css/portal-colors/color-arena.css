@@ -8,7 +8,8 @@
 .tags-group a i,
 .section-title.bigger span i,
 .tag-list-1 a i,
-a:hover{
+a:hover,
+.article-ct a{
     color: #000;
 }
 .weather-forecast,
