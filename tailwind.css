@@ -2228,6 +2228,11 @@
         .section-title.news-filter{
             @apply !flex-col gap-5;
         }
+
+        .share-article-group .social,
+        .share-article-group .interaction{
+            @apply justify-between w-full;
+        }
     }
     @media only screen and (max-width:1280px){
         .container{
@@ -2624,10 +2629,7 @@
         .news-list-1.first-bigger .news-list-1a .news-item:first-child{
             @apply gap-2;
         }
-        .share-article-group .social,
-        .share-article-group .interaction{
-            @apply justify-between w-full;
-        }
+        
         .burger.for-mobile{
             @apply relative left-auto order-2;
         }

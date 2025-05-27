@@ -5631,6 +5631,12 @@ body.oto .news-card-1::before,
     flex-direction: column !important;
     gap: 1.25rem;
   }
+
+  .share-article-group .social,
+        .share-article-group .interaction {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 @media only screen and (max-width:1280px){
@@ -6295,12 +6301,6 @@ body.oto .news-card-1::before,
   .news-list-1 .news-item,
         .news-list-1.first-bigger .news-list-1a .news-item:first-child {
     gap: 0.5rem;
-  }
-
-  .share-article-group .social,
-        .share-article-group .interaction {
-    width: 100%;
-    justify-content: space-between;
   }
 
   .burger.for-mobile {
