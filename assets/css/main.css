@@ -6302,6 +6302,12 @@ body.oto .news-card-1::before,
     width: 100%;
     justify-content: space-between;
   }
+
+  .burger.for-mobile {
+    position: relative;
+    left: auto;
+    order: 2;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
