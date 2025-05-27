@@ -353,12 +353,12 @@
                         <div class="col-md-12">
                             <div class="section-title">
                                 <span>RESEP MASAKAN</span>
-                                <a href="#">Lihat Selengkapnya <i class="ri-arrow-right-s-line"></i></a>
+                                <a href="#" class="for-desktop">Lihat Selengkapnya <i class="ri-arrow-right-s-line"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6 col-sm-3 col-md-3 col-lg-3">
+                        <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-3 md:mb-0">
                             <div class="news-card-5">
                                 <div class="pic">
                                     <a href="#" class="ratio ratio-75"><img src="assets/images/stocks/podcast-4.jpg" alt=""></a>
@@ -369,7 +369,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-sm-3 col-md-3 col-lg-3">
+                        <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-3 md:mb-0">
                             <div class="news-card-5">
                                 <div class="pic">
                                     <a href="#" class="ratio ratio-75"><img src="assets/images/stocks/podcast-4.jpg" alt=""></a>
@@ -380,7 +380,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-sm-3 col-md-3 col-lg-3">
+                        <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-3 md:mb-0">
                             <div class="news-card-5">
                                 <div class="pic">
                                     <a href="#" class="ratio ratio-75"><img src="assets/images/stocks/podcast-4.jpg" alt=""></a>
@@ -391,7 +391,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-sm-3 col-md-3 col-lg-3">
+                        <div class="col-6 col-sm-3 col-md-3 col-lg-3 mb-3 md:mb-0">
                             <div class="news-card-5">
                                 <div class="pic">
                                     <a href="#" class="ratio ratio-75"><img src="assets/images/stocks/podcast-4.jpg" alt=""></a>
@@ -399,6 +399,13 @@
                                 <div class="text">
                                     <h3><a href="#">Kemendagri Nilai Sumsel Berhasil Tekan Kemiskinan</a></h3>
                                     <div class="speaker"><i class='ri-restaurant-fill'></i> Chef Marinka</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-6">
+                            <div class="for-mobile">
+                                <div class="flex justify-center">
+                                    <a href="#" class="btn primary mx-auto small w-[151px]">Lihat Selengkapnya <i class="ri-arrow-right-s-line"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1400,10 +1407,22 @@
                 });
                 $(".media-network-slider").owlCarousel({
                     items: 3,
-                    itemsDesktop : 3,
-                    itemsDesktopSmall : 3,
-                    itemsTablet: 2.5,
-                    itemsMobile : 1.5,
+                    responsive:{
+                        0:{
+                            items:1.2,
+                            nav:true
+                        },
+                        768:{
+                            items:3,
+                            nav:false
+                        },
+                        1000:{
+                            items:5,
+                            nav:true,
+                            loop:false
+                        }
+                    },
+                    loop: true,
                     pagination: true,
                     nav: true,
                     autoplay: true

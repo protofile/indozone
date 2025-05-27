@@ -1332,13 +1332,25 @@
                 });
                 $(".media-network-slider").owlCarousel({
                     items: 3,
-                    itemsDesktop : 3,
-                    itemsDesktopSmall : 3,
-                    itemsTablet: 2.5,
-                    itemsMobile : 1.5,
+                    responsive:{
+                        0:{
+                            items:1.2,
+                            nav:true
+                        },
+                        768:{
+                            items:3,
+                            nav:false
+                        },
+                        1000:{
+                            items:5,
+                            nav:true,
+                            loop:false
+                        }
+                    },
+                    loop: true,
                     pagination: true,
                     nav: true,
-                    autoPlay: true
+                    autoplay: true
                 });
             });
         </script>
