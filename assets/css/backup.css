@@ -146,6 +146,10 @@
 }
 /* STICKY SHARE END */
 
+.article-ct a{
+    color: #E6465C;
+}
+
 /* NIGHTMODE */
 body.night .burger,
 body.night .headline-slider .owl-nav .owl-prev,
