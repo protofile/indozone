@@ -10,7 +10,7 @@
 .tag-list-1 a i,
 a:hover,
 .article-ct a{
-    color: #A05BF3;
+    color: #0e79b2;
 }
 .weather-forecast,
 .section-title span::after,
@@ -18,11 +18,11 @@ a:hover,
 .footer-section-1 .row,
 .footer-section-3,
 .breaking-news-title i{
-    background-color: #A05BF3;
+    background-color: #0e79b2;
 }
 .popular-list .item i,
 .news-card-3,
 .article-pagination .pagination a.pagenum{
-    border-color: #A05BF3;
+    border-color: #0e79b2;
 }
 

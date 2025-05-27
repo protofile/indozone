@@ -1091,7 +1091,7 @@ a:hover {
         .article-head .kanal.news a,
         .video-headline .kanal.news a {
   --tw-bg-opacity: 1;
-  background-color: rgb(230 70 92 / var(--tw-bg-opacity, 1));
+  background-color: rgb(209 17 73 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
@@ -1105,88 +1105,88 @@ a:hover {
         .news-card-5 .kanal.news a,
         .brand-widget-card .kanal.news a {
   --tw-text-opacity: 1;
-  color: rgb(230 70 92 / var(--tw-text-opacity, 1));
+  color: rgb(209 17 73 / var(--tw-text-opacity, 1));
 }
 
 /* TECH */
 
-.headline-1 .news-item .text .kanal.tech a,
-        .news-list-1.first-bigger .news-item:first-child .text .kanal.tech a,
-        .news-list-1a .news-item .text .kanal.tech a,
-        .news-card-1 .text .kanal.tech a,
-        .foto-card .text .kanal.tech a,
-        .article-head .kanal.tech a,
-        .video-headline .kanal.tech a {
+.headline-1 .news-item .text .kanal.tekingame a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.tekingame a,
+        .news-list-1a .news-item .text .kanal.tekingame a,
+        .news-card-1 .text .kanal.tekingame a,
+        .foto-card .text .kanal.tekingame a,
+        .article-head .kanal.tekingame a,
+        .video-headline .kanal.tekingame a {
   --tw-bg-opacity: 1;
-  background-color: rgb(110 110 110 / var(--tw-bg-opacity, 1));
+  background-color: rgb(82 59 253 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.zcampus-card .kanal.tech a,
-        .media-network-item .kanal.tech a,
-        .news-list-1 .news-item .kanal.tech a,
-        .news-card-4 .text .kanal.tech a,
-        .news-list-5 .text .kanal.tech a,
-        .video-headline-list .news-card-5 .text .kanal.tech a,
-        .news-card-5 .kanal.tech a,
-        .brand-widget-card .kanal.tech a {
+.zcampus-card .kanal.tekingame a,
+        .media-network-item .kanal.tekingame a,
+        .news-list-1 .news-item .kanal.tekingame a,
+        .news-card-4 .text .kanal.tekingame a,
+        .news-list-5 .text .kanal.tekingame a,
+        .video-headline-list .news-card-5 .text .kanal.tekingame a,
+        .news-card-5 .kanal.tekingame a,
+        .brand-widget-card .kanal.tekingame a {
   --tw-text-opacity: 1;
-  color: rgb(110 110 110 / var(--tw-text-opacity, 1));
+  color: rgb(82 59 253 / var(--tw-text-opacity, 1));
 }
 
 /* LIFE */
 
-.headline-1 .news-item .text .kanal.life a,
-        .news-list-1.first-bigger .news-item:first-child .text .kanal.life a,
-        .news-list-1a .news-item .text .kanal.life a,
-        .news-card-1 .text .kanal.life a,
-        .foto-card .text .kanal.life a,
-        .article-head .kanal.life a,
-        .video-headline .kanal.life a {
+.headline-1 .news-item .text .kanal.lifezone a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.lifezone a,
+        .news-list-1a .news-item .text .kanal.lifezone a,
+        .news-card-1 .text .kanal.lifezone a,
+        .foto-card .text .kanal.lifezone a,
+        .article-head .kanal.lifezone a,
+        .video-headline .kanal.lifezone a {
   --tw-bg-opacity: 1;
-  background-color: rgb(88 89 91 / var(--tw-bg-opacity, 1));
+  background-color: rgb(211 52 121 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.zcampus-card .kanal.life a,
-        .media-network-item .kanal.life a,
-        .news-list-1 .news-item .kanal.life a,
-        .news-card-4 .text .kanal.life a,
-        .news-list-5 .text .kanal.life a,
-        .video-headline-list .news-card-5 .text .kanal.life a,
-        .news-card-5 .kanal.life a,
-        .brand-widget-card .kanal.life a {
+.zcampus-card .kanal.lifezone a,
+        .media-network-item .kanal.lifezone a,
+        .news-list-1 .news-item .kanal.lifezone a,
+        .news-card-4 .text .kanal.lifezone a,
+        .news-list-5 .text .kanal.lifezone a,
+        .video-headline-list .news-card-5 .text .kanal.lifezone a,
+        .news-card-5 .kanal.lifezone a,
+        .brand-widget-card .kanal.lifezone a {
   --tw-text-opacity: 1;
-  color: rgb(88 89 91 / var(--tw-text-opacity, 1));
+  color: rgb(211 52 121 / var(--tw-text-opacity, 1));
 }
 
 /* SOCCER */
 
-.headline-1 .news-item .text .kanal.soccer a,
-        .news-list-1.first-bigger .news-item:first-child .text .kanal.soccer a,
-        .news-list-1a .news-item .text .kanal.soccer a,
-        .news-card-1 .text .kanal.soccer a,
-        .foto-card .text .kanal.soccer a,
-        .article-head .kanal.soccer a,
-        .video-headline .kanal.soccer a {
+.headline-1 .news-item .text .kanal.arena a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.arena a,
+        .news-list-1a .news-item .text .kanal.arena a,
+        .news-card-1 .text .kanal.arena a,
+        .foto-card .text .kanal.arena a,
+        .article-head .kanal.arena a,
+        .video-headline .kanal.arena a {
   --tw-bg-opacity: 1;
-  background-color: rgb(14 154 2 / var(--tw-bg-opacity, 1));
+  background-color: rgb(23 190 187 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.zcampus-card .kanal.soccer a,
-        .media-network-item .kanal.soccer a,
-        .news-list-1 .news-item .kanal.soccer a,
-        .news-card-4 .text .kanal.soccer a,
-        .news-list-5 .text .kanal.soccer a,
-        .video-headline-list .news-card-5 .text .kanal.soccer a,
-        .news-card-5 .kanal.soccer a,
-        .brand-widget-card .kanal.soccer a {
+.zcampus-card .kanal.arena a,
+        .media-network-item .kanal.arena a,
+        .news-list-1 .news-item .kanal.arena a,
+        .news-card-4 .text .kanal.arena a,
+        .news-list-5 .text .kanal.arena a,
+        .video-headline-list .news-card-5 .text .kanal.arena a,
+        .news-card-5 .kanal.arena a,
+        .brand-widget-card .kanal.arena a {
   --tw-text-opacity: 1;
-  color: rgb(14 154 2 / var(--tw-text-opacity, 1));
+  color: rgb(23 190 187 / var(--tw-text-opacity, 1));
 }
 
 /* SPORT */
@@ -1245,29 +1245,29 @@ a:hover {
 
 /* OTOMOTIF */
 
-.headline-1 .news-item .text .kanal.otomotif a,
-        .news-list-1.first-bigger .news-item:first-child .text .kanal.otomotif a,
-        .news-list-1a .news-item .text .kanal.otomotif a,
-        .news-card-1 .text .kanal.otomotif a,
-        .foto-card .text .kanal.otomotif a,
-        .article-head .kanal.otomotif a,
-        .video-headline .kanal.otomotif a {
+.headline-1 .news-item .text .kanal.otozone a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.otozone a,
+        .news-list-1a .news-item .text .kanal.otozone a,
+        .news-card-1 .text .kanal.otozone a,
+        .foto-card .text .kanal.otozone a,
+        .article-head .kanal.otozone a,
+        .video-headline .kanal.otozone a {
   --tw-bg-opacity: 1;
-  background-color: rgb(11 20 58 / var(--tw-bg-opacity, 1));
+  background-color: rgb(142 142 142 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.zcampus-card .kanal.otomotif a,
-        .media-network-item .kanal.otomotif a,
-        .news-list-1 .news-item .kanal.otomotif a,
-        .news-card-4 .text .kanal.otomotif a,
-        .news-list-5 .text .kanal.otomotif a,
-        .video-headline-list .news-card-5 .text .kanal.otomotif a,
-        .news-card-5 .kanal.otomotif a,
-        .brand-widget-card .kanal.otomotif a {
+.zcampus-card .kanal.otozone a,
+        .media-network-item .kanal.otozone a,
+        .news-list-1 .news-item .kanal.otozone a,
+        .news-card-4 .text .kanal.otozone a,
+        .news-list-5 .text .kanal.otozone a,
+        .video-headline-list .news-card-5 .text .kanal.otozone a,
+        .news-card-5 .kanal.otozone a,
+        .brand-widget-card .kanal.otozone a {
   --tw-text-opacity: 1;
-  color: rgb(11 20 58 / var(--tw-text-opacity, 1));
+  color: rgb(142 142 142 / var(--tw-text-opacity, 1));
 }
 
 /* MUSIC */
@@ -1299,29 +1299,29 @@ a:hover {
 
 /* SELEB */
 
-.headline-1 .news-item .text .kanal.seleb a,
-        .news-list-1.first-bigger .news-item:first-child .text .kanal.seleb a,
-        .news-list-1a .news-item .text .kanal.seleb a,
-        .news-card-1 .text .kanal.seleb a,
-        .foto-card .text .kanal.seleb a,
-        .article-head .kanal.seleb a,
-        .video-headline .kanal.seleb a {
+.headline-1 .news-item .text .kanal.spotlight a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.spotlight a,
+        .news-list-1a .news-item .text .kanal.spotlight a,
+        .news-card-1 .text .kanal.spotlight a,
+        .foto-card .text .kanal.spotlight a,
+        .article-head .kanal.spotlight a,
+        .video-headline .kanal.spotlight a {
   --tw-bg-opacity: 1;
-  background-color: rgb(244 86 93 / var(--tw-bg-opacity, 1));
+  background-color: rgb(168 51 185 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.zcampus-card .kanal.seleb a,
-        .media-network-item .kanal.seleb a,
-        .news-list-1 .news-item .kanal.seleb a,
-        .news-card-4 .text .kanal.seleb a,
-        .news-list-5 .text .kanal.seleb a,
-        .video-headline-list .news-card-5 .text .kanal.seleb a,
-        .news-card-5 .kanal.seleb a,
-        .brand-widget-card .kanal.seleb a {
+.zcampus-card .kanal.spotlight a,
+        .media-network-item .kanal.spotlight a,
+        .news-list-1 .news-item .kanal.spotlight a,
+        .news-card-4 .text .kanal.spotlight a,
+        .news-list-5 .text .kanal.spotlight a,
+        .video-headline-list .news-card-5 .text .kanal.spotlight a,
+        .news-card-5 .kanal.spotlight a,
+        .brand-widget-card .kanal.spotlight a {
   --tw-text-opacity: 1;
-  color: rgb(244 86 93 / var(--tw-text-opacity, 1));
+  color: rgb(168 51 185 / var(--tw-text-opacity, 1));
 }
 
 /* GAME */
@@ -1353,29 +1353,29 @@ a:hover {
 
 /* FOOD */
 
-.headline-1 .news-item .text .kanal.food a,
-        .news-list-1.first-bigger .news-item:first-child .text .kanal.food a,
-        .news-list-1a .news-item .text .kanal.food a,
-        .news-card-1 .text .kanal.food a,
-        .foto-card .text .kanal.food a,
-        .article-head .kanal.food a,
-        .video-headline .kanal.food a {
+.headline-1 .news-item .text .kanal.foodventure a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.foodventure a,
+        .news-list-1a .news-item .text .kanal.foodventure a,
+        .news-card-1 .text .kanal.foodventure a,
+        .foto-card .text .kanal.foodventure a,
+        .article-head .kanal.foodventure a,
+        .video-headline .kanal.foodventure a {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 132 6 / var(--tw-bg-opacity, 1));
+  background-color: rgb(254 104 71 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.zcampus-card .kanal.food a,
-        .media-network-item .kanal.food a,
-        .news-list-1 .news-item .kanal.food a,
-        .news-card-4 .text .kanal.food a,
-        .news-list-5 .text .kanal.food a,
-        .video-headline-list .news-card-5 .text .kanal.food a,
-        .news-card-5 .kanal.food a,
-        .brand-widget-card .kanal.food a {
+.zcampus-card .kanal.foodventure a,
+        .media-network-item .kanal.foodventure a,
+        .news-list-1 .news-item .kanal.foodventure a,
+        .news-card-4 .text .kanal.foodventure a,
+        .news-list-5 .text .kanal.foodventure a,
+        .video-headline-list .news-card-5 .text .kanal.foodventure a,
+        .news-card-5 .kanal.foodventure a,
+        .brand-widget-card .kanal.foodventure a {
   --tw-text-opacity: 1;
-  color: rgb(255 132 6 / var(--tw-text-opacity, 1));
+  color: rgb(254 104 71 / var(--tw-text-opacity, 1));
 }
 
 /* TRAVEL */
@@ -1457,6 +1457,60 @@ a:hover {
         .brand-widget-card .kanal.movie a {
   --tw-text-opacity: 1;
   color: rgb(185 128 40 / var(--tw-text-opacity, 1));
+}
+
+/* EKOBIZ */
+
+.headline-1 .news-item .text .kanal.ekobiz a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.ekobiz a,
+        .news-list-1a .news-item .text .kanal.ekobiz a,
+        .news-card-1 .text .kanal.ekobiz a,
+        .foto-card .text .kanal.ekobiz a,
+        .article-head .kanal.ekobiz a,
+        .video-headline .kanal.ekobiz a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 121 178 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.zcampus-card .kanal.ekobiz a,
+        .media-network-item .kanal.ekobiz a,
+        .news-list-1 .news-item .kanal.ekobiz a,
+        .news-card-4 .text .kanal.ekobiz a,
+        .news-list-5 .text .kanal.ekobiz a,
+        .video-headline-list .news-card-5 .text .kanal.ekobiz a,
+        .news-card-5 .kanal.ekobiz a,
+        .brand-widget-card .kanal.ekobiz a {
+  --tw-text-opacity: 1;
+  color: rgb(14 121 178 / var(--tw-text-opacity, 1));
+}
+
+/* fadami */
+
+.headline-1 .news-item .text .kanal.fadami a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.fadami a,
+        .news-list-1a .news-item .text .kanal.fadami a,
+        .news-card-1 .text .kanal.fadami a,
+        .foto-card .text .kanal.fadami a,
+        .article-head .kanal.fadami a,
+        .video-headline .kanal.fadami a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(73 81 89 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.zcampus-card .kanal.fadami a,
+        .media-network-item .kanal.fadami a,
+        .news-list-1 .news-item .kanal.fadami a,
+        .news-card-4 .text .kanal.fadami a,
+        .news-list-5 .text .kanal.fadami a,
+        .video-headline-list .news-card-5 .text .kanal.fadami a,
+        .news-card-5 .kanal.fadami a,
+        .brand-widget-card .kanal.fadami a {
+  --tw-text-opacity: 1;
+  color: rgb(73 81 89 / var(--tw-text-opacity, 1));
 }
 
 /* THEMES END */
@@ -6472,7 +6526,8 @@ body.night .for-night{
 body.night,
 body.night .bg-gray-100,
 body.night .main-menu .item .dropdown,
-body.night.niche-web header a.logo{
+body.night.niche-web header a.logo,
+body.night header{
   background: #111827;
 }
 

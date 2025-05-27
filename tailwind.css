@@ -52,7 +52,7 @@
         .foto-card .text .kanal.news a,
         .article-head .kanal.news a,
         .video-headline .kanal.news a{
-            @apply bg-z-red-600 text-white;
+            @apply bg-[#d11149] text-white;
         }
         .zcampus-card .kanal.news a,
         .media-network-item .kanal.news a,
@@ -62,70 +62,70 @@
         .video-headline-list .news-card-5 .text .kanal.news a,
         .news-card-5 .kanal.news a,
         .brand-widget-card .kanal.news a{
-            @apply text-z-red-600;
+            @apply text-[#d11149];
         }
 
         /* TECH */
-        .headline-1 .news-item .text .kanal.tech a,
-        .news-list-1.first-bigger .news-item:first-child .text .kanal.tech a,
-        .news-list-1a .news-item .text .kanal.tech a,
-        .news-card-1 .text .kanal.tech a,
-        .foto-card .text .kanal.tech a,
-        .article-head .kanal.tech a,
-        .video-headline .kanal.tech a{
-            @apply bg-[#6e6e6e] text-white;
+        .headline-1 .news-item .text .kanal.tekingame a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.tekingame a,
+        .news-list-1a .news-item .text .kanal.tekingame a,
+        .news-card-1 .text .kanal.tekingame a,
+        .foto-card .text .kanal.tekingame a,
+        .article-head .kanal.tekingame a,
+        .video-headline .kanal.tekingame a{
+            @apply bg-[#523bfd] text-white;
         }
-        .zcampus-card .kanal.tech a,
-        .media-network-item .kanal.tech a,
-        .news-list-1 .news-item .kanal.tech a,
-        .news-card-4 .text .kanal.tech a,
-        .news-list-5 .text .kanal.tech a,
-        .video-headline-list .news-card-5 .text .kanal.tech a,
-        .news-card-5 .kanal.tech a,
-        .brand-widget-card .kanal.tech a{
-            @apply text-[#6e6e6e];
+        .zcampus-card .kanal.tekingame a,
+        .media-network-item .kanal.tekingame a,
+        .news-list-1 .news-item .kanal.tekingame a,
+        .news-card-4 .text .kanal.tekingame a,
+        .news-list-5 .text .kanal.tekingame a,
+        .video-headline-list .news-card-5 .text .kanal.tekingame a,
+        .news-card-5 .kanal.tekingame a,
+        .brand-widget-card .kanal.tekingame a{
+            @apply text-[#523bfd];
         }
 
         /* LIFE */
-        .headline-1 .news-item .text .kanal.life a,
-        .news-list-1.first-bigger .news-item:first-child .text .kanal.life a,
-        .news-list-1a .news-item .text .kanal.life a,
-        .news-card-1 .text .kanal.life a,
-        .foto-card .text .kanal.life a,
-        .article-head .kanal.life a,
-        .video-headline .kanal.life a{
-            @apply bg-[#58595b] text-white;
+        .headline-1 .news-item .text .kanal.lifezone a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.lifezone a,
+        .news-list-1a .news-item .text .kanal.lifezone a,
+        .news-card-1 .text .kanal.lifezone a,
+        .foto-card .text .kanal.lifezone a,
+        .article-head .kanal.lifezone a,
+        .video-headline .kanal.lifezone a{
+            @apply bg-[#d33479] text-white;
         }
-        .zcampus-card .kanal.life a,
-        .media-network-item .kanal.life a,
-        .news-list-1 .news-item .kanal.life a,
-        .news-card-4 .text .kanal.life a,
-        .news-list-5 .text .kanal.life a,
-        .video-headline-list .news-card-5 .text .kanal.life a,
-        .news-card-5 .kanal.life a,
-        .brand-widget-card .kanal.life a{
-            @apply text-[#58595b];
+        .zcampus-card .kanal.lifezone a,
+        .media-network-item .kanal.lifezone a,
+        .news-list-1 .news-item .kanal.lifezone a,
+        .news-card-4 .text .kanal.lifezone a,
+        .news-list-5 .text .kanal.lifezone a,
+        .video-headline-list .news-card-5 .text .kanal.lifezone a,
+        .news-card-5 .kanal.lifezone a,
+        .brand-widget-card .kanal.lifezone a{
+            @apply text-[#d33479];
         }
 
         /* SOCCER */
-        .headline-1 .news-item .text .kanal.soccer a,
-        .news-list-1.first-bigger .news-item:first-child .text .kanal.soccer a,
-        .news-list-1a .news-item .text .kanal.soccer a,
-        .news-card-1 .text .kanal.soccer a,
-        .foto-card .text .kanal.soccer a,
-        .article-head .kanal.soccer a,
-        .video-headline .kanal.soccer a{
-            @apply bg-[#0e9a02] text-white;
+        .headline-1 .news-item .text .kanal.arena a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.arena a,
+        .news-list-1a .news-item .text .kanal.arena a,
+        .news-card-1 .text .kanal.arena a,
+        .foto-card .text .kanal.arena a,
+        .article-head .kanal.arena a,
+        .video-headline .kanal.arena a{
+            @apply bg-[#17bebb] text-white;
         }
-        .zcampus-card .kanal.soccer a,
-        .media-network-item .kanal.soccer a,
-        .news-list-1 .news-item .kanal.soccer a,
-        .news-card-4 .text .kanal.soccer a,
-        .news-list-5 .text .kanal.soccer a,
-        .video-headline-list .news-card-5 .text .kanal.soccer a,
-        .news-card-5 .kanal.soccer a,
-        .brand-widget-card .kanal.soccer a{
-            @apply text-[#0e9a02];
+        .zcampus-card .kanal.arena a,
+        .media-network-item .kanal.arena a,
+        .news-list-1 .news-item .kanal.arena a,
+        .news-card-4 .text .kanal.arena a,
+        .news-list-5 .text .kanal.arena a,
+        .video-headline-list .news-card-5 .text .kanal.arena a,
+        .news-card-5 .kanal.arena a,
+        .brand-widget-card .kanal.arena a{
+            @apply text-[#17bebb];
         }
 
         /* SPORT */
@@ -169,24 +169,24 @@
             @apply text-[#1d2f92];
         }
         /* OTOMOTIF */
-        .headline-1 .news-item .text .kanal.otomotif a,
-        .news-list-1.first-bigger .news-item:first-child .text .kanal.otomotif a,
-        .news-list-1a .news-item .text .kanal.otomotif a,
-        .news-card-1 .text .kanal.otomotif a,
-        .foto-card .text .kanal.otomotif a,
-        .article-head .kanal.otomotif a,
-        .video-headline .kanal.otomotif a{
-            @apply bg-[#0b143a] text-white;
+        .headline-1 .news-item .text .kanal.otozone a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.otozone a,
+        .news-list-1a .news-item .text .kanal.otozone a,
+        .news-card-1 .text .kanal.otozone a,
+        .foto-card .text .kanal.otozone a,
+        .article-head .kanal.otozone a,
+        .video-headline .kanal.otozone a{
+            @apply bg-[#8e8e8e] text-white;
         }
-        .zcampus-card .kanal.otomotif a,
-        .media-network-item .kanal.otomotif a,
-        .news-list-1 .news-item .kanal.otomotif a,
-        .news-card-4 .text .kanal.otomotif a,
-        .news-list-5 .text .kanal.otomotif a,
-        .video-headline-list .news-card-5 .text .kanal.otomotif a,
-        .news-card-5 .kanal.otomotif a,
-        .brand-widget-card .kanal.otomotif a{
-            @apply text-[#0b143a];
+        .zcampus-card .kanal.otozone a,
+        .media-network-item .kanal.otozone a,
+        .news-list-1 .news-item .kanal.otozone a,
+        .news-card-4 .text .kanal.otozone a,
+        .news-list-5 .text .kanal.otozone a,
+        .video-headline-list .news-card-5 .text .kanal.otozone a,
+        .news-card-5 .kanal.otozone a,
+        .brand-widget-card .kanal.otozone a{
+            @apply text-[#8e8e8e];
         }
         /* MUSIC */
         .headline-1 .news-item .text .kanal.music a,
@@ -209,24 +209,24 @@
             @apply text-[#ff6d24];
         }
         /* SELEB */
-        .headline-1 .news-item .text .kanal.seleb a,
-        .news-list-1.first-bigger .news-item:first-child .text .kanal.seleb a,
-        .news-list-1a .news-item .text .kanal.seleb a,
-        .news-card-1 .text .kanal.seleb a,
-        .foto-card .text .kanal.seleb a,
-        .article-head .kanal.seleb a,
-        .video-headline .kanal.seleb a{
-            @apply bg-[#f4565d] text-white;
+        .headline-1 .news-item .text .kanal.spotlight a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.spotlight a,
+        .news-list-1a .news-item .text .kanal.spotlight a,
+        .news-card-1 .text .kanal.spotlight a,
+        .foto-card .text .kanal.spotlight a,
+        .article-head .kanal.spotlight a,
+        .video-headline .kanal.spotlight a{
+            @apply bg-[#a833b9] text-white;
         }
-        .zcampus-card .kanal.seleb a,
-        .media-network-item .kanal.seleb a,
-        .news-list-1 .news-item .kanal.seleb a,
-        .news-card-4 .text .kanal.seleb a,
-        .news-list-5 .text .kanal.seleb a,
-        .video-headline-list .news-card-5 .text .kanal.seleb a,
-        .news-card-5 .kanal.seleb a,
-        .brand-widget-card .kanal.seleb a{
-            @apply text-[#f4565d];
+        .zcampus-card .kanal.spotlight a,
+        .media-network-item .kanal.spotlight a,
+        .news-list-1 .news-item .kanal.spotlight a,
+        .news-card-4 .text .kanal.spotlight a,
+        .news-list-5 .text .kanal.spotlight a,
+        .video-headline-list .news-card-5 .text .kanal.spotlight a,
+        .news-card-5 .kanal.spotlight a,
+        .brand-widget-card .kanal.spotlight a{
+            @apply text-[#a833b9];
         }
         /* GAME */
         .headline-1 .news-item .text .kanal.game a,
@@ -249,24 +249,24 @@
             @apply text-[#5cb82e];
         }
         /* FOOD */
-        .headline-1 .news-item .text .kanal.food a,
-        .news-list-1.first-bigger .news-item:first-child .text .kanal.food a,
-        .news-list-1a .news-item .text .kanal.food a,
-        .news-card-1 .text .kanal.food a,
-        .foto-card .text .kanal.food a,
-        .article-head .kanal.food a,
-        .video-headline .kanal.food a{
-            @apply bg-[#ff8406] text-white;
+        .headline-1 .news-item .text .kanal.foodventure a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.foodventure a,
+        .news-list-1a .news-item .text .kanal.foodventure a,
+        .news-card-1 .text .kanal.foodventure a,
+        .foto-card .text .kanal.foodventure a,
+        .article-head .kanal.foodventure a,
+        .video-headline .kanal.foodventure a{
+            @apply bg-[#fe6847] text-white;
         }
-        .zcampus-card .kanal.food a,
-        .media-network-item .kanal.food a,
-        .news-list-1 .news-item .kanal.food a,
-        .news-card-4 .text .kanal.food a,
-        .news-list-5 .text .kanal.food a,
-        .video-headline-list .news-card-5 .text .kanal.food a,
-        .news-card-5 .kanal.food a,
-        .brand-widget-card .kanal.food a{
-            @apply text-[#ff8406];
+        .zcampus-card .kanal.foodventure a,
+        .media-network-item .kanal.foodventure a,
+        .news-list-1 .news-item .kanal.foodventure a,
+        .news-card-4 .text .kanal.foodventure a,
+        .news-list-5 .text .kanal.foodventure a,
+        .video-headline-list .news-card-5 .text .kanal.foodventure a,
+        .news-card-5 .kanal.foodventure a,
+        .brand-widget-card .kanal.foodventure a{
+            @apply text-[#fe6847];
         }
         /* TRAVEL */
         .headline-1 .news-item .text .kanal.travel a,
@@ -327,6 +327,46 @@
         .news-card-5 .kanal.movie a,
         .brand-widget-card .kanal.movie a{
             @apply text-[#b98028];
+        }
+        /* EKOBIZ */
+        .headline-1 .news-item .text .kanal.ekobiz a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.ekobiz a,
+        .news-list-1a .news-item .text .kanal.ekobiz a,
+        .news-card-1 .text .kanal.ekobiz a,
+        .foto-card .text .kanal.ekobiz a,
+        .article-head .kanal.ekobiz a,
+        .video-headline .kanal.ekobiz a{
+            @apply bg-[#0e79b2] text-white;
+        }
+        .zcampus-card .kanal.ekobiz a,
+        .media-network-item .kanal.ekobiz a,
+        .news-list-1 .news-item .kanal.ekobiz a,
+        .news-card-4 .text .kanal.ekobiz a,
+        .news-list-5 .text .kanal.ekobiz a,
+        .video-headline-list .news-card-5 .text .kanal.ekobiz a,
+        .news-card-5 .kanal.ekobiz a,
+        .brand-widget-card .kanal.ekobiz a{
+            @apply text-[#0e79b2];
+        }
+        /* fadami */
+        .headline-1 .news-item .text .kanal.fadami a,
+        .news-list-1.first-bigger .news-item:first-child .text .kanal.fadami a,
+        .news-list-1a .news-item .text .kanal.fadami a,
+        .news-card-1 .text .kanal.fadami a,
+        .foto-card .text .kanal.fadami a,
+        .article-head .kanal.fadami a,
+        .video-headline .kanal.fadami a{
+            @apply bg-[#495159] text-white;
+        }
+        .zcampus-card .kanal.fadami a,
+        .media-network-item .kanal.fadami a,
+        .news-list-1 .news-item .kanal.fadami a,
+        .news-card-4 .text .kanal.fadami a,
+        .news-list-5 .text .kanal.fadami a,
+        .video-headline-list .news-card-5 .text .kanal.fadami a,
+        .news-card-5 .kanal.fadami a,
+        .brand-widget-card .kanal.fadami a{
+            @apply text-[#495159];
         }
     /* THEMES END */
 
@@ -2753,7 +2793,8 @@ body.night .for-night{display: block;}
 body.night,
 body.night .bg-gray-100,
 body.night .main-menu .item .dropdown,
-body.night.niche-web header a.logo{
+body.night.niche-web header a.logo,
+body.night header{
     background: #111827;
 }
 body.night .text h3,
