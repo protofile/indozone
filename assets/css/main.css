@@ -5639,11 +5639,11 @@ body.oto .news-card-1::before,
   }
 
   .skycrapper-ads.left {
-    left: 0px;
+    left: calc((100% - 1280px) / 2);
   }
 
   .skycrapper-ads.right {
-    right: 0px;
+    right: calc((100% - 1280px) / 2);
   }
 
   .news-list-1 .news-item .pic {

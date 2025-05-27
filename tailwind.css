@@ -2234,10 +2234,10 @@
             @apply max-w-[960px];
         }
         .skycrapper-ads.left{
-            @apply left-0;
+            @apply left-[calc((100%-1280px)/2)];
         }
         .skycrapper-ads.right{
-            @apply right-0;
+            @apply right-[calc((100%-1280px)/2)];
         }
         .news-list-1 .news-item .pic{
             @apply w-[180px];
