@@ -9,7 +9,9 @@
 .section-title.bigger span i,
 .tag-list-1 a i,
 a:hover,
-.article-ct a{
+.article-ct a,
+.mega-menu-list li a:hover,
+.comment-bt-2 i{
     color: #17bebb;
 }
 .weather-forecast,

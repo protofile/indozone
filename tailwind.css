@@ -410,6 +410,9 @@
     .content-counter i{
         @apply text-md -translate-y-0.5;
     }
+    .breadcrumb-section{
+        @apply bg-gray-100;
+    }
     .breadcrumb-wrapper{
         @apply bg-gray-100;
     }
@@ -640,7 +643,7 @@
         @apply text-slate-800 bg-[#FFC300]
     }
     .burger{
-        @apply flex justify-center items-center text-lg;
+        @apply flex justify-center items-center text-lg order-2 w-10 text-center;
     }
     /*HEADER END*/
 
@@ -1197,6 +1200,25 @@
     .brand-text p{
         @apply text-sm;
     }
+
+    .brand-widget-small{
+        @apply w-full overflow-hidden rounded-2xl;
+    }
+    .brand-widget-small .brand-banner{
+        @apply w-full;
+    }
+    .widget-small-grid{
+        @apply p-5;
+    }
+    .widget-row{
+        @apply flex gap-4 mb-4;
+    }
+    .widget-row:last-child{
+        @apply mb-0;
+    }
+    .brand-widget-small .text h3{
+        @apply text-white;
+    }
     /* BRAND WIDGET END */
 
     /* POLLING */
@@ -1681,6 +1703,9 @@
     }
     .article-ct blockquote{
         @apply bg-slate-100 py-4 pr-4 pl-20 rounded-lg flex flex-col gap-2 bg-[url("../images/double-quotes-l.png")] bg-[position:16px_12px] bg-no-repeat;
+    }
+    .article-ct a{
+        @apply text-z-red-600;
     }
     .news-card-3{
         @apply flex gap-4 p-3 w-full items-center border border-z-red-600 rounded-lg border-l-4;
@@ -2675,6 +2700,46 @@
         .burger.for-mobile{
             @apply relative left-auto order-2;
         }
+
+        .header-right-bottom{
+            @apply justify-end;
+        }
+        .src-form{
+            @apply w-[38px] h-[38px];
+        }
+        .src-form button{
+            @apply pointer-events-none;
+        }
+        .src-form.active button{
+            @apply pointer-events-auto z-[100];
+        }
+        .src-form.active{
+            @apply pointer-events-auto z-[99];
+        }
+        .src-form.active input{
+            @apply w-[200px] absolute top-0 right-0 z-50 border border-slate-300 bg-white opacity-100;
+        }
+        .mega-menu{
+            @apply top-[80px];
+        }
+        .niche-web .mega-menu{
+            @apply top-[52px];
+        }
+        .mega-menu-list{
+            @apply columns-3;
+        }
+        .sticky-share{
+            @apply w-[300px] justify-center top-auto -bottom-[50px] left-1/2 -translate-x-1/2 rounded-[20px] border border-slate-200;
+        }
+        .sticky-share.scrolled{
+            @apply top-auto bottom-[60px];
+        }
+        .sticky-share .right-group{
+            @apply w-full justify-between;
+        }
+        .sticky-share .share-group span{
+            @apply hidden;
+        }
     }
 
     @media only screen and (min-width: 768px) and (max-width: 1024px){
@@ -2703,6 +2768,21 @@
         }
     }
 
+    @media only screen and (min-width:480px) and (max-width:1024px){
+        .weather-forecast{
+            @apply order-2 ml-2;
+        }
+        .weather-forecast .text{
+            @apply flex-col gap-0;
+        }
+        .weather-forecast i.weather-icon{
+            @apply text-2xl leading-[100%];
+        }
+        .weather-forecast .temperature{
+            @apply text-sm leading-[100%];
+        }
+    }
+
     @media only screen and (max-width: 480px){
         .for-desktop-and-tablet{
             @apply hidden;
@@ -2718,6 +2798,27 @@
         }
         .author-groups{
             @apply flex-col items-start;
+        }
+        .weather-forecast{
+            @apply w-full;
+        }
+        .weather-forecast i.weather-icon{
+            @apply text-lg;
+        }
+        .weather-forecast .text{
+            @apply flex-row items-center;
+        }
+        .weather-forecast .city-selector{
+            @apply top-1;
+        }
+        main .breadcrumb-section{
+            @apply mb-4;
+        }
+        .article-ct figure img{
+            @apply rounded-lg;
+        }
+        .mega-menu-list{
+            @apply columns-2;
         }
     }
 }
@@ -2824,6 +2925,69 @@ body.has-billboard .skycrapper-ads.sticky{
     padding-top: 420px;
 } */
 
+/* MEGA MENU */
+.mega-menu{
+    @apply w-full fixed top-[120px] max-h-[80vh] overflow-auto left-0 z-[99] bg-white shadow-lg px-[10px] opacity-0 pointer-events-none transition-all;
+}
+.mega-menu.show{
+    @apply opacity-100 pointer-events-auto;
+}
+.niche-web .mega-menu{
+    @apply top-[78px];
+}
+.mega-menu-list{
+    @apply columns-5 gap-5;
+}
+.mega-menu-list li a:hover{
+    color: #E6465C;
+    @apply text-z-red-600;
+}
+/* MEGA MENU END */
+
+/* STICKY SHARE */
+.sticky-share{
+    @apply fixed -top-[50px] left-0 w-screen py-1 bg-slate-100 shadow-lg z-[101];
+}
+.sticky-share.scrolled{
+    @apply top-0;
+}
+.sticky-share .col-md-12{
+    @apply flex justify-between items-center;
+}
+.sticky-share h4{
+    @apply line-clamp-1 text-sm mr-16;
+}
+.sticky-share .right-group{
+    @apply flex justify-end gap-4 items-center;
+}
+.comment-bt-2{
+    @apply text-xs px-2 py-1 rounded-[20px] bg-white border border-slate-300 whitespace-nowrap;
+}
+.comment-bt-2 i{
+    @apply text-sm text-z-red-600;
+}
+.sticky-share .share-group{
+    @apply flex items-center gap-1;
+}
+.sticky-share .share-group span{
+    @apply text-xs font-bold text-slate-600 whitespace-nowrap;
+}
+.sticky-share .share-group a{
+    @apply flex items-center justify-center w-8 h-8 rounded-md text-white;
+}
+.sticky-share .share-group a.fb{
+    @apply bg-[#1559c2]
+}
+.sticky-share .share-group a.wa{
+    @apply bg-[#43ce13]
+}
+.sticky-share .share-group a.tw{
+    @apply bg-[#000]
+}
+.sticky-share .share-group a.other{
+    @apply bg-[#555]
+}
+/* STICKY SHARE END */
 
 /* NIGHTMODE */
 
@@ -2833,10 +2997,11 @@ body.night .for-day{display: none;}
 body.night .for-night{display: block;}
 
 body.night,
-body.night .bg-gray-100,
+body.night .breadcrumb-section,
 body.night .main-menu .item .dropdown,
 body.night.niche-web header a.logo,
-body.night header{
+body.night header,
+body.night .mega-menu{
     background: #111827;
 }
 body.night .text h3,
@@ -2879,7 +3044,11 @@ body.night .z-textarea,
 body.night .lipsus-plan-card h5,
 body.night .lipsus-plan-card h3,
 body.night .lipsus-plan-card p,
-body.night .lipsus-plan-card li{
+body.night .lipsus-plan-card li,
+body.night .burger,
+body.night .headline-slider .owl-nav .owl-prev,
+body.night .headline-slider .owl-nav .owl-next,
+body.night .mega-menu-list li a{
     color: #cbd5e1 !important;
 }
 body.night p,
