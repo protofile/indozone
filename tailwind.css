@@ -20,11 +20,14 @@
     main{
         @apply w-full overflow-x-hidden;
     }
-    body{
+    /* body{
         @apply pt-[120px];
+    } */
+    body{
+        @apply transition-none;
     }
     header{
-        @apply w-full flex bg-white fixed top-0 left-0 z-50 transition-all;
+        @apply w-full flex flex-col bg-white relative z-50 transition-all;
     }
     @media only screen and (min-width: 1536px) {    
         .container {
@@ -2130,9 +2133,9 @@
     body.niche-web .skycrapper-ads{
         @apply top-[96px];
     }
-    body.niche-web{
+    /* body.niche-web{
         @apply pt-[80px]
-    }
+    } */
     
     /* oto */
     body.oto .pic a img,
@@ -2334,9 +2337,6 @@
         .col-md-8{
             flex: 0 0 100%;
         }
-        body{
-            @apply pt-[80px]
-        }
         body.niche-web{
             @apply pt-[52px];
         }
@@ -2350,8 +2350,9 @@
             @apply px-[10px];
         }
         header{
-            @apply top-7 fixed z-50;
+            @apply z-50 pt-[28px];
         }
+        
         .niche-web header{
             @apply top-0;
         }
@@ -2365,8 +2366,9 @@
             @apply py-1.5 justify-between;
         }
         .header-right-top{
-            @apply !w-screen fixed top-0 left-0 py-1;
+            @apply !w-screen absolute top-0 -left-0 py-1 z-10;
         }
+        
         .breaking-news-title,
         .header-right-top span,
         .header-right-top .part:nth-child(2){
@@ -2780,9 +2782,49 @@
 #small-slide .owl-item.current{
     opacity: 1;
 }
+
+/* BILLBOARD */
+.banner-ads.billboard{
+    @apply bg-slate-900 h-[300px] flex items-center justify-center mb-0 overflow-hidden;
+}
+header.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 header.hide{
     top: -120px;
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
 }
+body.has-billboard header.sticky{
+    top: -300px;
+}
+body.has-billboard header.hide{
+    top: -420px;
+}
+body.has-billboard .skycrapper-ads{
+    top: 440px;
+}
+body.has-billboard.niche-web .skycrapper-ads{
+    top: 400px;
+}
+body.has-billboard .skycrapper-ads.sticky{
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+/* body.has-billboard{
+    padding-top: 420px;
+} */
+
+
 /* NIGHTMODE */
 
 .for-day{display: block;}
@@ -3022,6 +3064,17 @@ body.night .article-ct.unsubscribed::after{
 @media only screen and (max-width:1024px){
     .main-menu.show{
         left: 100px;
+    }
+    body.has-billboard,
+    body.has-billboard header{
+        padding-top: 0;
+    }
+    body.has-billboard header .logo,
+    body.has-billboard header .header-right-bottom{
+        margin-top: 28px;
+    }
+    body.has-billboard .header-right-top{
+        top: 300px;
     }
 }
 .klasemen-slider .owl-nav.disabled{

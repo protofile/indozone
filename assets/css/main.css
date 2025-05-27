@@ -1037,17 +1037,20 @@ body,
   overflow-x: hidden;
 }
 
+/* body{
+        @apply pt-[120px];
+    } */
+
 body {
-  padding-top: 120px;
+  transition-property: none;
 }
 
 header {
-  position: fixed;
-  top: 0px;
-  left: 0px;
+  position: relative;
   z-index: 50;
   display: flex;
   width: 100%;
+  flex-direction: column;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   transition-property: all;
@@ -5464,9 +5467,9 @@ body.niche-web .skycrapper-ads {
   top: 96px;
 }
 
-body.niche-web {
-  padding-top: 80px;
-}
+/* body.niche-web{
+        @apply pt-[80px]
+    } */
 
 /* oto */
 
@@ -5798,10 +5801,6 @@ body.oto .news-card-1::before,
     flex: 0 0 100%;
   }
 
-  body {
-    padding-top: 80px;
-  }
-
   body.niche-web {
     padding-top: 52px;
   }
@@ -5820,9 +5819,8 @@ body.oto .news-card-1::before,
   }
 
   header {
-    position: fixed;
-    top: 1.75rem;
     z-index: 50;
+    padding-top: 28px;
   }
 
   .niche-web header {
@@ -5844,9 +5842,10 @@ body.oto .news-card-1::before,
   }
 
   .header-right-top {
-    position: fixed;
+    position: absolute;
     top: 0px;
-    left: 0px;
+    left: -0px;
+    z-index: 10;
     width: 100vw !important;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
@@ -6501,9 +6500,62 @@ body.oto .news-card-1::before,
   opacity: 1;
 }
 
+/* BILLBOARD */
+
+.banner-ads.billboard {
+  margin-bottom: 0px;
+  display: flex;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
+}
+
+header.sticky{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 header.hide{
   top: -120px;
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
 }
+
+body.has-billboard header.sticky{
+  top: -300px;
+}
+
+body.has-billboard header.hide{
+  top: -420px;
+}
+
+body.has-billboard .skycrapper-ads{
+  top: 440px;
+}
+
+body.has-billboard.niche-web .skycrapper-ads{
+  top: 400px;
+}
+
+body.has-billboard .skycrapper-ads.sticky{
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+/* body.has-billboard{
+    padding-top: 420px;
+} */
 
 /* NIGHTMODE */
 
@@ -6781,6 +6833,20 @@ body.night .article-ct.unsubscribed::after{
 @media only screen and (max-width:1024px){
   .main-menu.show{
     left: 100px;
+  }
+
+  body.has-billboard,
+    body.has-billboard header{
+    padding-top: 0;
+  }
+
+  body.has-billboard header .logo,
+    body.has-billboard header .header-right-bottom{
+    margin-top: 28px;
+  }
+
+  body.has-billboard .header-right-top{
+    top: 300px;
   }
 }
 

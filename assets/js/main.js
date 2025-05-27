@@ -26,24 +26,39 @@ $(document).ready(function(){
 
     var header = document.querySelector("header");
     var navbarHeight = header.offsetHeight;
-    var lastScrollTop = 0;
+    var lastScrollTop = 420;
 
     window.onscroll = function() {scrollHide()};
 
     function scrollHide() {
-    var st = window.pageYOffset || document.documentElement.scrollTop;
-    console.log(st);
-    if (st > lastScrollTop) {
-        header.classList.add('hide');
-        $(".sticky-share").addClass("scrolled");
-        $('.skycrapper-ads').addClass("sticky");
-    } else {
-        header.classList.remove('hide');
-        $(".sticky-share").removeClass("scrolled");
-        $('.skycrapper-ads').removeClass("sticky");
+        var st = window.pageYOffset || document.documentElement.scrollTop;
+        console.log(st);
+        if (st > lastScrollTop) {
+            header.classList.add('hide');
+            $(".sticky-share").addClass("scrolled");
+        } else {
+            header.classList.remove('hide');
+            $(".sticky-share").removeClass("scrolled");
+        }
+        lastScrollTop = st <= 420 ? 420 : st;
     }
-    lastScrollTop = st <= 0 ? 0 : st;
-    }
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 420){  
+            $('header').addClass("sticky");
+            if($("body").hasClass("has-billboard")){
+                $('body').css("padding-top","420px");
+                $('.skycrapper-ads').addClass("sticky");
+            }else{
+                $('body').css("padding-top","120px");
+                $('.skycrapper-ads').removeClass("sticky");
+            }
+        }
+        else{
+            $('header').removeClass("sticky");
+            $('body').css("padding-top","0");
+        }
+    });
 
     // TAB
     $(".tab-nav a").click(function(tn){
@@ -89,5 +104,10 @@ $(document).ready(function(){
             'slow');
     });
 
+    // BILLBOARD DETECTOR
+    if($(".billboard").length >= 1){
+        $("body").addClass("has-billboard");
+        console.log("ada billboard");
+    }
 
 });
