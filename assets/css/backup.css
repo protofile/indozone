@@ -66,6 +66,86 @@
 }
 /* MEGA MENU END */
 
+/* STICKY SHARE */
+.sticky-share{
+    position: fixed;
+    top:-50px;
+    left: 0;
+    width: 100vw;
+    padding: 4px 0;
+    background: #f4f4f4;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    z-index: 101;
+}
+.sticky-share.scrolled{
+    top:0;
+}
+.sticky-share .col-md-12{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sticky-share h4{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    margin-right: 60px;
+}
+.sticky-share .right-group{
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+    align-items: center;
+}
+.comment-bt-2{
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+}
+.comment-bt-2 i{
+    font-size: 14px;
+    color: #E6465C;
+}
+.sticky-share .share-group{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.sticky-share .share-group span{
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+    white-space: nowrap;
+}
+.sticky-share .share-group a{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: #fff;
+}
+.sticky-share .share-group a.fb{
+    background: #1559c2;
+}
+.sticky-share .share-group a.wa{
+    background: #43ce13;
+}
+.sticky-share .share-group a.tw{
+    background: #000;
+}
+.sticky-share .share-group a.other{
+    background: #555;
+}
+/* STICKY SHARE END */
+
 /* NIGHTMODE */
 body.night .burger,
 body.night .headline-slider .owl-nav .owl-prev,
@@ -114,6 +194,27 @@ body.night .mega-menu{
     }
     .mega-menu-list{
         column-count: 3;
+    }
+    .sticky-share{
+        width: 300px;
+        justify-content: center;
+        top:auto;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 20px;
+        border: 1px solid #dedede;
+    }
+    .sticky-share.scrolled{
+        top: auto;
+        bottom: 60px;
+    }
+    .sticky-share .right-group{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .sticky-share .share-group span{
+        display: none;
     }
 }
 

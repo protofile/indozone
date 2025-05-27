@@ -35,9 +35,11 @@ $(document).ready(function(){
     console.log(st);
     if (st > lastScrollTop) {
         header.classList.add('hide');
+        $(".sticky-share").addClass("scrolled");
         $('.skycrapper-ads').addClass("sticky");
     } else {
         header.classList.remove('hide');
+        $(".sticky-share").removeClass("scrolled");
         $('.skycrapper-ads').removeClass("sticky");
     }
     lastScrollTop = st <= 0 ? 0 : st;
@@ -78,5 +80,14 @@ $(document).ready(function(){
             $(".mega-menu").removeClass("show");
         }
     });
+
+    //STICKY SHARE
+    $(".comment-bt-2").click(function(cb) {
+        cb.preventDefault();
+        $('html,body').animate({                                                          //  fine in moz, still quicker in chrome. 
+            scrollTop: $("#comment-field").offset().top},
+            'slow');
+    });
+
 
 });
