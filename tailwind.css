@@ -2334,7 +2334,7 @@
             @apply w-[1200px];
         }
         .match-schedule-widget .h-scroller-ct{
-            @apply w-[600px];
+            @apply w-full min-w-[600px];
         }
         .news-list-1 .news-item .pic,
         .news-list-1.smaller .news-item .pic{

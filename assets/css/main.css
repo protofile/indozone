@@ -5792,7 +5792,8 @@ body.oto .news-card-1::before,
   }
 
   .match-schedule-widget .h-scroller-ct {
-    width: 600px;
+    width: 100%;
+    min-width: 600px;
   }
 
   .news-list-1 .news-item .pic,
