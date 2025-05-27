@@ -2742,9 +2742,16 @@ header.hide{
     top: -120px;
 }
 /* NIGHTMODE */
+
+.for-day{display: block;}
+.for-night{display: none;}
+body.night .for-day{display: none;}
+body.night .for-night{display: block;}
+
 body.night,
 body.night .bg-gray-100,
-body.night .main-menu .item .dropdown{
+body.night .main-menu .item .dropdown,
+body.night.niche-web header a.logo{
     background: #111827;
 }
 body.night .text h3,
@@ -2833,7 +2840,6 @@ body.night .logo img,
 body.night .footer-logo img{
     opacity: 1;
 }
-body.night .header-right-bottom,
 body.night .social-media-sidebar,
 body.night .media-network-wrap,
 body.night .article-head .share-group span,
@@ -2862,7 +2868,8 @@ body.night .profile .author-profile .avatar i,
 body.night .niche-content .row:first-child,
 body.night .niche-content .row:last-child,
 body.night .text-block,
-body.night .brand-widget-card{
+body.night .brand-widget-card,
+body.night .header-right-bottom{
     background: #020617;
 }
 body.night .social-media-sidebar a.tw,
