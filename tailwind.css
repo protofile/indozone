@@ -2231,13 +2231,13 @@
     }
     @media only screen and (max-width:1280px){
         .container{
-            @apply max-w-[840px];
+            @apply max-w-[960px];
         }
         .skycrapper-ads.left{
-            @apply left-[calc((100%-1180px)/2)]
+            @apply left-0;
         }
         .skycrapper-ads.right{
-            @apply right-[calc((100%-1180px)/2)]
+            @apply right-0;
         }
         .news-list-1 .news-item .pic{
             @apply w-[180px];
