@@ -2205,6 +2205,13 @@
         @apply flex items-center gap-4;
     }
 
+    .static-page .article-head h1{
+        @apply w-full text-center relative py-10 mb-4;
+    }
+    .static-page .article-head h1::before{
+        content: "";
+        @apply w-16 h-[3px] bg-z-red-600 absolute left-1/2 bottom-4 -translate-x-1/2;
+    }
 
     .for-mobile,
     .for-mobile-only{
