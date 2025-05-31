@@ -77,7 +77,7 @@ $(document).ready(function(){
     //SEARCH TOGGLE
     $(".src-form").click(function(){
         $(this).addClass("active");
-        $(".src-form input").focus();
+        //$(".src-form input").focus();
     });
     window.addEventListener('mouseup',function(event){
         if(event.target != $(".src-form") && event.target.parentNode != $(".src-form")){
