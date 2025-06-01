@@ -1,7 +1,7 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
     // NIGHTMODE
-    $(".colormode-btn button").click(function(cbt){
+    $(".colormode-btn button").click(function (cbt) {
         cbt.preventDefault();
         $($(this).children("i")).toggleClass("ri-sun-fill ri-moon-fill");
         $($(this).parent()).toggleClass("day night");
@@ -9,18 +9,19 @@ $(document).ready(function(){
     });
 
     // SCROLLTOP
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 240){  
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 240) {
             $('.skycrapper-ads').addClass("sticky");
         }
-        else{
+        else {
             $('.skycrapper-ads').removeClass("sticky");
         }
     });
 
     // BURGER
-    $(".burger").click(function(){
+    $(".burger").click(function () {
         $(".main-menu").toggleClass("show");
+        $(this).children("i").toggleClass("ri-close-large-line ri-menu-line");
     });
 
 
@@ -28,40 +29,40 @@ $(document).ready(function(){
     var navbarHeight = header.offsetHeight;
     var lastScrollTop = 420;
 
-    window.onscroll = function() {scrollHide()};
+    window.onscroll = function () { scrollHide() };
 
     function scrollHide() {
         var st = window.pageYOffset || document.documentElement.scrollTop;
-        console.log(st);
+        // console.log(st);
         if (st > lastScrollTop) {
-            header.classList.add('hide');
+            //header.classList.add('hide');
             $(".sticky-share").addClass("scrolled");
         } else {
-            header.classList.remove('hide');
+            //header.classList.remove('hide');
             $(".sticky-share").removeClass("scrolled");
         }
         lastScrollTop = st <= 420 ? 420 : st;
     }
 
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 420){  
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 420) {
             $('header').addClass("sticky");
-            if($("body").hasClass("has-billboard")){
-                $('body').css("padding-top","420px");
+            if ($("body").hasClass("has-billboard")) {
+                $('body').css("padding-top", "420px");
                 $('.skycrapper-ads').addClass("sticky");
-            }else{
-                $('body').css("padding-top","120px");
+            } else {
+                $('body').css("padding-top", "120px");
                 $('.skycrapper-ads').removeClass("sticky");
             }
         }
-        else{
+        else {
             $('header').removeClass("sticky");
-            $('body').css("padding-top","0");
+            //$('body').css("padding-top", "0");
         }
     });
 
     // TAB
-    $(".tab-nav a").click(function(tn){
+    $(".tab-nav a").click(function (tn) {
         tn.preventDefault();
         $(".tab-nav a").removeClass("active");
         $(this).addClass("active")
@@ -69,43 +70,44 @@ $(document).ready(function(){
         $($(this).attr("href")).addClass("show");
     });
 
-    $(".author-group button").click(function(agb){
+    $(".author-group button").click(function (agb) {
         agb.preventDefault();
         $(".author-popup").toggleClass("show");
     });
 
     //SEARCH TOGGLE
-    $(".src-form").click(function(){
+    $(".src-form").click(function () {
         $(this).addClass("active");
-        //$(".src-form input").focus();
+        $(".src-form input").focus();
     });
-    window.addEventListener('mouseup',function(event){
-        if(event.target != $(".src-form") && event.target.parentNode != $(".src-form")){
+    window.addEventListener('mouseup', function (event) {
+        if (event.target != $(".src-form") && event.target.parentNode != $(".src-form")) {
             $(".src-form").removeClass("active");
         }
-    });  
+    });
 
     //NETWORK MENU
-    $(".bt-network-menu").click(function(nm){
+    $(".bt-network-menu").click(function (nm) {
         nm.preventDefault();
         $($(this).attr("href")).addClass("show");
     });
-    window.addEventListener('mouseup',function(event){
-        if(event.target != $(".mega-menu") && event.target.parentNode != $(".mega-menu")){
+    window.addEventListener('mouseup', function (event) {
+        if (event.target != $(".mega-menu") && event.target.parentNode != $(".mega-menu")) {
             $(".mega-menu").removeClass("show");
         }
     });
 
     //STICKY SHARE
-    $(".comment-bt-2").click(function(cb) {
+    $(".comment-bt-2").click(function (cb) {
         cb.preventDefault();
         $('html,body').animate({                                                          //  fine in moz, still quicker in chrome. 
-            scrollTop: $("#comment-field").offset().top},
+            scrollTop: $("#comment-field").offset().top
+        },
             'slow');
     });
 
     // BILLBOARD DETECTOR
-    if($(".billboard").length >= 1){
+    if ($(".billboard").length >= 1) {
         $("body").addClass("has-billboard");
         console.log("ada billboard");
     }
