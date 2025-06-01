@@ -6053,7 +6053,6 @@ body.oto .news-card-1::before,
 
   header {
     z-index: 50;
-    padding-top: 28px;
   }
 
   .niche-web header {
@@ -7234,7 +7233,7 @@ body.night .article-ct.unsubscribed::after{
 
   body header .logo,
     body header .header-right-bottom{
-    margin-top: 4px;
+    margin-top: 32px;
   }
   body.niche-web header .logo,
     body.niche-web header .header-right-bottom{
