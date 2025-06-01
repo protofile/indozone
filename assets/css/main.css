@@ -4289,7 +4289,7 @@ header {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
-.article-head .share-group a.tg,
+.share-group a.tg,
     .share-article-group .social a.tg,
     .liputan-author-info a.tg,
     .liputan-author-info-2 a.tg {
@@ -6645,7 +6645,7 @@ body.oto .news-card-1::before,
     top: auto;
     bottom: -50px;
     left: 50%;
-    width: 300px;
+    width: 260px;
     --tw-translate-x: -50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     justify-content: center;
@@ -6683,6 +6683,7 @@ body.oto .news-card-1::before,
   .sticky-share .right-group {
     width: 100%;
     justify-content: space-between;
+    gap: 0;
   }
 
   .sticky-share .share-group span {
@@ -7233,7 +7234,7 @@ body.night .article-ct.unsubscribed::after{
 
   body header .logo,
     body header .header-right-bottom{
-    margin-top: 32px;
+    margin-top: 4px;
   }
   body.niche-web header .logo,
     body.niche-web header .header-right-bottom{
