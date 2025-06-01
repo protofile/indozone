@@ -6627,7 +6627,7 @@ body.oto .news-card-1::before,
     top: 0px;
     right: 0px;
     z-index: 50;
-    width: 200px;
+    width: 160px;
     border-width: 1px;
     --tw-border-opacity: 1;
     border-color: rgb(203 213 225 / var(--tw-border-opacity, 1));
@@ -7446,6 +7446,18 @@ body{
   justify-content: space-between;
   font-size: 14px;
   padding: 5px 0;
+}
+.recent-search .bt-close{
+  color: #aaa;
+  font-size: 24px;
+  position: absolute;
+  top: 7px;
+  right: 11px;
+  z-index: 3;
+}
+.recent-search .bt-close:hover{
+  color: #555;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 480px){

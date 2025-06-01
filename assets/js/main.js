@@ -80,6 +80,10 @@ $(document).ready(function () {
         $(this).addClass("active");
         $(".src-form input").focus();
     });
+    $(".recent-search .bt-close").click(function(bc){
+        bc.stopPropagation();
+        $(".src-form").removeClass("active");
+    });
     window.addEventListener('mouseup', function (event) {
         if (event.target != $(".src-form") && event.target.parentNode != $(".src-form")) {
             $(".src-form").removeClass("active");
