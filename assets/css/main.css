@@ -7402,6 +7402,11 @@ body.night .article-ct.unsubscribed::after{
   padding: 0;
   margin-bottom: 24px;
 }
+@media only screen and (max-width: 1366px){
+  .regional-slider .item h3{
+    font-size: 12px;
+  }
+}
 @media only screen and (max-width: 480px){
   .regional-wrap{
     padding: 0;
