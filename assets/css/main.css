@@ -7402,6 +7402,75 @@ body.night .article-ct.unsubscribed::after{
   padding: 0;
   margin-bottom: 24px;
 }
+
+/*RECENT SEARCH*/
+.recent-search{
+  margin-top: 16px;
+  position: absolute;
+  top: calc(100% - 20px);
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all ease-out 0.3s;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -ms-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  border: 1px solid #dedede;
+  width: 300px;
+  padding: 16px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+.src-form.active .recent-search{
+  opacity: 1;
+  pointer-events: auto;
+  top: calc(100% - 10px);
+}
+.recent-group{
+  margin-bottom: 20px;
+}
+  
+.recent-group h6{
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.recent-group h6 i{
+  color: #E6465C;
+}
+.recent-group li a{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 5px 0;
+}
+.recent-search .bt-close{
+  color: #aaa;
+  font-size: 24px;
+  position: absolute;
+  top: 7px;
+  right: 11px;
+  z-index: 3;
+}
+.recent-search .bt-close:hover{
+  color: #555;
+  cursor: pointer;
+}
+
+.bt-network-menu.inactive{
+  pointer-events: none;
+}
+
+.h-scroller::-webkit-scrollbar {
+    display: none;
+}
+
+
 @media only screen and (max-width: 1366px){
   .regional-slider .item h3{
     font-size: 12px;
@@ -7419,7 +7488,42 @@ body.night .article-ct.unsubscribed::after{
   }
 }
 
-
+/*REGIONAL*/
+.regional-card{
+  display: flex;
+  gap: 16px;
+  background: #f1f5f9;
+  padding: 24px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin-bottom: 20px;
+}
+.regional-card .pic{
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.regional-card img{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.regional-card .text{
+  gap: 0;
+}
+.regional-card h3{
+  font-size: 16px;
+}
+.regional-card p{
+  font-size: 14px;
+}
 
 
 
