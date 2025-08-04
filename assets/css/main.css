@@ -7526,4 +7526,58 @@ body.night .article-ct.unsubscribed::after{
 }
 
 
+/*UPDATE AGUSTUS*/
+.profile{
+  align-items: start;
+  background: #f4f4f4;
+}
+.profile .author-profile{
+  align-items: start;
+}
+.profile .author-profile .avatar{
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.profile .author-profile .text h4{
+  font-size: 18px;
+}
+.profile .author-profile .text span{
+  font-size: 12px;
+}
+.profile .author-profile .text p{
+  font-size: 14px;
+  margin-top: 8px;
+  max-height: 105px;
+  overflow-y: auto;
+}
+@media only screen and (max-width: 768px){
+  .profile{
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  .profile .author-profile{
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile .author-profile .avatar{
+    width: 50px;
+    height: 50px;
+  }
+  .profile .author-profile .avatar i{
+    font-size: 24px;
+    width: 28px;
+    height: 28px;
+  }
+  .profile .author-profile .text{
+    text-align: center;
+  }
+  .profile .author-profile .text h4{
+    font-size: 16px;
+  }
+  .profile .author-profile .text span{
+    font-size: 14px;
+  }
+}
+
 
