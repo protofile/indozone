@@ -7580,4 +7580,80 @@ body.night .article-ct.unsubscribed::after{
   }
 }
 
+/*FORM USER*/
+.user-section{
+  padding-top: 60px;
+}
+.user-section-logo{
+  width: 100%;
+  text-align: center;
+}
+.user-section-logo img{
+  display: inline-block;
+}
+.user-form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid #e5e7eb;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+.user-form .inp-group{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.user-form .inp-group label{
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.user-form .inp-group input,
+.user-form .inp-group textarea,
+.user-form .inp-group select{
+  border: 1px solid #e5e7eb;
+  padding: 8px 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.user-form .inp-group .btn{
+  min-width: 100px;
+}
+.user-form .inp-group a{
+  color: #E6465C;
+  font-size: 14px;
+}
+.user-form p{
+  font-size: 14px;
+}
+.btn-group{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.btn-group a{
+  border: 1px solid #e5e7eb;
+}
+.btn-group a.google{
+  color: #a50e0e;
+}
+.btn-group a.facebook{
+  color: #1877f2;
+}
+
+@media only screen and (max-width: 768px){
+  .user-form{
+    padding: 20px;
+  }
+}
 
