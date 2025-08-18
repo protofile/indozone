@@ -7650,6 +7650,108 @@ body.night .article-ct.unsubscribed::after{
 .btn-group a.facebook{
   color: #1877f2;
 }
+.user-btn{
+  position: relative;
+}
+.user-btn-group{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #e5e7eb;
+  padding: 4px 16px 4px 4px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.user-btn-group:hover{
+  cursor: pointer;
+}
+.user-btn h6{
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  max-width: 120px;
+}
+.user-btn .avatar{
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.user-btn .avatar img{
+  border: 2px solid #fff;
+}
+.user-btn-dropdown{
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  position: absolute;
+  width: 240px;
+  top: calc(100% + 4px);
+  right: 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all ease-out 0.3s;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -ms-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+}
+.user-btn-dropdown.show{
+  opacity: 1;
+  pointer-events: auto;
+}
+.user-btn-dropdown a{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.user-btn-dropdown a:last-child{
+  border-bottom: none;
+}
+.user-btn-dropdown .user-profile{
+  padding: 10px;
+}
+.user-btn-dropdown .user-profile div{
+  background: #e5e7eb;
+  padding: 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.user-btn-dropdown .user-profile h6{
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.user-btn-dropdown .user-profile p{
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 1024px){
+  .user-btn{
+    order: 2;
+  }
+  .user-btn-group{
+    padding: 0;
+    margin-left: 8px;
+  }
+  .user-btn h6{
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 768px){
   .user-form{
@@ -7657,3 +7759,16 @@ body.night .article-ct.unsubscribed::after{
   }
 }
 
+body.night .user-btn-dropdown{
+  background: #020617;
+  border-color: #1e293b;
+}
+body.night .user-btn-dropdown a{
+  border-color: #1e293b;
+}
+body.night .user-btn-dropdown .user-profile div{
+  background: #1e293b;
+}
+body.night .user-btn-dropdown .user-profile div h6{
+  color: #e5e7eb;
+}

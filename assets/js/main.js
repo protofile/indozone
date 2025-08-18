@@ -116,4 +116,8 @@ $(document).ready(function () {
         console.log("ada billboard");
     }
 
+    $(".user-btn-group").click(function(){
+        $(".user-btn-dropdown").toggleClass("show");
+    });
+
 });
