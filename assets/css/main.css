@@ -7772,3 +7772,17 @@ body.night .user-btn-dropdown .user-profile div{
 body.night .user-btn-dropdown .user-profile div h6{
   color: #e5e7eb;
 }
+
+/*USER UPDATE*/
+.avatar.bigger{
+  width: 80px;
+  height: 80px;
+}
+.user-form .account-row label{
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.user-form .account-row{
+  border-bottom: 1px solid #e5e7eb;
+}
