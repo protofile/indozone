@@ -7786,3 +7786,17 @@ body.night .user-btn-dropdown .user-profile div h6{
 .user-form .account-row{
   border-bottom: 1px solid #e5e7eb;
 }
+
+
+/*UPDATE*/
+.btn-group .btn{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 24px;
+}
+.btn-group .btn img{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
