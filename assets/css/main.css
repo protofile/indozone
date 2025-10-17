@@ -7800,3 +7800,10 @@ body.night .user-btn-dropdown .user-profile div h6{
   height: 20px;
   object-fit: contain;
 }
+
+/* UPDATE */
+@media only screen and (max-width: 1024px){
+  .header-bottom-right .bt-network-menu{
+    display: none;   
+  }
+}
